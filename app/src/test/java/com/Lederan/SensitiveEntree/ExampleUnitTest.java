@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.Lederan.SensitiveEntree;
 
 import org.junit.Test;
 
