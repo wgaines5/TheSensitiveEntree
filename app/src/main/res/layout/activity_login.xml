@@ -11,7 +11,7 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginStart="158dp"
-      android:layout_marginTop="544dp"
+      android:layout_marginTop="24dp"
       android:layout_marginEnd="165dp"
       android:backgroundTint="@color/dark_green"
       android:text="@string/login"
@@ -19,9 +19,9 @@
       android:textColor="@color/off_white"
       android:visibility="visible"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.515"
+      app:layout_constraintHorizontal_bias="0.535"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/enterPassword"
       tools:text="@string/login"
       tools:visibility="visible" />
 
@@ -88,13 +88,13 @@
       app:layout_constraintTop_toBottomOf="@+id/enterEmailAddress" />
 
   <Button
-      android:id="@+id/button2"
+      android:id="@+id/createAccountButton"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginStart="132dp"
       android:layout_marginTop="12dp"
       android:layout_marginEnd="134dp"
-      android:backgroundTint="@color/dark_yellow"
+      android:backgroundTint="@color/light_yellow"
       android:text="@string/create_account"
       android:textAlignment="center"
       android:textColor="@color/black"
