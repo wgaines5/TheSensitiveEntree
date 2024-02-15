@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:background="@drawable/backdrop_foreground"
+    android:gravity="bottom"
+    android:padding="20dp">
+    
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/menu_book_foreground"/>
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aguafina_script"
+        android:text="The Sensitive Entree"
+        android:textSize="26sp" />
+
+
+</LinearLayout>

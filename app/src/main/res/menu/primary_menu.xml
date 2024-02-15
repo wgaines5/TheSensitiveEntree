@@ -1,34 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <item
-        android:id="@+id/menu_home"
-        android:title="Home" />
-    <item
-        android:id="@+id/menu_profile"
-        android:title="Profile"/>
-    <item
-        android:id="@+id/menu_cooking_tips"
-        android:title="Cooking Tips"/>
-    <item
-        android:id="@+id/menu_calorie_counter"
-        android:title="Calorie Counter"/>
-    <item
-        android:id="@+id/menu_ingredient_substitutions"
-        android:title="Ingredient Substitutions"/>
-    <item
-        android:id="@+id/menu_resources"
-        android:title="Resources"/>
-    <item
-        android:id="@+id/search"
-        android:title="Search"/>
-    <item
-        android:id="@+id/menu_pantry"
-        android:title="Pantry"/>
-    <item
-        android:id="@+id/menu_settings"
-        android:title="Settings"/>
-    <item
-        android:id="@+id/menu_about"
-        android:title="About"/>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_home"
+            android:icon="@drawable/home_icon"
+            android:title="Home" />
+        <item
+            android:id="@+id/menu_profile"
+            android:icon="@drawable/profile_icon"
+            android:title="Profile" />
+        <item
+            android:id="@+id/menu_cooking_tips"
+            android:icon="@drawable/cooking_tips_icon"
+            android:title="Cooking Tips" />
+        <item
+            android:id="@+id/menu_calorie_counter"
+            android:icon="@drawable/calorie_counter_icon"
+            android:title="Calorie Counter" />
+        <item
+            android:id="@+id/menu_ingredient_substitutions"
+            android:icon="@drawable/ingredient_substitution_icon"
+            android:title="Ingredient Substitutions" />
+        <item
+            android:id="@+id/menu_resources"
+            android:icon="@drawable/resources_icon"
+            android:title="Resources" />
+        <item
+            android:id="@+id/search"
+            android:icon="@drawable/search_icon"
+            android:title="Search" />
+        <item
+            android:id="@+id/menu_pantry"
+            android:icon="@drawable/pantry_icon"
+            android:title="Pantry" />
+        <item
+            android:id="@+id/menu_settings"
+            android:icon="@drawable/settings_icon"
+            android:title="Settings" />
+        <item
+            android:id="@+id/menu_about"
+            android:icon="@drawable/about_icon"
+            android:title="About" />
+    </group>
 </menu>
