@@ -2,6 +2,7 @@ package com.Lederan.SensitiveEntree;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.view.View;
@@ -25,6 +26,10 @@ public class Login extends AppCompatActivity {
         email = e.getText().toString();
         EditText p= findViewById(R.id.enterPassword);
         password = p.getText().toString();
+    }
+    public void onCreateAccountClick(View view){
+        Intent myIntent = new Intent(Login.this, Registration.class);
+        Login.this.startActivity(myIntent);
     }
 
 }
