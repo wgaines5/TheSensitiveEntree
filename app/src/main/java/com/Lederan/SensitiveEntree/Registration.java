@@ -1,7 +1,9 @@
 package com.Lederan.SensitiveEntree;
 
+import androidx.annotation.StringRes;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -28,6 +30,11 @@ public class Registration extends AppCompatActivity {
 
         if(p != c){
             x.setVisibility(View.VISIBLE);
+            c.setHint(R.string.password_match_fail);
         }
+    }
+    public void onClickBack(View view){
+        Intent myIntent = new Intent(Registration.this, Login.class);
+        Registration.this.startActivity(myIntent);
     }
 }
