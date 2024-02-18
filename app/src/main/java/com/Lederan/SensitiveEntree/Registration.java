@@ -19,7 +19,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class Registration extends AppCompatActivity {
 
-    EditText editTextEmail, editTextPassword;
+    EditText editTextEmail, editTextPassword, editTextConfirmation;
     Button buttonReg;
     FirebaseAuth mAuth;
 
@@ -43,6 +43,7 @@ public class Registration extends AppCompatActivity {
         setContentView(R.layout.activity_registration);
         editTextEmail = findViewById(R.id.getEmail);
         editTextPassword = findViewById(R.id.getPassword);
+        editTextConfirmation = findViewById(R.id.getConfirmPassword);
         buttonReg = findViewById(R.id.registationButton);
         mAuth = FirebaseAuth.getInstance();
         buttonReg.setOnClickListener(new View.OnClickListener()
@@ -64,11 +65,19 @@ public class Registration extends AppCompatActivity {
                     Toast.makeText(Registration.this, "Enter password", Toast.LENGTH_SHORT).show();
                     return;
                 }
+                if(editTextPassword != editTextConfirmation)
+                {
+                    Toast.makeText(Registration.this, "Password mismatch",
+                            Toast.LENGTH_SHORT).show();
+                    return;
+                }
 
                 mAuth.createUserWithEmailAndPassword(email, password)
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
-                            public void onComplete(@NonNull Task<AuthResult> task) {
+                            public void onComplete(@NonNull Task<AuthResult> task)
+                            {
+
                                 if (task.isSuccessful())
                                 {
                                     // Sign in success, update UI with the signed-in user's information
