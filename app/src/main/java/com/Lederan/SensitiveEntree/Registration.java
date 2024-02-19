@@ -99,24 +99,8 @@ public class Registration extends AppCompatActivity {
         });
     }
 
-/*
-    String fistName = "";
-    String lastName ="";
-    String emailAddress="";
-    String password="";
-    public void onClickRegister(View view){
-        EditText f = findViewById(R.id.getFirstName);
-        EditText l = findViewById(R.id.getLastName);
-        EditText e = findViewById(R.id.getEmail);
-        EditText p = findViewById(R.id.getPassword);
-        EditText c = findViewById(R.id.getConfirmPassword);
-        ImageView x = findViewById(R.id.errorX);
-
-
-
-        if(p != c){
-            x.setVisibility(View.VISIBLE);
-        }
+    public void onClickBack(View view){
+        Intent myIntent = new Intent(Registration.this, Login.class);
+        Registration.this.startActivity(myIntent);
     }
-    */
 }
