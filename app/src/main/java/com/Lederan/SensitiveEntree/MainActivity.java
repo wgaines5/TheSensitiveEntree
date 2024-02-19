@@ -21,17 +21,18 @@ Toolbar toolbar;
         setContentView(R.layout.activity_main);
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
+        toolbar = findViewById(R.id.toolbar);
 
         setSupportActionBar(toolbar);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
     }
-    public boolean onCreateOptionMenu(Menu menu){
+    /*public boolean onCreateOptionMenu(Menu menu){
         getMenuInflater().inflate(R.menu.primary_menu,menu);
         return true;
     }
-    /*public boolean onOptionsItemSelected(MenuItem item){
+    public boolean onOptionsItemSelected(MenuItem item){
         switch (item.getItemId()){
             case R.id.menu_home:
                 return true;
