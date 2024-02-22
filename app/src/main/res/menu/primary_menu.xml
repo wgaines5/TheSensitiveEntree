@@ -3,16 +3,19 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/menu_home"
-            android:icon="@drawable/home_icon"
-            android:title="Home"/>
+            android:title="Home"
+            android:icon="@drawable/home_icon"/>
+
         <item
             android:id="@+id/menu_profile"
-            android:icon="@drawable/profile_icon"
-            android:title="Profile" />
+            android:title="Profile"
+            android:icon="@drawable/profile_icon"/>
+
         <item
             android:id="@+id/search"
-            android:icon="@drawable/search_icon"
-            android:title="Search" />
+            android:title="Search"
+            android:icon="@drawable/search_icon"/>
+
         <item
             android:id="@+id/menu_ingredient_substitutions"
             android:icon="@drawable/ingredient_substitution_icon"

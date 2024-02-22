@@ -12,7 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.The_Sensitive_Entree"
         tools:targetApi="31">
-
+        <activity
+            android:name=".About"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
