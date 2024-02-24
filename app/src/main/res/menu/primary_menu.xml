@@ -2,12 +2,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/menu_home"
+            android:id="@+id/nav_home"
             android:title="Home"
             android:icon="@drawable/home_icon"/>
 
         <item
-            android:id="@+id/menu_profile"
+            android:id="@+id/nav_profile"
             android:title="Profile"
             android:icon="@drawable/profile_icon"/>
 
@@ -17,31 +17,31 @@
             android:icon="@drawable/search_icon"/>
 
         <item
-            android:id="@+id/menu_ingredient_substitutions"
+            android:id="@+id/nav_ingredient_substitutions"
             android:icon="@drawable/ingredient_substitution_icon"
             android:title="Ingredient Substitutions" />
         <item
-            android:id="@+id/menu_calorie_counter"
+            android:id="@+id/nav_calorie_counter"
             android:icon="@drawable/calorie_counter_icon"
             android:title="Calorie Counter" />
         <item
-            android:id="@+id/menu_pantry"
+            android:id="@+id/nav_pantry"
             android:icon="@drawable/pantry_icon"
             android:title="My Recipes" />
         <item
-            android:id="@+id/menu_cooking_tips"
+            android:id="@+id/nav_cooking_tips"
             android:icon="@drawable/cooking_tips_icon"
             android:title="Cooking Tips" />
         <item
-            android:id="@+id/menu_resources"
+            android:id="@+id/nav_resources"
             android:icon="@drawable/resources_icon"
             android:title="Resources" />
         <item
-            android:id="@+id/menu_settings"
+            android:id="@+id/nav_settings"
             android:icon="@drawable/settings_icon"
             android:title="Settings" />
         <item
-            android:id="@+id/menu_about"
+            android:id="@+id/nav_about"
             android:icon="@drawable/about_icon"
             android:title="About" />
     </group>
