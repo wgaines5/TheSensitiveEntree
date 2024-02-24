@@ -1,17 +1,16 @@
 package com.Lederan.SensitiveEntree;
-
+import com.Lederan.SensitiveEntree.R;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.widget.Toolbar;
-
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
+import com.google.android.material.internal.NavigationMenu;
 import com.google.android.material.navigation.NavigationView;
 
 import org.checkerframework.checker.nullness.qual.NonNull;
@@ -20,6 +19,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 DrawerLayout drawerLayout;
 NavigationView navigationView;
 Toolbar toolbar;
+//Define menu Constants
+private static final int Home = R.id.nav_home;
+private static final int Profile = R.id.nav_profile;
+private static final int Search = R.id.search;
+private static final int Ingredient_Substitutions = R.id.nav_ingredient_substitutions;
+private static final int Calorie_Counter = R.id.nav_calorie_counter;
+private static final int My_Recipes = R.id.nav_pantry;
+private static final int Cooking_Tips = R.id.nav_cooking_tips;
+private static final int Resources = R.id.nav_resources;
+private static final int Settings = R.id.nav_settings;
+private static int Menu_About;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +38,7 @@ Toolbar toolbar;
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
         toolbar = findViewById(R.id.toolbar);
-
+        Menu_About = R.id.nav_about;
 
         setSupportActionBar(toolbar);
 
@@ -47,9 +57,8 @@ public void onBackPressed(){
             super.onBackPressed();
         }
 }
-
     @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
         return true;
     }
