@@ -29,7 +29,7 @@ private static final int My_Recipes = R.id.nav_pantry;
 private static final int Cooking_Tips = R.id.nav_cooking_tips;
 private static final int Resources = R.id.nav_resources;
 private static final int Settings = R.id.nav_settings;
-private static int Menu_About;
+private static final int Menu_About = R.id.nav_about;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,7 +38,6 @@ private static int Menu_About;
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
         toolbar = findViewById(R.id.toolbar);
-        Menu_About = R.id.nav_about;
 
         setSupportActionBar(toolbar);
 
@@ -59,7 +58,32 @@ public void onBackPressed(){
 }
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
+        int id = item.getItemId();
+        if (id == R.id.nav_about) {
+            Intent intent = new Intent(MainActivity.this, About.class);
+            startActivity(intent);
+        } else if (id == R.id.nav_home) {
+            return false;
+        } else if (id == R.id.nav_profile) {
+            return false;
+        } else if (id == R.id.search) {
+            return false;
+        } else if (id == R.id.nav_ingredient_substitutions) {
+            return false;
+        } else if (id == R.id.nav_calorie_counter) {
+            return false;
+        } else if (id == R.id.nav_pantry) {
+            return false;
+        } else if (id == R.id.nav_cooking_tips) {
+            return false;
+        } else if (id == R.id.nav_resources) {
+            return false;
+        } else if (id == R.id.nav_settings) {
+            return false;
+        } else {
+            return false;
+        }
+        drawerLayout.closeDrawer(GravityCompat.START);
         return true;
     }
 }
