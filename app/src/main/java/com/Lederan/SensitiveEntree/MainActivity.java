@@ -63,7 +63,8 @@ public void onBackPressed(){
             Intent intent = new Intent(MainActivity.this, About.class);
             startActivity(intent);
         } else if (id == R.id.nav_home) {
-            return false;
+            Intent intent = new Intent(MainActivity.this, MainActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_profile) {
             return false;
         } else if (id == R.id.search) {
