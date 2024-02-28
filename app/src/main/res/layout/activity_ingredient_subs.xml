@@ -11,7 +11,7 @@
         android:layout_width="375dp"
         android:layout_height="8dp"
         android:layout_marginTop="20dp"
-        android:background="@color/dark_green"
+        android:background="@drawable/button3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
@@ -20,10 +20,10 @@
         android:id="@+id/ingredientSub3_textView"
         android:layout_width="319dp"
         android:layout_height="34dp"
-        android:layout_marginTop="308dp"
-        android:background="@color/off_white"
+        android:layout_marginTop="320dp"
+        android:background="@drawable/textview2"
         android:fontFamily="@font/playfair_display"
-        android:text="TextView"
+        android:text="@string/ingredSubs"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -35,11 +35,12 @@
         android:id="@+id/ingredientSub4_textView"
         android:layout_width="319dp"
         android:layout_height="34dp"
-        android:layout_marginTop="440dp"
-        android:background="@color/off_white"
+        android:layout_marginTop="460dp"
+        android:background="@drawable/textview2"
         android:fontFamily="@font/playfair_display"
-        android:text="TextView"
+        android:text="@string/ingredSubs"
         android:textAlignment="center"
+        android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,10 +51,11 @@
         android:layout_width="319dp"
         android:layout_height="34dp"
         android:layout_marginTop="180dp"
-        android:background="@color/off_white"
+        android:background="@drawable/textview2"
         android:fontFamily="@font/playfair_display"
-        android:text="TextView"
+        android:text="@string/ingredSubs"
         android:textAlignment="center"
+        android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,10 +65,10 @@
         android:id="@+id/ingredientSub6_textView"
         android:layout_width="319dp"
         android:layout_height="34dp"
-        android:layout_marginTop="52dp"
-        android:background="@color/off_white"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/textview2"
         android:fontFamily="@font/playfair_display"
-        android:text="TextView"
+        android:text="@string/ingredSubs"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -78,7 +80,7 @@
         android:id="@+id/selectSub_textView"
         android:layout_width="232dp"
         android:layout_height="40dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="12dp"
         android:fontFamily="@font/playfair_display"
         android:text="Select Ingredient"
         android:textAlignment="center"
@@ -97,5 +99,46 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/sub1_spinner"
+        android:layout_width="319dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/dropdown1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
+
+    <Spinner
+        android:id="@+id/sub2_spinner"
+        android:layout_width="319dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="212dp"
+        android:background="@drawable/dropdown1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
+
+    <Spinner
+        android:id="@+id/sub3_spinner"
+        android:layout_width="319dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="352dp"
+        android:background="@drawable/dropdown1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
+
+    <Spinner
+        android:id="@+id/sub4_spinner"
+        android:layout_width="319dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="492dp"
+        android:background="@drawable/dropdown1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

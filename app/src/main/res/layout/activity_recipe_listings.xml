@@ -47,44 +47,27 @@
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
-        android:textSize="34sp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.937"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.093" />
-
-    <Button
-        android:id="@+id/recipeFilter_button"
-        android:layout_width="76dp"
-        android:layout_height="48dp"
-        android:fontFamily="@font/playfair_display"
-        android:text="@string/filter_button"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.953"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.094" />
 
     <Button
         android:id="@+id/addRecipe_button"
         android:layout_width="118dp"
         android:layout_height="48dp"
-        android:background="@color/dark_green"
+        android:background="@drawable/button3"
         android:clickable="true"
         android:fontFamily="@font/playfair_display"
         android:text="@string/add_recipe"
         android:textAlignment="center"
         android:textAppearance="@style/ShapeAppearance.Material3.SmallComponent"
-        android:textColor="@color/black"
+        android:textColor="@color/grey_tint"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -472,19 +455,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <ImageButton
-        android:id="@+id/recipeListingsback_imageButton"
-        android:layout_width="75dp"
-        android:layout_height="59dp"
-        android:contentDescription="@string/back_button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.047"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView"
-        app:layout_constraintVertical_bias="0.971"
-        app:srcCompat="@drawable/backbutton_icon_foreground" />
-
     <ScrollView
         android:layout_width="348dp"
         android:layout_height="463dp"
@@ -492,7 +462,7 @@
         android:contentDescription="@string/scroll_view"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView"
         app:layout_constraintVertical_bias="0.0">
@@ -502,5 +472,14 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" />
     </ScrollView>
+
+    <ImageView
+        android:id="@+id/hamburgerRecipes_imageButton"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/hamburger_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hamburgericon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

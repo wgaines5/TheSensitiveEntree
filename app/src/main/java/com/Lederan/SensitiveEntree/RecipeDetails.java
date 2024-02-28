@@ -1,14 +1,19 @@
 package com.Lederan.SensitiveEntree;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+
 
 public class RecipeDetails extends AppCompatActivity {
 
@@ -19,15 +24,24 @@ public class RecipeDetails extends AppCompatActivity {
     ImageButton backRecipes_button, hamburgerIcon_imageButton;
     Button ingredSub_button;
 
-    protected void OnCreate(Bundle savedInstanceState){
+    @Override
+    protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe_deatils);
-
-
 
     }
     public void onClickBack(View view){
         Intent myintent = new Intent(RecipeDetails.this, RecipeListings.class);
         RecipeDetails.this.startActivity(myintent);
     }
+    public void onClickIngredientSubs(View view){
+        Intent myintent = new Intent(RecipeDetails.this, IngredientSubs.class);
+        RecipeDetails.this.startActivity(myintent);
+    }
+
+    //method for Resource button
+   /* public void onClickResource(View view){
+        Intent myintent = new Intent(RecipeDetails.this, AllergyResources.class);
+        RecipeDetails.this.startActivity(myintent);
+    }*/
 }
