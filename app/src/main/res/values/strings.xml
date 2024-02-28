@@ -7,6 +7,11 @@
         <item>Substitute 4</item>
         <item>Substitute 5</item>
     </string-array>
+    <string name="ingredSubs">Ingredient</string>
+    <string name="addto_recipes">Add to Recipes</string>
+    <string name="publicview">Submit for Public View</string>
+    <string name="photosubmit">Please submit .png or .jpeg picture format for recipe photo.</string>
+    <string name="specifics_instruct">Please specify ingredients and instructions.</string>
     <string name="newRecipe_name">Recipe Name:</string>
     <string name="newRecipe_time">Time:</string>
     <string name="newRecipe_servings">Servings:</string>

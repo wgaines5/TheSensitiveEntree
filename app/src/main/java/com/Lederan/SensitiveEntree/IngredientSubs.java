@@ -51,7 +51,7 @@ public class IngredientSubs extends AppCompatActivity implements AdapterView.OnI
         sub2_spinner.setOnItemSelectedListener(this);
 
         //Dropdown #3
-        sub3_spinner = (Spinner)findViewById(R.id.sub1_spinner);
+        sub3_spinner = (Spinner)findViewById(R.id.sub3_spinner);
         ArrayAdapter<String>adapter3 = new ArrayAdapter<String>(com.Lederan.SensitiveEntree.IngredientSubs.this,
                 android.R.layout.simple_spinner_item,subs3);
 
@@ -60,7 +60,7 @@ public class IngredientSubs extends AppCompatActivity implements AdapterView.OnI
         sub3_spinner.setOnItemSelectedListener(this);
 
         //Dropdown #4
-        sub4_spinner = (Spinner)findViewById(R.id.sub1_spinner);
+        sub4_spinner = (Spinner)findViewById(R.id.sub4_spinner);
         ArrayAdapter<String>adapter4 = new ArrayAdapter<String>(com.Lederan.SensitiveEntree.IngredientSubs.this,
                 android.R.layout.simple_spinner_item,subs4);
 

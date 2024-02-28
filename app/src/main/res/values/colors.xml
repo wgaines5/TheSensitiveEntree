@@ -15,4 +15,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="our_white">#F5F5F5</color>
     <color name="off_offWhite">#E0D9C8</color>
+    <color name="grey_tint">#262626</color>
 </resources>
