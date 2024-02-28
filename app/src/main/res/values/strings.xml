@@ -1,6 +1,10 @@
 <resources>
 
 
+    <string name="addto_recipes">Add to Recipes</string>
+    <string name="publicview">Submit for Public View</string>
+    <string name="photosubmit">Please submit .png or .jpeg picture format for photo of recipe:</string>
+    <string name="specifics_instruct">Please specify ingredients and instructions:</string>
 <string name = "autoText">AutoText</string>
     <string-array name="Substitutes">
         <item>Substitute 1</item>

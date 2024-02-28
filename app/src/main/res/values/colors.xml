@@ -14,4 +14,5 @@
     <color name="light_yellow">#FFE85C</color>
     <color name="dark_yellow">#FCD633</color>
     <color name="off_offWhite">#E0D9C8</color>
+    <color name="grey_tint">#262626</color>
 </resources>
