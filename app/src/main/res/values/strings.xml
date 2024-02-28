@@ -1,9 +1,41 @@
 <resources>
+<string name = "autoText">AutoText</string>
+    <string-array name="Substitutes">
+        <item>Substitute 1</item>
+        <item>Substitute 2</item>
+        <item>Substitute 3</item>
+        <item>Substitute 4</item>
+        <item>Substitute 5</item>
+    </string-array>
+    <string name="newRecipe_name">Recipe Name:</string>
+    <string name="newRecipe_time">Time:</string>
+    <string name="newRecipe_servings">Servings:</string>
+    <string name="newRecipe_servingsize">Serving Size:</string>
+    <string name="newRecipe_calories">Calories:</string>
+    <string name="newRecipe_instructions">Ingredients and Instructions</string>
+    <string name="new_recipe">New Recipe</string>
+    <string name="filter_button">Filter</string>
+    <string name="add_recipe">Add Recipe</string>
+    <string name="recipes">Recipes</string>
+    <string name="hamburger_icon">hamburger icon</string>
+    <string name="scroll_view">touchscreen</string>
+    <string name="ingredSub_button">Ingredient Substitutions</string>
+    <string name="recipe_servings">Servings: 2</string>
+    <string name="recipe_image">Recipe Picture</string>
+    <string name="back_button">Back</string>
+    <string name="recipe_calories">Calories: 250</string>
+    <string name="recipe_directions">Ingredients and Directions coming soon...</string>
+    <string name="recipe_instructions">Ingredients and Directions</string>
+    <string name="recipe_time">Time: 25 minutes</string>
+    <string name="recipe_servingsize">Serving Size: 1 1/2 cups</string>
+    <string name="allergen_name">Allergen</string>
+    <string name="recipe_name">Recipe Name</string>
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="password_match_fail">Passwords do not match</string>
     <string name="create_account">Create Account</string>
     <string name="login">Login</string>
     <string name="app_name">The Sensitive Entrée</string>
@@ -12,4 +44,5 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+
 </resources>
