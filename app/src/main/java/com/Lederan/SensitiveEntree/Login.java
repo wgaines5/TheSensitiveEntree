@@ -94,4 +94,5 @@ public class Login extends AppCompatActivity
         Intent myIntent = new Intent(Login.this, Registration.class);
         Login.this.startActivity(myIntent);
     }
+
 }
