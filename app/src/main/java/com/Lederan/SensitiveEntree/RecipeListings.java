@@ -31,8 +31,8 @@ public class RecipeListings extends AppCompatActivity{
         setContentView(R.layout.activity_recipe_listings);
 
     }
-    public void onClickBack(View view){
-        Intent myintent = new Intent(RecipeListings.this, HomeFragment.class);
+    public void onClickAddRecipe(View view){
+        Intent myintent = new Intent(RecipeListings.this, AddRecipe.class);
         RecipeListings.this.startActivity(myintent);
     }
 

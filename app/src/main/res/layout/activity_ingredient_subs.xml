@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:saveEnabled="false">
 
     <TextView
         android:id="@+id/greenBar3_textView"
@@ -65,7 +66,7 @@
         android:id="@+id/ingredientSub6_textView"
         android:layout_width="319dp"
         android:layout_height="34dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="48dp"
         android:background="@drawable/textview2"
         android:fontFamily="@font/playfair_display"
         android:text="@string/ingredSubs"
@@ -104,8 +105,9 @@
         android:id="@+id/sub1_spinner"
         android:layout_width="319dp"
         android:layout_height="50dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="80dp"
         android:background="@drawable/dropdown1"
+        android:popupBackground="@drawable/dropdown1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
@@ -116,6 +118,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="212dp"
         android:background="@drawable/dropdown1"
+        android:popupBackground="@drawable/dropdown1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
@@ -126,6 +129,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="352dp"
         android:background="@drawable/dropdown1"
+        android:popupBackground="@drawable/dropdown1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
@@ -136,9 +140,33 @@
         android:layout_height="50dp"
         android:layout_marginTop="492dp"
         android:background="@drawable/dropdown1"
+        android:clickable="false"
+        android:popupBackground="@drawable/dropdown1"
+        android:textColor="@color/grey_tint"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
+
+
+    <Button
+        android:id="@+id/hamIngred_button"
+        android:layout_width="57dp"
+        android:layout_height="51dp"
+        android:background="@drawable/hamburgericon"
+        android:contentDescription="@string/hamburger_icon"
+        android:fontFamily="@font/playfair_display"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ingredSub_backButton"
+        android:layout_width="51dp"
+        android:layout_height="49dp"
+        android:background="@drawable/backbutton_icon_foreground"
+        android:contentDescription="@string/ingredSubs"
+        android:onClick="onClickBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

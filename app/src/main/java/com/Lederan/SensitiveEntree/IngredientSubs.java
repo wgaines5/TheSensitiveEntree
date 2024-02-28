@@ -18,13 +18,14 @@ import android.widget.Button;
 public class IngredientSubs extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
     Spinner sub1_spinner, sub2_spinner, sub3_spinner, sub4_spinner;
+    Button hamIngred_button;
     String[] subsOne = {"Substitution 1", "Substitution 2", "Substitution 3", "Substitution 4"};
     AutoCompleteTextView autocompletetextview;
     ArrayAdapter<String> subItems;
-    private static final String[] subs1 = {"Sub 1", "Sub 2", "Sub 3"};
-    private static final String[] subs2 = {"Sub 1", "Sub 2", "Sub 3"};
-    private static final String[] subs3 = {"Sub 1", "Sub 2", "Sub 3"};
-    private static final String[] subs4 = {"Sub 1", "Sub 2", "Sub 3"};
+    private static final String[] subs1 = {"See All","Sub 1", "Sub 2", "Sub 3"};
+    private static final String[] subs2 = {"See All","Sub 1", "Sub 2", "Sub 3"};
+    private static final String[] subs3 = {"See All","Sub 1", "Sub 2", "Sub 3"};
+    private static final String[] subs4 = {"See All","Sub 1", "Sub 2", "Sub 3"};
 
     @SuppressLint("MissingInflatedId")
     @Override

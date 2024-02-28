@@ -157,8 +157,8 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.824"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintStart_toEndOf="@+id/newRecipeName_textView"
         app:layout_constraintTop_toTopOf="@+id/greenBar2_textView" />
 
     <EditText
@@ -222,6 +222,7 @@
         android:fontFamily="@font/playfair_display"
         android:hint="Ingredients and instructions..."
         android:inputType="text"
+        android:singleLine="false"
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -287,6 +288,18 @@
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/publicView_button"
         app:layout_constraintTop_toTopOf="@+id/greenBar2_textView" />
+
+    <Button
+        android:id="@+id/addBack_button"
+        android:layout_width="57dp"
+        android:layout_height="49dp"
+        android:background="@drawable/backbutton_icon_foreground"
+        android:contentDescription="@string/back_button"
+        android:onClick="onClickBack"
+        app:layout_constraintEnd_toEndOf="@+id/addRecipe_toolbar"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
