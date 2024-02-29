@@ -42,7 +42,7 @@
         android:text="@string/recipe_servings"
         android:textAlignment="textStart"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.071"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,9 +57,9 @@
         android:text="@string/recipe_servingsize"
         android:textAlignment="textStart"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.791"
+        app:layout_constraintHorizontal_bias="0.829"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/RecipeNameDetails_textView" />
 
@@ -72,7 +72,7 @@
         android:text="@string/recipe_time"
         android:textAlignment="textStart"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.082"
         app:layout_constraintStart_toStartOf="parent"
@@ -87,7 +87,7 @@
         android:text="@string/recipe_calories"
         android:textAlignment="textStart"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.615"
         app:layout_constraintStart_toStartOf="parent"
@@ -102,7 +102,7 @@
         android:text="@string/recipe_directions"
         android:textAlignment="textStart"
         android:textColor="@color/black"
-        android:textSize="14sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -118,7 +118,7 @@
         android:text="@string/recipe_instructions"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="14sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
@@ -128,21 +128,22 @@
 
     <Button
         android:id="@+id/ingredSub_button"
-        android:layout_width="129dp"
+        android:layout_width="145dp"
         android:layout_height="52dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="568dp"
         android:background="@drawable/button3"
         android:fontFamily="@font/playfair_display"
         android:onClick="onClickIngredientSubs"
         android:text="@string/ingredSub_button"
         android:textAlignment="center"
         android:textColor="@color/grey_tint"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.169"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RecipeNameDetails_textView" />
+        app:layout_constraintTop_toBottomOf="@+id/RecipeNameDetails_textView"
+        app:layout_constraintVertical_bias="0.972" />
 
     <TextView
         android:id="@+id/greenLine_textView"
@@ -187,19 +188,20 @@
 
     <Button
         android:id="@+id/resourcebutton_button"
-        android:layout_width="129dp"
+        android:layout_width="145dp"
         android:layout_height="52dp"
-        android:layout_marginTop="568dp"
-        android:layout_marginEnd="52dp"
         android:background="@drawable/button3"
         android:fontFamily="@font/playfair_display"
         android:text="Resources"
         android:textColor="@color/grey_tint"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RecipeNameDetails_textView" />
+        app:layout_constraintHorizontal_bias="0.853"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RecipeNameDetails_textView"
+        app:layout_constraintVertical_bias="0.972" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -214,20 +216,22 @@
         app:srcCompat="@drawable/recipe_pic" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/detBack_button"
         android:layout_width="60dp"
         android:layout_height="50dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/backbutton_icon_foreground"
+        android:contentDescription="@string/back_button"
         android:onClick="onClickBack"
         app:layout_constraintEnd_toEndOf="@+id/recipeDetails_toolbar"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/hamDet_button"
         android:layout_width="70dp"
         android:layout_height="49dp"
         android:background="@drawable/hamburgericon"
+        android:contentDescription="@string/hamburger_icon"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

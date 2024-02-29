@@ -20,7 +20,7 @@ public class AddRecipe extends AppCompatActivity {
 
     }
     public void onClickBack(View view){
-        Intent myintent = new Intent(com.Lederan.SensitiveEntree.AddRecipe.this, RecipeDetails.class);
+        Intent myintent = new Intent(com.Lederan.SensitiveEntree.AddRecipe.this, RecipeListings.class);
         com.Lederan.SensitiveEntree.AddRecipe.this.startActivity(myintent);
     }
 }
