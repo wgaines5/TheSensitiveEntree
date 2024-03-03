@@ -1,48 +1,418 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/container"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:paddingTop="?attr/actionBarSize">
+    tools:context=".MainActivity"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
         android:id="@+id/nav_view"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="0dp"
-        android:layout_marginEnd="0dp"
-        android:background="?android:attr/windowBackground"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:menu="@menu/bottom_nav_menu" />
+        android:background="#EDE6D6"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/primary_menu"
+        app:itemTextColor="@color/black"
+        app:itemIconTint="@color/black"
+        android:layout_gravity="start"/>
 
-    <TextView
-        android:id="@+id/user_details"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World"
-        />
-
-    <Button
-        android:id="@+id/logoutButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Logout" />
-
-    <fragment
-        android:id="@+id/nav_host_fragment_activity_main"
-        android:name="androidx.navigation.fragment.NavHostFragment"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:defaultNavHost="true"
-        app:layout_constraintBottom_toTopOf="@id/nav_view"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:navGraph="@navigation/mobile_navigation" />
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recipe">
 
-</LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00FEFEFE"
+            android:backgroundTint="#58A34C"
+            tools:context=".MainActivity">
+
+            <ImageView
+                android:id="@+id/recipe3"
+                android:layout_width="115dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/recipe2"
+                app:layout_constraintTop_toBottomOf="@+id/recipe"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <ImageView
+                android:id="@+id/recipe1"
+                android:layout_width="115dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recipe"
+                app:layout_constraintVertical_bias="0.0"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <TextView
+                android:id="@+id/featrecipes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Featured Recipes"
+                android:textSize="34sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.043" />
+
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="409dp"
+                android:layout_height="1dp"
+                android:layout_marginBottom="56dp"
+                android:background="?android:attr/listDivider"
+                android:backgroundTint="#58A34C"
+                android:visibility="visible"
+                app:layout_constraintBottom_toTopOf="@+id/recipe2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/featrecipestx1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginBottom="16dp"
+                android:text="Chicken Parm"
+                app:layout_constraintBottom_toTopOf="@+id/divider"
+                app:layout_constraintStart_toEndOf="@+id/feattx2" />
+
+            <TextView
+                android:id="@+id/feattx2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="46dp"
+                android:layout_marginBottom="16dp"
+                android:text="Baked Ziti"
+                app:layout_constraintBottom_toTopOf="@+id/divider"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/feattx3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="52dp"
+                android:layout_marginBottom="16dp"
+                android:text="Empanada"
+                app:layout_constraintBottom_toTopOf="@+id/divider"
+                app:layout_constraintStart_toEndOf="@+id/featrecipestx1" />
+
+            <TextView
+                android:id="@+id/recipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="290dp"
+                android:layout_marginBottom="100dp"
+                android:text="Recipes"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/recipetx2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.54"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/recipetx2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="264dp"
+                android:text="TextView"
+                app:layout_constraintStart_toEndOf="@+id/recipetx1"
+                app:layout_constraintTop_toBottomOf="@+id/featrecipes" />
+
+            <TextView
+                android:id="@+id/recipetx3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="74dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/recipetx2"
+                app:layout_constraintTop_toBottomOf="@+id/recipe3" />
+
+            <TextView
+                android:id="@+id/recipetx4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="46dp"
+                android:layout_marginTop="18dp"
+                android:text="TextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recipe4" />
+
+            <TextView
+                android:id="@+id/recipetx5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="74dp"
+                android:layout_marginTop="18dp"
+                android:text="TextView"
+                app:layout_constraintStart_toEndOf="@+id/recipetx4"
+                app:layout_constraintTop_toBottomOf="@+id/recpie5" />
+
+            <TextView
+                android:id="@+id/recpietx6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="74dp"
+                android:layout_marginTop="18dp"
+                android:text="TextView"
+                app:layout_constraintStart_toEndOf="@+id/recipetx5"
+                app:layout_constraintTop_toBottomOf="@+id/recipe6" />
+
+            <TextView
+                android:id="@+id/recipetx7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="46dp"
+                android:layout_marginTop="18dp"
+                android:text="TextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Recipe7" />
+
+            <TextView
+                android:id="@+id/recipetx8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="74dp"
+                android:layout_marginTop="18dp"
+                android:text="TextView"
+                app:layout_constraintStart_toEndOf="@+id/recipetx7"
+                app:layout_constraintTop_toBottomOf="@+id/recipe8" />
+
+            <TextView
+                android:id="@+id/recipetx9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="74dp"
+                android:layout_marginTop="18dp"
+                android:text="TextView"
+                app:layout_constraintStart_toEndOf="@+id/recipetx8"
+                app:layout_constraintTop_toBottomOf="@+id/recipe9" />
+
+            <ImageView
+                android:id="@+id/feat1"
+                android:layout_width="120dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/featrecipestx1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/featrecipes"
+                app:layout_constraintVertical_bias="0.555"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <ImageView
+                android:id="@+id/feat2"
+                android:layout_width="120dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/feattx2"
+                app:layout_constraintStart_toEndOf="@+id/feat1"
+                app:layout_constraintTop_toBottomOf="@+id/featrecipes"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <ImageView
+                android:id="@+id/feat3"
+                android:layout_width="120dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/feattx3"
+                app:layout_constraintStart_toEndOf="@+id/feat2"
+                app:layout_constraintTop_toBottomOf="@+id/featrecipes"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <ImageView
+                android:id="@+id/recipe2"
+                android:layout_width="115dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/recipetx2"
+                app:layout_constraintStart_toEndOf="@+id/recipe1"
+                app:layout_constraintTop_toBottomOf="@+id/recipe"
+                app:layout_constraintVertical_bias="1.0"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <TextView
+                android:id="@+id/recipetx1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="16dp"
+                android:text="TextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recipe1" />
+
+            <ImageView
+                android:id="@+id/recipe4"
+                android:layout_width="115dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recipetx1"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <ImageView
+                android:id="@+id/recpie5"
+                android:layout_width="115dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toEndOf="@+id/recipe4"
+                app:layout_constraintTop_toBottomOf="@+id/recipetx2"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <ImageView
+                android:id="@+id/recipe6"
+                android:layout_width="115dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/recpie5"
+                app:layout_constraintTop_toBottomOf="@+id/recipetx3"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <ImageView
+                android:id="@+id/Recipe7"
+                android:layout_width="115dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="17dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recipetx4"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <ImageView
+                android:id="@+id/recipe8"
+                android:layout_width="115dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toEndOf="@+id/Recipe7"
+                app:layout_constraintTop_toBottomOf="@+id/recipetx5"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <ImageView
+                android:id="@+id/recipe9"
+                android:layout_width="115dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="17dp"
+                app:layout_constraintStart_toEndOf="@+id/recipe8"
+                app:layout_constraintTop_toBottomOf="@+id/recpietx6"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <ImageView
+                android:id="@+id/recipe10"
+                android:layout_width="115dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recipetx7"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <ImageView
+                android:id="@+id/recipe11"
+                android:layout_width="115dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toEndOf="@+id/recipe10"
+                app:layout_constraintTop_toBottomOf="@+id/recipetx8"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <ImageView
+                android:id="@+id/recipe12"
+                android:layout_width="115dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toEndOf="@+id/recipe11"
+                app:layout_constraintTop_toBottomOf="@+id/recipetx9"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <TextView
+                android:id="@+id/recipetx10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="46dp"
+                android:layout_marginTop="18dp"
+                android:text="TextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recipe10" />
+
+            <TextView
+                android:id="@+id/recipetx11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="74dp"
+                android:layout_marginTop="18dp"
+                android:text="TextView"
+                app:layout_constraintStart_toEndOf="@+id/recipetx10"
+                app:layout_constraintTop_toBottomOf="@+id/recipe11" />
+
+            <TextView
+                android:id="@+id/recipetx12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="74dp"
+                android:layout_marginTop="18dp"
+                android:text="TextView"
+                app:layout_constraintStart_toEndOf="@+id/recipetx11"
+                app:layout_constraintTop_toBottomOf="@+id/recipe12" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="410dp"
+                android:layout_height="53dp"
+                android:background="#58A34C"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintBottom_toTopOf="@+id/featrecipes"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:navigationIcon="@drawable/menu_icon_foreground" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
