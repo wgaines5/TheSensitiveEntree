@@ -14,11 +14,11 @@
         android:layout_height="match_parent"
         android:id="@+id/nav_view"
         android:background="#EDE6D6"
-        app:headerLayout="@layout/header"
         app:menu="@menu/primary_menu"
         app:itemTextColor="@color/black"
         app:itemIconTint="@color/black"
         android:layout_gravity="start"/>
+    <!--app:headerLayout="@layout/header"-->
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -35,8 +35,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.115"
-            app:srcCompat="@drawable/teamlederan_logo_transparent" />
-
+             />
+        <!--app:srcCompat="@drawable/teamlederan_logo_transparent"-->
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="412dp"
@@ -50,8 +50,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"
-            app:navigationIcon="@drawable/menu_icon_foreground" />
-
+             />
+        <!--app:navigationIcon="@drawable/menu_icon_foreground"-->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout4"
             android:layout_width="377dp"
