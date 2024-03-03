@@ -1,19 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/home_icon"/>
 
-    <item
-        android:id="@+id/navigation_home"
-        android:icon="@drawable/ic_home_black_24dp"
-        android:title="@string/title_home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:title="Profile"
+            android:icon="@drawable/profile_icon"/>
 
-    <item
-        android:id="@+id/navigation_dashboard"
-        android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="@string/title_dashboard" />
+        <item
+            android:id="@+id/search"
+            android:title="Search"
+            android:icon="@drawable/search_icon"/>
 
-    <item
-        android:id="@+id/navigation_notifications"
-        android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="@string/title_notifications" />
-
+        <item
+            android:id="@+id/nav_ingredient_substitutions"
+            android:icon="@drawable/ingredient_substitution_icon"
+            android:title="Ingredient Substitutions" />
+        <item
+            android:id="@+id/nav_calorie_counter"
+            android:icon="@drawable/calorie_counter_icon"
+            android:title="Calorie Counter" />
+        <item
+            android:id="@+id/nav_pantry"
+            android:icon="@drawable/pantry_icon"
+            android:title="My Recipes" />
+        <item
+            android:id="@+id/nav_cooking_tips"
+            android:icon="@drawable/cooking_tips_icon"
+            android:title="Cooking Tips" />
+        <item
+            android:id="@+id/nav_resources"
+            android:icon="@drawable/resources_icon"
+            android:title="Resources" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings_icon"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/about_icon"
+            android:title="About" />
+    </group>
 </menu>
