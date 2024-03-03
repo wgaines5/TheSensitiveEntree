@@ -15,12 +15,12 @@
         android:layout_height="match_parent"
         android:id="@+id/nav_view"
         android:background="#EDE6D6"
-        app:headerLayout="@layout/header"
+
         app:menu="@menu/primary_menu"
         app:itemTextColor="@color/black"
         app:itemIconTint="@color/black"
         android:layout_gravity="start"/>
-
+    <!--app:headerLayout="@layout/header"-->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -407,8 +407,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:navigationIcon="@drawable/menu_icon_foreground" />
-
+                />
+            <!--app:navigationIcon="@drawable/menu_icon_foreground" -->
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
