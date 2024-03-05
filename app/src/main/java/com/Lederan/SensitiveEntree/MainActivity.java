@@ -19,17 +19,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
-    //Define menu Constants
-    private static final int Home = R.id.nav_home;
-    private static final int Profile = R.id.nav_profile;
-    private static final int Search = R.id.search;
-    private static final int Ingredient_Substitutions = R.id.nav_ingredient_substitutions;
-    private static final int Calorie_Counter = R.id.nav_calorie_counter;
-    private static final int My_Recipes = R.id.nav_pantry;
-    private static final int Cooking_Tips = R.id.nav_cooking_tips;
-    private static final int Resources = R.id.nav_resources;
-    private static final int Settings = R.id.nav_settings;
-    private static final int Menu_About = R.id.nav_about;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
