@@ -71,7 +71,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             return false;
         } else if (id == R.id.nav_settings) {
             return false;
-        } else {
+        }else if (id == R.id.nav_logout) {
+            return false;
+        }else {
             return false;
         }
         drawerLayout.closeDrawer(GravityCompat.START);

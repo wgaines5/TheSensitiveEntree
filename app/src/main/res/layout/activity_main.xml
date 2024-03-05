@@ -5,21 +5,21 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
     tools:openDrawer="start">
 
 
     <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:id="@+id/nav_view"
+        android:layout_gravity="start"
         android:background="#EDE6D6"
         app:headerLayout="@layout/header"
-        app:menu="@menu/primary_menu"
-        app:itemTextColor="@color/black"
         app:itemIconTint="@color/black"
-        android:layout_gravity="start"/>
+        app:itemTextColor="@color/black"
+        app:menu="@menu/primary_menu" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -416,4 +416,4 @@
 
     </ScrollView>
 
-    </androidx.drawerlayout.widget.DrawerLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
