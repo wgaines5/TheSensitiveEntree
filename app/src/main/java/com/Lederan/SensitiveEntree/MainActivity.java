@@ -16,7 +16,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 import org.checkerframework.checker.nullness.qual.NonNull;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity  {
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.nav_activity_main);
 
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
@@ -107,5 +107,49 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                int id = item.getItemId();
+                if (id == R.id.nav_about) {
+                    Intent intent = new Intent(MainActivity.this, About.class);
+                    startActivity(intent);
+                } else if (id == R.id.nav_home) {
+                    Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                    startActivity(intent);
+                } else if (id == R.id.nav_profile) {
+                    return false;
+                } else if (id == R.id.search) {
+                    return false;
+                } else if (id == R.id.nav_ingredient_substitutions) {
+                    return false;
+                } else if (id == R.id.nav_calorie_counter) {
+                    return false;
+                } else if (id == R.id.nav_pantry) {
+                    return false;
+                } else if (id == R.id.nav_cooking_tips) {
+                    return false;
+                } else if (id == R.id.nav_resources) {
+                    return false;
+                } else if (id == R.id.nav_settings) {
+                    return false;
+                }else if (id == R.id.nav_logout) {
+                    return false;
+                }else {
+                    return false;
+                }
+                drawerLayout.closeDrawer(GravityCompat.START);
+                return true;
+            }
+        });
+    }
+    @Override
+    public void onBackPressed(){
+        if(drawerLayout.isDrawerOpen(GravityCompat.START)){
+            drawerLayout.closeDrawer(GravityCompat.START);
+        }
+        else{
+            super.onBackPressed();
+        }
     }
 }
