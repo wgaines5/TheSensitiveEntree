@@ -7,6 +7,8 @@
     android:background="@color/white"
     android:saveEnabled="false">
 
+
+
     <TextView
         android:id="@+id/greenBar3_textView"
         android:layout_width="375dp"
