@@ -113,6 +113,6 @@
       app:layout_constraintHorizontal_bias="0.498"
       app:layout_constraintStart_toStartOf="@+id/textView"
       app:layout_constraintTop_toTopOf="parent"
-      app:srcCompat="@drawable/logo_light" />
+      app:srcCompat="@drawable/logo_dark" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
