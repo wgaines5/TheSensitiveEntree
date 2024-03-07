@@ -17,6 +17,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/greenLine_textView"
+        android:layout_width="375dp"
+        android:layout_height="8dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
     <Button
         android:id="@+id/hamSearch_button"
         android:layout_width="70dp"
@@ -30,7 +40,7 @@
         android:id="@+id/search_view"
         android:layout_width="345dp"
         android:layout_height="60dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="120dp"
         android:background="@drawable/textview2"
         android:clickable="true"
         android:orientation="vertical"
@@ -55,5 +65,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/search_view"
         app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="350dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/playfair_display"
+        android:text="Search All Recipes"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="38sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_toolbar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -32,7 +32,7 @@
             android:layout_marginTop="320dp"
             android:background="@drawable/textview2"
             android:fontFamily="@font/playfair_display"
-            android:text="@string/ingredSubs"
+            android:text="@string/fish"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="20sp"
@@ -44,10 +44,10 @@
             android:id="@+id/ingredientSub4_textView"
             android:layout_width="319dp"
             android:layout_height="34dp"
-            android:layout_marginTop="460dp"
+            android:layout_marginTop="456dp"
             android:background="@drawable/textview2"
             android:fontFamily="@font/playfair_display"
-            android:text="@string/ingredSubs"
+            android:text="@string/crustacean"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="20sp"
@@ -56,13 +56,13 @@
             app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
 
         <TextView
-            android:id="@+id/ingredientSub5_textView"
+            android:id="@+id/ingredientSub2_textView"
             android:layout_width="319dp"
             android:layout_height="34dp"
             android:layout_marginTop="180dp"
             android:background="@drawable/textview2"
             android:fontFamily="@font/playfair_display"
-            android:text="@string/ingredSubs"
+            android:text="@string/eggs"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="20sp"
@@ -71,13 +71,13 @@
             app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
 
         <TextView
-            android:id="@+id/ingredientSub6_textView"
+            android:id="@+id/ingredientSub1_textView"
             android:layout_width="319dp"
             android:layout_height="34dp"
             android:layout_marginTop="48dp"
             android:background="@drawable/textview2"
             android:fontFamily="@font/playfair_display"
-            android:text="@string/ingredSubs"
+            android:text="@string/milk"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="20sp"
@@ -99,6 +99,82 @@
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ingredSub_toolbar" />
+
+
+        <TextView
+            android:id="@+id/ingredientSub5_textView"
+            android:layout_width="319dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="596dp"
+            android:background="@drawable/textview2"
+            android:fontFamily="@font/playfair_display"
+            android:text="@string/treenuts"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
+
+        <TextView
+            android:id="@+id/ingredientSub6_textView"
+            android:layout_width="319dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="736dp"
+            android:background="@drawable/textview2"
+            android:fontFamily="@font/playfair_display"
+            android:text="@string/peanuts"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
+
+        <TextView
+            android:id="@+id/ingredientSub7_textView"
+            android:layout_width="319dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="880dp"
+            android:background="@drawable/textview2"
+            android:fontFamily="@font/playfair_display"
+            android:text="@string/wheat"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
+
+        <TextView
+            android:id="@+id/ingredientSub8_textView"
+            android:layout_width="319dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="1028dp"
+            android:background="@drawable/textview2"
+            android:fontFamily="@font/playfair_display"
+            android:text="@string/gluten"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
+
+        <TextView
+            android:id="@+id/ingredientSub9_textView"
+            android:layout_width="319dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="1172dp"
+            android:background="@drawable/textview2"
+            android:fontFamily="@font/playfair_display"
+            android:text="@string/soybeans"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/ingredSub_toolbar"
@@ -142,11 +218,12 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
 
+
         <Spinner
             android:id="@+id/sub4_spinner"
             android:layout_width="319dp"
             android:layout_height="50dp"
-            android:layout_marginTop="492dp"
+            android:layout_marginTop="488dp"
             android:background="@drawable/dropdown1"
             android:clickable="false"
             android:popupBackground="@drawable/dropdown1"
@@ -155,6 +232,70 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
 
+        <Spinner
+            android:id="@+id/sub5_spinner"
+            android:layout_width="319dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="628dp"
+            android:background="@drawable/dropdown1"
+            android:clickable="false"
+            android:popupBackground="@drawable/dropdown1"
+            android:textColor="@color/grey_tint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
+
+        <Spinner
+            android:id="@+id/sub6_spinner"
+            android:layout_width="319dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="768dp"
+            android:background="@drawable/dropdown1"
+            android:clickable="false"
+            android:popupBackground="@drawable/dropdown1"
+            android:textColor="@color/grey_tint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
+
+        <Spinner
+            android:id="@+id/sub7_spinner"
+            android:layout_width="319dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="912dp"
+            android:background="@drawable/dropdown1"
+            android:clickable="false"
+            android:popupBackground="@drawable/dropdown1"
+            android:textColor="@color/grey_tint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
+
+        <Spinner
+            android:id="@+id/sub8_spinner"
+            android:layout_width="319dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="1060dp"
+            android:background="@drawable/dropdown1"
+            android:clickable="false"
+            android:popupBackground="@drawable/dropdown1"
+            android:textColor="@color/grey_tint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
+
+        <Spinner
+            android:id="@+id/sub9_spinner"
+            android:layout_width="319dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="1200dp"
+            android:background="@drawable/dropdown1"
+            android:clickable="false"
+            android:popupBackground="@drawable/dropdown1"
+            android:textColor="@color/grey_tint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
 
         <Button
             android:id="@+id/hamIngred_button"
@@ -177,6 +318,13 @@
             app:layout_constraintTop_toTopOf="parent" />
 
 
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="1248dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
