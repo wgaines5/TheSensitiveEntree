@@ -9,9 +9,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-
 import com.google.android.material.internal.NavigationMenu;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import org.checkerframework.checker.nullness.qual.NonNull;
 
@@ -20,16 +21,27 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     NavigationView navigationView;
     Toolbar toolbar;
     //Define menu Constants
-    private static final int Home = R.id.nav_home;
-    private static final int Profile = R.id.nav_profile;
-    private static final int Search = R.id.search;
-    private static final int Ingredient_Substitutions = R.id.nav_ingredient_substitutions;
-    private static final int Calorie_Counter = R.id.nav_calorie_counter;
-    private static final int My_Recipes = R.id.nav_pantry;
-    private static final int Cooking_Tips = R.id.nav_cooking_tips;
-    private static final int Resources = R.id.nav_resources;
-    private static final int Settings = R.id.nav_settings;
-    private static final int Menu_About = R.id.nav_about;
+    FirebaseAuth mAuth;
+
+    // Validates the user
+    @Override
+    public void onStart()
+    {
+        super.onStart();
+        // Check if user is signed in (non-null) and update UI accordingly.
+        mAuth = FirebaseAuth.getInstance();
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        currentUser.getIdToken(true).addOnCompleteListener(task ->
+        {
+            if(!task.isSuccessful())
+            {
+                mAuth.signOut();
+                Intent myIntent = new Intent(MainActivity.this, Login.class);
+                MainActivity.this.startActivity(myIntent);
+            }
+        });
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,7 +50,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
         toolbar = findViewById(R.id.toolbar);
-
         setSupportActionBar(toolbar);
 
         navigationView.bringToFront();
@@ -48,11 +59,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navigationView.setNavigationItemSelectedListener(this);
     }
     @Override
-    public void onBackPressed(){
-        if(drawerLayout.isDrawerOpen(GravityCompat.START)){
+    public void onBackPressed()
+    {
+        if(drawerLayout.isDrawerOpen(GravityCompat.START))
+        {
             drawerLayout.closeDrawer(GravityCompat.START);
         }
-        else{
+        else
+        {
             super.onBackPressed();
         }
     }
@@ -81,8 +95,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             return false;
         } else if (id == R.id.nav_settings) {
             return false;
-        } else {
-            return false;
+        } else if(id == R.id.nav_logout)
+        {
+            mAuth.signOut();
+            Intent myIntent = new Intent(MainActivity.this, Login.class);
+            MainActivity.this.startActivity(myIntent);
+        }
+        else
+        {
+            return true;
         }
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
