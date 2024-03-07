@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#EDE6D6"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="96dp"
+        app:srcCompat="@drawable/sensitiveentree_highres_logo" />
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aguafina_script"
+        android:text="The Sensitive Entree"
+        android:textColor="@color/black"
+        android:textSize="26sp" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/menuicon_background"
+        android:backgroundTint="#4CAF50"
+        android:visibility="visible" />
+
+
+</LinearLayout>
