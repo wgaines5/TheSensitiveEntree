@@ -129,6 +129,7 @@ public class IngredientSubs extends AppCompatActivity implements AdapterView.OnI
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
+
     }
 
     @Override

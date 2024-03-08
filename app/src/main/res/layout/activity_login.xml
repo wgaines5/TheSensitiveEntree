@@ -90,7 +90,7 @@
       android:layout_marginStart="132dp"
       android:layout_marginTop="12dp"
       android:layout_marginEnd="134dp"
-      android:backgroundTint="@color/light_yellow"
+      android:backgroundTint="@color/dark_green"
       android:onClick="onCreateAccountClick"
       android:text="@string/create_account"
       android:textAlignment="center"
