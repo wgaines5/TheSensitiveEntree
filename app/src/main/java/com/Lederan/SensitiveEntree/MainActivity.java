@@ -70,11 +70,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else if (id == R.id.search) {
             return false;
         } else if (id == R.id.nav_ingredient_substitutions) {
-            return false;
+            Intent intent = new Intent(MainActivity.this, IngredientSubs.class);
+            startActivity(intent);
         } else if (id == R.id.nav_calorie_counter) {
             return false;
         } else if (id == R.id.nav_pantry) {
-            return false;
+            Intent intent = new Intent(MainActivity.this, RecipeListings.class);
+            startActivity(intent);
         } else if (id == R.id.nav_cooking_tips) {
             return false;
         } else if (id == R.id.nav_resources) {
