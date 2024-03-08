@@ -142,7 +142,7 @@
         android:background="@drawable/dropdown1"
         android:clickable="false"
         android:popupBackground="@drawable/dropdown1"
-        android:textColor="@color/grey_tint"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
