@@ -1,330 +1,172 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:saveEnabled="false">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/white"
-        android:nestedScrollingEnabled="true"
-        android:saveEnabled="false"
-        android:scrollIndicators="right"
-        android:scrollbars="vertical">
+    <TextView
+        android:id="@+id/greenBar3_textView"
+        android:layout_width="375dp"
+        android:layout_height="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
 
-        <TextView
-            android:id="@+id/greenBar3_textView"
-            android:layout_width="375dp"
-            android:layout_height="8dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/button3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
+    <TextView
+        android:id="@+id/ingredientSub3_textView"
+        android:layout_width="319dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="320dp"
+        android:background="@drawable/textview2"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/ingredSubs"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
 
-        <TextView
-            android:id="@+id/ingredientSub3_textView"
-            android:layout_width="319dp"
-            android:layout_height="34dp"
-            android:layout_marginTop="320dp"
-            android:background="@drawable/textview2"
-            android:fontFamily="@font/playfair_display"
-            android:text="@string/fish"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
+    <TextView
+        android:id="@+id/ingredientSub4_textView"
+        android:layout_width="319dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="460dp"
+        android:background="@drawable/textview2"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/ingredSubs"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
 
-        <TextView
-            android:id="@+id/ingredientSub4_textView"
-            android:layout_width="319dp"
-            android:layout_height="34dp"
-            android:layout_marginTop="456dp"
-            android:background="@drawable/textview2"
-            android:fontFamily="@font/playfair_display"
-            android:text="@string/crustacean"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
+    <TextView
+        android:id="@+id/ingredientSub5_textView"
+        android:layout_width="319dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/textview2"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/ingredSubs"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
 
-        <TextView
-            android:id="@+id/ingredientSub2_textView"
-            android:layout_width="319dp"
-            android:layout_height="34dp"
-            android:layout_marginTop="180dp"
-            android:background="@drawable/textview2"
-            android:fontFamily="@font/playfair_display"
-            android:text="@string/eggs"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
+    <TextView
+        android:id="@+id/ingredientSub6_textView"
+        android:layout_width="319dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/textview2"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/ingredSubs"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
 
-        <TextView
-            android:id="@+id/ingredientSub1_textView"
-            android:layout_width="319dp"
-            android:layout_height="34dp"
-            android:layout_marginTop="48dp"
-            android:background="@drawable/textview2"
-            android:fontFamily="@font/playfair_display"
-            android:text="@string/milk"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
+    <TextView
+        android:id="@+id/selectSub_textView"
+        android:layout_width="232dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/playfair_display"
+        android:text="Select Ingredient"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingredSub_toolbar" />
 
-        <TextView
-            android:id="@+id/selectSub_textView"
-            android:layout_width="232dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="12dp"
-            android:fontFamily="@font/playfair_display"
-            android:text="Select Ingredient"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="30sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ingredSub_toolbar" />
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ingredSub_toolbar"
+        android:layout_width="411dp"
+        android:layout_height="51dp"
+        android:background="@color/light_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <Spinner
+        android:id="@+id/sub1_spinner"
+        android:layout_width="319dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/dropdown1"
+        android:popupBackground="@drawable/dropdown1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
 
-        <TextView
-            android:id="@+id/ingredientSub5_textView"
-            android:layout_width="319dp"
-            android:layout_height="34dp"
-            android:layout_marginTop="596dp"
-            android:background="@drawable/textview2"
-            android:fontFamily="@font/playfair_display"
-            android:text="@string/treenuts"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
+    <Spinner
+        android:id="@+id/sub2_spinner"
+        android:layout_width="319dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="212dp"
+        android:background="@drawable/dropdown1"
+        android:popupBackground="@drawable/dropdown1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
 
-        <TextView
-            android:id="@+id/ingredientSub6_textView"
-            android:layout_width="319dp"
-            android:layout_height="34dp"
-            android:layout_marginTop="736dp"
-            android:background="@drawable/textview2"
-            android:fontFamily="@font/playfair_display"
-            android:text="@string/peanuts"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
+    <Spinner
+        android:id="@+id/sub3_spinner"
+        android:layout_width="319dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="352dp"
+        android:background="@drawable/dropdown1"
+        android:popupBackground="@drawable/dropdown1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
 
-        <TextView
-            android:id="@+id/ingredientSub7_textView"
-            android:layout_width="319dp"
-            android:layout_height="34dp"
-            android:layout_marginTop="880dp"
-            android:background="@drawable/textview2"
-            android:fontFamily="@font/playfair_display"
-            android:text="@string/wheat"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
-
-        <TextView
-            android:id="@+id/ingredientSub8_textView"
-            android:layout_width="319dp"
-            android:layout_height="34dp"
-            android:layout_marginTop="1028dp"
-            android:background="@drawable/textview2"
-            android:fontFamily="@font/playfair_display"
-            android:text="@string/gluten"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
-
-        <TextView
-            android:id="@+id/ingredientSub9_textView"
-            android:layout_width="319dp"
-            android:layout_height="34dp"
-            android:layout_marginTop="1172dp"
-            android:background="@drawable/textview2"
-            android:fontFamily="@font/playfair_display"
-            android:text="@string/soybeans"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/ingredSub_toolbar"
-            android:layout_width="411dp"
-            android:layout_height="51dp"
-            android:background="@color/light_green"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Spinner
-            android:id="@+id/sub1_spinner"
-            android:layout_width="319dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="80dp"
-            android:background="@drawable/dropdown1"
-            android:popupBackground="@drawable/dropdown1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
-
-        <Spinner
-            android:id="@+id/sub2_spinner"
-            android:layout_width="319dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="212dp"
-            android:background="@drawable/dropdown1"
-            android:popupBackground="@drawable/dropdown1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
-
-        <Spinner
-            android:id="@+id/sub3_spinner"
-            android:layout_width="319dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="352dp"
-            android:background="@drawable/dropdown1"
-            android:popupBackground="@drawable/dropdown1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
+    <Spinner
+        android:id="@+id/sub4_spinner"
+        android:layout_width="319dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="492dp"
+        android:background="@drawable/dropdown1"
+        android:clickable="false"
+        android:popupBackground="@drawable/dropdown1"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
 
 
-        <Spinner
-            android:id="@+id/sub4_spinner"
-            android:layout_width="319dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="488dp"
-            android:background="@drawable/dropdown1"
-            android:clickable="false"
-            android:popupBackground="@drawable/dropdown1"
-            android:textColor="@color/grey_tint"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
+    <Button
+        android:id="@+id/hamIngred_button"
+        android:layout_width="57dp"
+        android:layout_height="51dp"
+        android:background="@drawable/hamburgericon"
+        android:contentDescription="@string/hamburger_icon"
+        android:fontFamily="@font/playfair_display"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <Spinner
-            android:id="@+id/sub5_spinner"
-            android:layout_width="319dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="628dp"
-            android:background="@drawable/dropdown1"
-            android:clickable="false"
-            android:popupBackground="@drawable/dropdown1"
-            android:textColor="@color/grey_tint"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
-
-        <Spinner
-            android:id="@+id/sub6_spinner"
-            android:layout_width="319dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="768dp"
-            android:background="@drawable/dropdown1"
-            android:clickable="false"
-            android:popupBackground="@drawable/dropdown1"
-            android:textColor="@color/grey_tint"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
-
-        <Spinner
-            android:id="@+id/sub7_spinner"
-            android:layout_width="319dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="912dp"
-            android:background="@drawable/dropdown1"
-            android:clickable="false"
-            android:popupBackground="@drawable/dropdown1"
-            android:textColor="@color/grey_tint"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
-
-        <Spinner
-            android:id="@+id/sub8_spinner"
-            android:layout_width="319dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="1060dp"
-            android:background="@drawable/dropdown1"
-            android:clickable="false"
-            android:popupBackground="@drawable/dropdown1"
-            android:textColor="@color/grey_tint"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
-
-        <Spinner
-            android:id="@+id/sub9_spinner"
-            android:layout_width="319dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="1200dp"
-            android:background="@drawable/dropdown1"
-            android:clickable="false"
-            android:popupBackground="@drawable/dropdown1"
-            android:textColor="@color/grey_tint"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
-
-        <Button
-            android:id="@+id/hamIngred_button"
-            android:layout_width="57dp"
-            android:layout_height="51dp"
-            android:background="@drawable/hamburgericon"
-            android:contentDescription="@string/hamburger_icon"
-            android:fontFamily="@font/playfair_display"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/ingredSub_backButton"
-            android:layout_width="51dp"
-            android:layout_height="49dp"
-            android:background="@drawable/backbutton_icon_foreground"
-            android:contentDescription="@string/ingredSubs"
-            android:onClick="onClickBack"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/ingredSub_backButton"
+        android:layout_width="51dp"
+        android:layout_height="49dp"
+        android:background="@drawable/backbutton_icon_foreground"
+        android:contentDescription="@string/ingredSubs"
+        android:onClick="onClickBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
-        <TextView
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_marginTop="1248dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

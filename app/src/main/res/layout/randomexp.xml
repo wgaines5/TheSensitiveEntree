@@ -7,35 +7,6 @@
     android:background="#FFFFFF"
     android:visibility="visible">
 
-    <ImageButton
-        android:id="@+id/recipeImage1_imageButton"
-        android:layout_width="153dp"
-        android:layout_height="106dp"
-        android:contentDescription="@string/recipe_image"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.113"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView"
-        app:layout_constraintVertical_bias="0.068"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <TextView
-        android:id="@+id/recipeName1_textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/playfair_display"
-        android:text="@string/recipe_name"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.166"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView"
-        app:layout_constraintVertical_bias="0.238" />
-
     <TextView
         android:id="@+id/Recipes_TextView"
         android:layout_width="wrap_content"
@@ -75,6 +46,43 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView"
         app:layout_constraintVertical_bias="0.927" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_constraintEnd_toTopOf="@+id/addRecipe_button"
+        android:layout_constraintTop_toBottomOf="@+id/Recipes_TextView"
+        android:layout_constraintHorizontal_bias="0.498">
+    <ImageButton
+        android:id="@+id/recipeImage1_imageButton"
+        android:layout_width="153dp"
+        android:layout_height="106dp"
+        android:contentDescription="@string/recipe_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView"
+        app:layout_constraintVertical_bias="0.068"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/recipeName1_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/recipe_name"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView"
+        app:layout_constraintVertical_bias="0.238" />
+
+
 
     <TextView
         android:id="@+id/allergen2_textView"
@@ -317,6 +325,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView"
         app:layout_constraintVertical_bias="0.548" />
+</ScrollView>
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -341,3 +350,4 @@
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
