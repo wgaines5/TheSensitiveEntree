@@ -56,57 +56,7 @@ public class MainActivity extends AppCompatActivity  {
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
-        navigationView.setNavigationItemSelectedListener(this);
-    }
-    @Override
-    public void onBackPressed()
-    {
-        if(drawerLayout.isDrawerOpen(GravityCompat.START))
-        {
-            drawerLayout.closeDrawer(GravityCompat.START);
-        }
-        else
-        {
-            super.onBackPressed();
-        }
-    }
-    @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        int id = item.getItemId();
-        if (id == R.id.nav_about) {
-            Intent intent = new Intent(MainActivity.this, About.class);
-            startActivity(intent);
-        } else if (id == R.id.nav_home) {
-            Intent intent = new Intent(MainActivity.this, MainActivity.class);
-            startActivity(intent);
-        } else if (id == R.id.nav_profile) {
-            return false;
-        } else if (id == R.id.search) {
-            return false;
-        } else if (id == R.id.nav_ingredient_substitutions) {
-            return false;
-        } else if (id == R.id.nav_calorie_counter) {
-            return false;
-        } else if (id == R.id.nav_pantry) {
-            return false;
-        } else if (id == R.id.nav_cooking_tips) {
-            return false;
-        } else if (id == R.id.nav_resources) {
-            return false;
-        } else if (id == R.id.nav_settings) {
-            return false;
-        } else if(id == R.id.nav_logout)
-        {
-            mAuth.signOut();
-            Intent myIntent = new Intent(MainActivity.this, Login.class);
-            MainActivity.this.startActivity(myIntent);
-        }
-        else
-        {
-            return true;
-        }
-        drawerLayout.closeDrawer(GravityCompat.START);
-        return true;
+
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -136,7 +86,9 @@ public class MainActivity extends AppCompatActivity  {
                 }else if (id == R.id.nav_logout) {
                     return false;
                 }else {
-                    return false;
+                    mAuth.signOut();
+                    Intent intent = new Intent(MainActivity.this, Login.class);
+                    startActivity(intent);
                 }
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return true;
