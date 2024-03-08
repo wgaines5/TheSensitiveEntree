@@ -57,8 +57,8 @@
 
     <Button
         android:id="@+id/addRecipe_button"
-        android:layout_width="118dp"
-        android:layout_height="52dp"
+        android:layout_width="142dp"
+        android:layout_height="49dp"
         android:background="@drawable/button3"
         android:clickable="true"
         android:fontFamily="@font/playfair_display"
@@ -66,7 +66,7 @@
         android:text="@string/add_recipe"
         android:textAlignment="center"
         android:textAppearance="@style/ShapeAppearance.Material3.SmallComponent"
-        android:textColor="@color/grey_tint"
+        android:textColor="@color/almost_white"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
