@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="toolbar" type="id"/>
-
+    <color name="backdrop_background">#77BB70</color>
 </resources>
