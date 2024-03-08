@@ -1,17 +1,18 @@
 package com.Lederan.SensitiveEntree;
-import com.Lederan.SensitiveEntree.R;
-import androidx.appcompat.app.ActionBarDrawerToggle;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.appcompat.widget.Toolbar;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 
-import com.google.android.material.internal.NavigationMenu;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import org.checkerframework.checker.nullness.qual.NonNull;
 
@@ -19,7 +20,26 @@ public class MainActivity extends AppCompatActivity  {
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
+    FirebaseAuth mAuth;
 
+    // Validates the user
+    @Override
+    public void onStart()
+    {
+        super.onStart();
+        // Check if user is signed in (non-null) and update UI accordingly.
+        mAuth = FirebaseAuth.getInstance();
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        currentUser.getIdToken(true).addOnCompleteListener(task ->
+        {
+            if(!task.isSuccessful())
+            {
+                mAuth.signOut();
+                Intent myIntent = new Intent(MainActivity.this, Login.class);
+                MainActivity.this.startActivity(myIntent);
+            }
+        });
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,7 +84,9 @@ public class MainActivity extends AppCompatActivity  {
                 }else if (id == R.id.nav_logout) {
                     return false;
                 }else {
-                    return false;
+                    mAuth.signOut();
+                    Intent intent = new Intent(MainActivity.this, Login.class);
+                    startActivity(intent);
                 }
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return true;
