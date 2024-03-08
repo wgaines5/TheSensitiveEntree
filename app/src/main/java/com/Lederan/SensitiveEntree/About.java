@@ -62,9 +62,8 @@ public class About extends AppCompatActivity {
                     return false;
                 } else if (id == R.id.nav_settings) {
                     return false;
-                }else if (id == R.id.nav_logout) {
-                    return false;
-                }else {
+
+                }else if (id == R.id.nav_logout){
                     mAuth.signOut();
                     Intent intent = new Intent(About.this, Login.class);
                     startActivity(intent);
