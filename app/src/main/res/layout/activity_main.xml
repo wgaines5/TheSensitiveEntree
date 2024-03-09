@@ -1,195 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FEFEFE"
+    android:backgroundTint="#58A34C"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="410dp"
+        android:layout_height="53dp"
+        android:background="#58A34C"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/featrecipes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--app:navigationIcon="@drawable/menu_icon_foreground" -->
+
+
+    <TextView
+        android:id="@+id/featrecipes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="8dp"
+        android:text="Featured Recipes"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/add_recipe">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#00FEFEFE"
-            android:backgroundTint="#58A34C"
-            tools:context=".MainActivity">
-
-            <ImageView
-                android:id="@+id/recipe3"
-                android:layout_width="115dp"
-                android:layout_height="65dp"
-                android:layout_marginTop="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.932"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/recipe"
-                tools:srcCompat="@tools:sample/backgrounds/scenic" />
-
-            <ImageView
-                android:id="@+id/recipe1"
-                android:layout_width="115dp"
-                android:layout_height="65dp"
-                android:layout_marginTop="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.067"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/recipe"
-                tools:srcCompat="@tools:sample/backgrounds/scenic" />
-
-            <TextView
-                android:id="@+id/featrecipes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:text="Featured Recipes"
-                android:textSize="34sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.043" />
-
-
-            <View
-                android:id="@+id/divider"
-                android:layout_width="409dp"
-                android:layout_height="1dp"
-                android:layout_marginBottom="56dp"
-                android:background="?android:attr/listDivider"
-                android:backgroundTint="#58A34C"
-                android:visibility="visible"
-                app:layout_constraintBottom_toTopOf="@+id/recipe2"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
-
-            <TextView
-                android:id="@+id/featrecipestx1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="14dp"
-                android:text="Chicken Parm"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/feat2" />
-
-            <TextView
-                android:id="@+id/feattx2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="14dp"
-                android:text="Baked Ziti"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.131"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/feat1" />
-
-            <TextView
-                android:id="@+id/feattx3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="14dp"
-                android:text="Empanada"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.921"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/feat3" />
-
-            <TextView
-                android:id="@+id/recipe"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="148dp"
-                android:text="Recipes"
-                android:textSize="24sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.046"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/featrecipes" />
-
-            <TextView
-                android:id="@+id/recipetx2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="TextView"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/recipe2" />
-
-            <TextView
-                android:id="@+id/recipetx3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="TextView"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.907"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/recipe3" />
-
-            <TextView
-                android:id="@+id/recipetx4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="TextView"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.124"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/recipe4" />
-
-            <TextView
-                android:id="@+id/recipetx5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="TextView"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/recpie5" />
-
-            <TextView
-                android:id="@+id/recpietx6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="TextView"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.899"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/recipe6" />
-
-            <TextView
-                android:id="@+id/recipetx7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="TextView"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.124"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Recipe7" />
-
-            <TextView
-                android:id="@+id/recipetx8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="TextView"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/recipe8" />
-
-            <TextView
-                android:id="@+id/recipetx9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="TextView"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.898"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/recipe9" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/feat1"
-                android:layout_width="120dp"
-                android:layout_height="62dp"
-                android:layout_marginTop="16dp"
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.051"
                 app:layout_constraintStart_toStartOf="parent"
@@ -198,9 +61,10 @@
 
             <ImageView
                 android:id="@+id/feat2"
-                android:layout_width="120dp"
-                android:layout_height="62dp"
-                android:layout_marginTop="16dp"
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.494"
@@ -211,9 +75,10 @@
 
             <ImageView
                 android:id="@+id/feat3"
-                android:layout_width="120dp"
-                android:layout_height="62dp"
-                android:layout_marginTop="16dp"
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.931"
                 app:layout_constraintStart_toStartOf="parent"
@@ -221,9 +86,100 @@
                 tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
             <ImageView
+                android:id="@+id/feat4"
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/featrecipes"
+                app:layout_constraintVertical_bias="0.0"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <ImageView
+                android:id="@+id/feat5"
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.931"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/featrecipes"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="#58A34C"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/recipe2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/recipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="1dp"
+        android:text="Recipes"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/featrecipes" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="520dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/recipe1"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.067"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recipe"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <TextView
+                android:id="@+id/recipetx1"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.129"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recipe1" />
+
+            <ImageView
                 android:id="@+id/recipe2"
-                android:layout_width="115dp"
-                android:layout_height="65dp"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:layout_marginLeft="65dp"
                 android:layout_marginTop="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -231,20 +187,47 @@
                 tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
             <TextView
-                android:id="@+id/recipetx1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:id="@+id/recipetx2"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="8dp"
                 android:text="TextView"
+                android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.129"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/recipe1" />
+                app:layout_constraintTop_toBottomOf="@+id/recipe2" />
+
+            <ImageView
+                android:id="@+id/recipe3"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.932"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recipe"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <TextView
+                android:id="@+id/recipetx3"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.907"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recipe3" />
 
             <ImageView
                 android:id="@+id/recipe4"
-                android:layout_width="115dp"
-                android:layout_height="65dp"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:layout_marginLeft="65dp"
                 android:layout_marginTop="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.067"
@@ -252,20 +235,47 @@
                 app:layout_constraintTop_toBottomOf="@+id/recipetx1"
                 tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
+            <TextView
+                android:id="@+id/recipetx4"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.124"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recipe4" />
+
             <ImageView
                 android:id="@+id/recpie5"
-                android:layout_width="115dp"
-                android:layout_height="65dp"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:layout_marginLeft="65dp"
                 android:layout_marginTop="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/recipetx2"
                 tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
+            <TextView
+                android:id="@+id/recipetx5"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recpie5" />
+
             <ImageView
                 android:id="@+id/recipe6"
-                android:layout_width="115dp"
-                android:layout_height="65dp"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:layout_marginLeft="65dp"
                 android:layout_marginTop="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.932"
@@ -273,10 +283,24 @@
                 app:layout_constraintTop_toBottomOf="@+id/recipetx3"
                 tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
+            <TextView
+                android:id="@+id/recpietx6"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.899"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recipe6" />
+
             <ImageView
                 android:id="@+id/Recipe7"
-                android:layout_width="115dp"
-                android:layout_height="65dp"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:layout_marginLeft="65dp"
                 android:layout_marginTop="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.067"
@@ -284,20 +308,47 @@
                 app:layout_constraintTop_toBottomOf="@+id/recipetx4"
                 tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
+            <TextView
+                android:id="@+id/recipetx7"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.124"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Recipe7" />
+
             <ImageView
                 android:id="@+id/recipe8"
-                android:layout_width="115dp"
-                android:layout_height="65dp"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:layout_marginLeft="65dp"
                 android:layout_marginTop="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/recipetx5"
                 tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
+            <TextView
+                android:id="@+id/recipetx8"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recipe8" />
+
             <ImageView
                 android:id="@+id/recipe9"
-                android:layout_width="115dp"
-                android:layout_height="65dp"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:layout_marginLeft="65dp"
                 android:layout_marginTop="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.932"
@@ -305,10 +356,24 @@
                 app:layout_constraintTop_toBottomOf="@+id/recpietx6"
                 tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
+            <TextView
+                android:id="@+id/recipetx9"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.898"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recipe9" />
+
             <ImageView
                 android:id="@+id/recipe10"
-                android:layout_width="115dp"
-                android:layout_height="65dp"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:layout_marginLeft="65dp"
                 android:layout_marginTop="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.067"
@@ -316,20 +381,47 @@
                 app:layout_constraintTop_toBottomOf="@+id/recipetx7"
                 tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
+            <TextView
+                android:id="@+id/recipetx10"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.124"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recipe10" />
+
             <ImageView
                 android:id="@+id/recipe11"
-                android:layout_width="115dp"
-                android:layout_height="65dp"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:layout_marginLeft="65dp"
                 android:layout_marginTop="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/recipetx8"
                 tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
+            <TextView
+                android:id="@+id/recipetx11"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recipe11" />
+
             <ImageView
                 android:id="@+id/recipe12"
-                android:layout_width="115dp"
-                android:layout_height="65dp"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:layout_marginLeft="65dp"
                 android:layout_marginTop="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.932"
@@ -338,52 +430,23 @@
                 tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
             <TextView
-                android:id="@+id/recipetx10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="TextView"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.124"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/recipe10" />
-
-            <TextView
-                android:id="@+id/recipetx11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="TextView"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/recipe11" />
-
-            <TextView
                 android:id="@+id/recipetx12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="8dp"
                 android:text="TextView"
+                android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.897"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/recipe12" />
 
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="410dp"
-                android:layout_height="53dp"
-                android:background="#58A34C"
-                android:minHeight="?attr/actionBarSize"
-                android:theme="?attr/actionBarTheme"
-                app:layout_constraintBottom_toTopOf="@+id/featrecipes"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-            <!--app:navigationIcon="@drawable/menu_icon_foreground" -->
 
+        </LinearLayout>
+    </ScrollView>
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
 
 
 
