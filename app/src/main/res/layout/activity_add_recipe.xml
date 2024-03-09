@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/addRecipe_toolbar"
+        android:layout_width="411dp"
+        android:layout_height="51dp"
+        android:background="@color/light_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/newRecipe_textView"
+        android:layout_width="176dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/new_recipe"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addRecipe_toolbar" />
+
+    <TextView
+        android:id="@+id/greenBar2_textView"
+        android:layout_width="375dp"
+        android:layout_height="8dp"
+        android:background="@drawable/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newRecipe_textView" />
+
+    <TextView
+        android:id="@+id/newRecipeName_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/newRecipe_name"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/greenBar2_textView" />
+
+    <TextView
+        android:id="@+id/newTime_textView"
+        android:layout_width="79dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="156dp"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/newRecipe_time"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/greenBar2_textView" />
+
+    <TextView
+        android:id="@+id/newServings_textView"
+        android:layout_width="121dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/newRecipe_servingsize"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.734"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/greenBar2_textView" />
+
+    <TextView
+        android:id="@+id/newCalories_textView"
+        android:layout_width="99dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="156dp"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/newRecipe_calories"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.692"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/greenBar2_textView" />
+
+    <TextView
+        android:id="@+id/newServing_textView"
+        android:layout_width="89dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/newRecipe_servings"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/greenBar2_textView" />
+
+    <TextView
+        android:id="@+id/newInstructions_textView"
+        android:layout_width="332dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="232dp"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/specifics_instruct"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/greenBar2_textView" />
+
+    <EditText
+        android:id="@+id/time_editText"
+        android:layout_width="127dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="184dp"
+        android:background="@drawable/textview1"
+        android:ems="10"
+        android:fontFamily="@font/playfair_display"
+        android:hint="Time"
+        android:inputType="time"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/greenBar2_textView" />
+
+    <EditText
+        android:id="@+id/recipeName_editText"
+        android:layout_width="212dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/textview1"
+        android:ems="10"
+        android:fontFamily="@font/playfair_display"
+        android:hint="Recipe Name"
+        android:inputType="text"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintStart_toEndOf="@+id/newRecipeName_textView"
+        app:layout_constraintTop_toTopOf="@+id/greenBar2_textView" />
+
+    <EditText
+        android:id="@+id/servingSize_editText"
+        android:layout_width="127dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="108dp"
+        android:background="@drawable/textview1"
+        android:ems="10"
+        android:fontFamily="@font/playfair_display"
+        android:hint="Serving Size"
+        android:inputType="text"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/greenBar2_textView" />
+
+    <EditText
+        android:id="@+id/servigns_editText"
+        android:layout_width="127dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="108dp"
+        android:background="@drawable/textview1"
+        android:ems="10"
+        android:fontFamily="@font/playfair_display"
+        android:hint="Servings"
+        android:inputType="text"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newRecipe_textView" />
+
+    <EditText
+        android:id="@+id/calories_editText"
+        android:layout_width="127dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="184dp"
+        android:background="@drawable/textview1"
+        android:ems="10"
+        android:fontFamily="@font/playfair_display"
+        android:hint="Calories"
+        android:inputType="text"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/greenBar2_textView" />
+
+    <EditText
+        android:id="@+id/instruct_editText"
+        android:layout_width="331dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/textview1"
+        android:ems="10"
+        android:fontFamily="@font/playfair_display"
+        android:hint="Ingredients and instructions..."
+        android:inputType="text"
+        android:singleLine="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/greenBar2_textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="343dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="380dp"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/photosubmit"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/greenBar2_textView" />
+
+    <EditText
+        android:id="@+id/photo_editText"
+        android:layout_width="331dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="432dp"
+        android:background="@drawable/textview1"
+        android:ems="10"
+        android:fontFamily="@font/playfair_display"
+        android:hint="Photo"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/greenBar2_textView" />
+
+    <Button
+        android:id="@+id/publicView_button"
+        android:layout_width="132dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="552dp"
+        android:background="@drawable/button3"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/publicview"
+        android:textColor="@color/almost_white"
+        android:textIsSelectable="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/greenBar2_textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/addtoRecipes_button"
+        android:layout_width="132dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="552dp"
+        android:background="@drawable/button3"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/addto_recipes"
+        android:textColor="@color/almost_white"
+        android:textIsSelectable="true"
+
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.795"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/greenBar2_textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/addBack_button"
+        android:layout_width="57dp"
+        android:layout_height="49dp"
+        android:background="@drawable/backbutton_icon_foreground"
+        android:contentDescription="@string/back_button"
+        android:onClick="onClickBack"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/addRecipe_toolbar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

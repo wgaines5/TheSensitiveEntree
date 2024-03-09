@@ -30,6 +30,11 @@
     <string name="recipe_servingsize">Serving Size: 1 1/2 cups</string>
     <string name="allergen_name">Allergen</string>
     <string name="recipe_name">Recipe Name</string>
+    <string name="ingredSubs">Ingredient</string>
+    <string name="addto_recipes">Add to Recipes</string>
+    <string name="publicview">Submit for Public View</string>
+    <string name="photosubmit">Please submit .png or .jpeg picture format for recipe photo.</string>
+    <string name="specifics_instruct">Please specify ingredients and instructions.</string>
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
     <string name="email">Email</string>
@@ -46,4 +51,6 @@
     <string name="title_notifications">Notifications</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="about">Introducing The Sensitive Entrée by Team Lederan – the ultimate culinary companion designed to revolutionize how you approach cooking! Crafted by Daniel, Leah, Lily, and Willie, our app is a testament to our commitment to making the world a healthier, more inclusive, and tastier place. Whether you are navigating allergies, counting calories, or watching your budget, our app is your go-to solution. With a vast database of recipes tailored to your needs, we empower users to create delicious meals without compromise. From novices exploring new flavors to seasoned chefs seeking culinary inspiration, we cater to every skill level and taste preference. We have meticulously curated every feature to ensure seamless usability, so you can focus on the joy of cooking. Plus, we offer the flexibility for users to personalize their experience by adding custom meals, making every dish truly their own.</string>
+
 </resources>
