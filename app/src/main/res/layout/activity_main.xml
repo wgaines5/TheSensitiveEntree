@@ -9,6 +9,9 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <!--app:navigationIcon="@drawable/menu_icon_foreground" -->
+
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="410dp"
@@ -20,8 +23,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    <!--app:navigationIcon="@drawable/menu_icon_foreground" -->
-
 
     <TextView
         android:id="@+id/featrecipes"
