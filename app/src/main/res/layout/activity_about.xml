@@ -16,6 +16,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="181dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_about" />
     <ImageView
         android:id="@+id/Team_Logo"
         android:layout_width="158dp"
@@ -25,20 +37,33 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.228"
+        app:layout_constraintVertical_bias="0.21"
         app:srcCompat="@drawable/teamlederan_logo_transparent" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="327dp"
-        android:layout_height="335dp"
-        android:layout_marginStart="43dp"
-        android:layout_marginTop="6dp"
-        android:layout_marginEnd="42dp"
-        android:text="@string/about"
-        android:textColor="@color/black"
+    <ScrollView
+        android:layout_width="411dp"
+        android:layout_height="722dp"
+        android:layout_marginTop="23dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Team_Logo" />
+        app:layout_constraintTop_toBottomOf="@+id/Team_Logo">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="327dp"
+            android:layout_height="335dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="42dp"
+            android:text="@string/about"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Team_Logo" />
+
+
+    </ScrollView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
