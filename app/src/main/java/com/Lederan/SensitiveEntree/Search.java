@@ -2,84 +2,30 @@ package com.Lederan.SensitiveEntree;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SearchView;
+import android.widget.TextView;
+import android.widget.Toast;
 
-import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
-
-import com.google.android.material.navigation.NavigationView;
-import com.google.firebase.auth.FirebaseAuth;
-
-import org.checkerframework.checker.nullness.qual.NonNull;
 
 public class Search extends AppCompatActivity {
 
     SearchView search_view;
     ListView list_view;
-    DrawerLayout drawerLayout;
-    NavigationView navigationView;
-    Toolbar toolbar;
-    FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.nav_activity_search);
+        setContentView(R.layout.activity_search);
 
         search_view = findViewById(R.id.search_view);
         list_view = findViewById(R.id.list_view);
-        drawerLayout = findViewById(R.id.drawer_layout);
-        navigationView = findViewById(R.id.nav_view);
-        toolbar = findViewById(R.id.toolbar);
-        mAuth = FirebaseAuth.getInstance();
-
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                int id = item.getItemId();
-                if (id == R.id.nav_about) {
-                    Intent intent = new Intent(Search.this, About.class);
-                    startActivity(intent);
-                } else if (id == R.id.nav_home) {
-                    Intent intent = new Intent(Search.this, MainActivity.class);
-                    startActivity(intent);
-                } else if (id == R.id.nav_profile) {
-                    return false;
-                } else if (id == R.id.search) {
-                    Intent intent = new Intent(Search.this, Search.class);
-                    startActivity(intent);
-                } else if (id == R.id.nav_ingredient_substitutions) {
-                    Intent intent = new Intent(Search.this, IngredientSubs.class);
-                    startActivity(intent);
-                } else if (id == R.id.nav_calorie_counter) {
-                    Intent intent = new Intent(Search.this, CalorieCounter.class);
-                    startActivity(intent);
-                } else if (id == R.id.nav_pantry) {
-                    Intent intent = new Intent(Search.this, RecipeListings.class);
-                    startActivity(intent);
-                } else if (id == R.id.nav_cooking_tips) {
-                    return false;
-                } else if (id == R.id.nav_resources) {
-                    return false;
-                } else if (id == R.id.nav_settings) {
-                    return false;
-                }else if (id == R.id.nav_logout) {
-                    mAuth.signOut();
-                    Intent intent = new Intent(Search.this, Login.class);
-                    startActivity(intent);
-                }else {
-                    return false;
-                }
-                drawerLayout.closeDrawer(GravityCompat.START);
-                return true;
-            }
-        });
 
         // sample data
         String[] items = {
@@ -87,7 +33,7 @@ public class Search extends AppCompatActivity {
                 "Steak", "Garlic Bread", "Peach Cobbler", "Stir Fry", "Pulled Pork", "Burritos", "Omelet", "Parfait",
                 "Cake", "Casserole"
         };
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, items);
         list_view.setAdapter(adapter);
 
         setupSearchView();
