@@ -45,13 +45,17 @@ public class About extends AppCompatActivity {
                 } else if (id == R.id.nav_profile) {
                     return false;
                 } else if (id == R.id.search) {
-                    return false;
+                    Intent intent = new Intent(About.this, Search.class);
+                    startActivity(intent);
                 } else if (id == R.id.nav_ingredient_substitutions) {
-                    return false;
+                    Intent intent = new Intent(About.this, IngredientSubs.class);
+                    startActivity(intent);
                 } else if (id == R.id.nav_calorie_counter) {
-                    return false;
+                    Intent intent = new Intent(About.this, CalorieCounter.class);
+                    startActivity(intent);
                 } else if (id == R.id.nav_pantry) {
-                    return false;
+                    Intent intent = new Intent(About.this, RecipeListings.class);
+                    startActivity(intent);
                 } else if (id == R.id.nav_cooking_tips) {
                     return false;
                 } else if (id == R.id.nav_resources) {
@@ -59,11 +63,11 @@ public class About extends AppCompatActivity {
                 } else if (id == R.id.nav_settings) {
                     return false;
                 }else if (id == R.id.nav_logout) {
-                    return false;
-                }else {
                     mAuth.signOut();
                     Intent intent = new Intent(About.this, Login.class);
                     startActivity(intent);
+                }else {
+                    return false;
                 }
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return true;
