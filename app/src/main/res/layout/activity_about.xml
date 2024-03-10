@@ -10,15 +10,15 @@
     tools:openDrawer="start">
 
     <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:id="@+id/nav_view"
-        android:background="#EDE6D6"
+        android:layout_gravity="start"
+        android:background="@color/off_white"
         app:headerLayout="@layout/header"
-        app:menu="@menu/primary_menu"
-        app:itemTextColor="@color/black"
         app:itemIconTint="@color/black"
-        android:layout_gravity="start"/>
+        app:itemTextColor="@color/black"
+        app:menu="@menu/primary_menu" />
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
