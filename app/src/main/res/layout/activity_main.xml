@@ -11,15 +11,15 @@
 
 
     <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:id="@+id/nav_view"
-        android:background="#EDE6D6"
+        android:layout_gravity="start"
+        android:background="@color/off_white"
         app:headerLayout="@layout/header"
-        app:menu="@menu/primary_menu"
-        app:itemTextColor="@color/black"
         app:itemIconTint="@color/black"
-        android:layout_gravity="start"/>
+        app:itemTextColor="@color/black"
+        app:menu="@menu/primary_menu" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -400,14 +400,13 @@
                 android:id="@+id/toolbar"
                 android:layout_width="410dp"
                 android:layout_height="53dp"
-                android:background="#58A34C"
+                android:background="@color/light_green"
                 android:minHeight="?attr/actionBarSize"
                 android:theme="?attr/actionBarTheme"
                 app:layout_constraintBottom_toTopOf="@+id/featrecipes"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                />
+                app:layout_constraintTop_toTopOf="parent" />
             <!--app:navigationIcon="@drawable/menu_icon_foreground" -->
 
 
