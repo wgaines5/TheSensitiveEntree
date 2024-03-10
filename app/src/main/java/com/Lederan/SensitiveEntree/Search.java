@@ -22,7 +22,7 @@ public class Search extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_search);
+        setContentView(R.layout.nav_activity_search);
 
         search_view = findViewById(R.id.search_view);
         list_view = findViewById(R.id.list_view);
