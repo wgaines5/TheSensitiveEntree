@@ -257,7 +257,7 @@
         android:fontFamily="@font/playfair_display"
         android:hint="Photo"
         android:inputType="text"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -292,8 +292,8 @@
         android:text="@string/addto_recipes"
         android:textColor="@color/almost_white"
         android:textIsSelectable="true"
-
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.795"
