@@ -19,15 +19,20 @@
 
     <TextView
         android:id="@+id/textView23"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="296dp"
+        android:layout_height="57dp"
         android:layout_marginStart="172dp"
-        android:layout_marginTop="23dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="181dp"
-        android:text="TextView"
+        android:text="@string/about_title"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar_about" />
+
     <ImageView
         android:id="@+id/Team_Logo"
         android:layout_width="158dp"
@@ -37,31 +42,38 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.21"
+        app:layout_constraintVertical_bias="0.249"
         app:srcCompat="@drawable/teamlederan_logo_transparent" />
 
     <ScrollView
-        android:layout_width="411dp"
-        android:layout_height="722dp"
+        android:layout_width="401dp"
+        android:layout_height="440dp"
         android:layout_marginTop="23dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Team_Logo">
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="327dp"
-            android:layout_height="335dp"
-            android:layout_marginStart="43dp"
-            android:layout_marginTop="6dp"
-            android:layout_marginEnd="42dp"
-            android:text="@string/about"
-            android:textColor="@color/black"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Team_Logo" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="644dp"
+                android:layout_marginStart="43dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="42dp"
+                android:text="@string/about"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Team_Logo" />
+        </LinearLayout>
     </ScrollView>
 
 
