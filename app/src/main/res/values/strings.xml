@@ -7,6 +7,7 @@
         <item>Substitute 4</item>
         <item>Substitute 5</item>
     </string-array>
+    <string name="my_recipes">My Recipes</string>
     <string name="newRecipe_name">Recipe Name:</string>
     <string name="newRecipe_time">Time:</string>
     <string name="newRecipe_servings">Servings:</string>
