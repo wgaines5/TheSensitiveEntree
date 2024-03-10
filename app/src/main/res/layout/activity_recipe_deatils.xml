@@ -9,7 +9,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white">
+        android:background="@color/almost_white">
 
         <TextView
             android:id="@+id/RecipeNameDetails_textView"
@@ -140,7 +140,7 @@
             android:onClick="onClickIngredientSubs"
             android:text="@string/ingredSub_button"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textIsSelectable="true"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -180,7 +180,7 @@
             android:background="@drawable/button3"
             android:fontFamily="@font/playfair_display"
             android:text="Resources"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textIsSelectable="true"
             android:textSize="18sp"
             android:textStyle="bold"

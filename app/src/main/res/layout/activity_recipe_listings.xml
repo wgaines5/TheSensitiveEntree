@@ -8,7 +8,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#FFFFFF"
+        android:background="@color/almost_white"
         android:visibility="visible">
 
         <ImageButton
@@ -39,6 +39,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView" />
 
+
         <TextView
             android:id="@+id/Recipes_TextView"
             android:layout_width="wrap_content"
@@ -47,13 +48,12 @@
             android:layout_marginTop="60dp"
             android:layout_marginEnd="144dp"
             android:fontFamily="@font/playfair_display"
-            android:text="@string/recipes"
+            android:text="@string/my_recipes"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
             android:textColor="@color/black"
             android:textSize="40sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.625"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -61,7 +61,7 @@
             android:id="@+id/addRecipe_button"
             android:layout_width="118dp"
             android:layout_height="52dp"
-            android:layout_marginTop="840dp"
+            android:layout_marginTop="912dp"
             android:background="@drawable/button3"
             android:clickable="true"
             android:fontFamily="@font/playfair_display"
@@ -69,14 +69,13 @@
             android:text="@string/add_recipe"
             android:textAlignment="center"
             android:textAppearance="@style/ShapeAppearance.Material3.SmallComponent"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView" />
-
 
         <TextView
             android:id="@+id/allergen2_textView"
@@ -89,10 +88,10 @@
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.245"
+            app:layout_constraintHorizontal_bias="0.21"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView"
-            app:layout_constraintVertical_bias="0.374" />
+            app:layout_constraintVertical_bias="0.337" />
 
         <ImageButton
             android:id="@+id/recipeImage2_imageButton"
@@ -124,7 +123,7 @@
             android:id="@+id/recipeImage4_imageButton"
             android:layout_width="153dp"
             android:layout_height="106dp"
-            android:layout_marginTop="376dp"
+            android:layout_marginTop="380dp"
             android:background="@drawable/textview1"
             android:contentDescription="@string/recipe_image"
             app:layout_constraintEnd_toEndOf="parent"
@@ -137,7 +136,20 @@
             android:id="@+id/recipeImage7_imageButton"
             android:layout_width="153dp"
             android:layout_height="106dp"
-            android:layout_marginTop="376dp"
+            android:layout_marginTop="720dp"
+            android:background="@drawable/textview1"
+            android:contentDescription="@string/recipe_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.872"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/recipeImage8_imageButton"
+            android:layout_width="153dp"
+            android:layout_height="106dp"
+            android:layout_marginTop="548dp"
             android:background="@drawable/textview1"
             android:contentDescription="@string/recipe_image"
             app:layout_constraintEnd_toEndOf="parent"
@@ -147,10 +159,36 @@
             tools:srcCompat="@tools:sample/avatars" />
 
         <ImageButton
+            android:id="@+id/recipeImage9_imageButton"
+            android:layout_width="153dp"
+            android:layout_height="106dp"
+            android:layout_marginTop="720dp"
+            android:background="@drawable/textview1"
+            android:contentDescription="@string/recipe_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.124"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/recipeImage10_imageButton"
+            android:layout_width="153dp"
+            android:layout_height="106dp"
+            android:layout_marginTop="548dp"
+            android:background="@drawable/textview1"
+            android:contentDescription="@string/recipe_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.872"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
             android:id="@+id/recipeImage5_imageButton"
             android:layout_width="153dp"
             android:layout_height="106dp"
-            android:layout_marginTop="376dp"
+            android:layout_marginTop="380dp"
             android:background="@drawable/textview1"
             android:contentDescription="@string/recipe_image"
             app:layout_constraintEnd_toEndOf="parent"
@@ -228,16 +266,76 @@
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.207"
+            app:layout_constraintHorizontal_bias="0.166"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView"
-            app:layout_constraintVertical_bias="0.35" />
+            app:layout_constraintVertical_bias="0.316" />
 
         <TextView
             android:id="@+id/recipeName4_textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="480dp"
+            android:layout_marginTop="484dp"
+            android:fontFamily="@font/playfair_display"
+            android:text="@string/recipe_name"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.194"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView" />
+
+        <TextView
+            android:id="@+id/recipeName7_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="824dp"
+            android:fontFamily="@font/playfair_display"
+            android:text="@string/recipe_name"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.798"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView" />
+
+        <TextView
+            android:id="@+id/recipeName8_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="828dp"
+            android:fontFamily="@font/playfair_display"
+            android:text="@string/recipe_name"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.194"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView" />
+
+        <TextView
+            android:id="@+id/recipeName9_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="652dp"
+            android:fontFamily="@font/playfair_display"
+            android:text="@string/recipe_name"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.798"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView" />
+
+        <TextView
+            android:id="@+id/recipeName10_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="652dp"
             android:fontFamily="@font/playfair_display"
             android:text="@string/recipe_name"
             android:textAlignment="center"
@@ -252,7 +350,7 @@
             android:id="@+id/recipeName5_textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="480dp"
+            android:layout_marginTop="488dp"
             android:fontFamily="@font/playfair_display"
             android:text="@string/recipe_name"
             android:textAlignment="center"
@@ -267,14 +365,74 @@
             android:id="@+id/allergen4_textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="504dp"
+            android:layout_marginTop="508dp"
             android:fontFamily="@font/playfair_display"
             android:text="@string/allergen_name"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.245"
+            app:layout_constraintHorizontal_bias="0.21"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView" />
+
+        <TextView
+            android:id="@+id/allergen7_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="848dp"
+            android:fontFamily="@font/playfair_display"
+            android:text="@string/allergen_name"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.777"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView" />
+
+        <TextView
+            android:id="@+id/allergen8_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="848dp"
+            android:fontFamily="@font/playfair_display"
+            android:text="@string/allergen_name"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.21"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView" />
+
+        <TextView
+            android:id="@+id/allergen10_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="672dp"
+            android:fontFamily="@font/playfair_display"
+            android:text="@string/allergen_name"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.777"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView" />
+
+        <TextView
+            android:id="@+id/allergen11_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="672dp"
+            android:fontFamily="@font/playfair_display"
+            android:text="@string/allergen_name"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.21"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView" />
 
@@ -282,7 +440,7 @@
             android:id="@+id/allergen5_textView"
             android:layout_width="60dp"
             android:layout_height="25dp"
-            android:layout_marginTop="500dp"
+            android:layout_marginTop="508dp"
             android:fontFamily="@font/playfair_display"
             android:text="@string/allergen_name"
             android:textAlignment="center"
@@ -307,7 +465,7 @@
             app:layout_constraintHorizontal_bias="0.798"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView"
-            app:layout_constraintVertical_bias="0.35" />
+            app:layout_constraintVertical_bias="0.316" />
 
         <TextView
             android:id="@+id/allergen9_textView"
@@ -323,7 +481,7 @@
             app:layout_constraintHorizontal_bias="0.777"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView"
-            app:layout_constraintVertical_bias="0.374" />
+            app:layout_constraintVertical_bias="0.336" />
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
@@ -349,9 +507,9 @@
         <TextView
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginTop="888dp"
+            android:layout_marginTop="988dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintHorizontal_bias="0.49"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView" />
 
