@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     android:background="#FEEAD2"
     tools:context=".About">
+
+<!--tool bar across the top. does not have navigation.-->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_about"
         android:layout_width="410dp"
@@ -17,6 +19,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+<!--Title-->
     <TextView
         android:id="@+id/textView23"
         android:layout_width="296dp"
@@ -33,6 +36,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar_about" />
 
+    <!--Team Logo-->
     <ImageView
         android:id="@+id/Team_Logo"
         android:layout_width="158dp"
@@ -44,6 +48,7 @@
         app:layout_constraintVertical_bias="0.214"
         app:srcCompat="@drawable/teamlederan_logo_transparent" />
 
+    <!--The bottom half of this window is scrollable-->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="520dp"
@@ -60,6 +65,7 @@
         app:layout_constraintTop_toBottomOf="@+id/Team_Logo"
         tools:layout_editor_absoluteX="0dp">
 
+        <!--This is the about text-->
         <TextView
             android:id="@+id/textView5"
             android:layout_width="match_parent"

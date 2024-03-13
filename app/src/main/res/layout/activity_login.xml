@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/almost_white"
     tools:context=".Login">
-
+<!--Login button-->
   <Button
       android:id="@+id/loginButton"
       android:layout_width="178dp"
@@ -28,7 +28,7 @@
       app:layout_constraintTop_toBottomOf="@+id/enterPassword"
       tools:text="@string/login"
       tools:visibility="visible" />
-
+<!--"The Sensitve"-->
   <TextView
       android:id="@+id/textView"
       android:layout_width="wrap_content"
@@ -42,7 +42,7 @@
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/imageView5" />
-
+<!--"Entree"-->
   <TextView
       android:id="@+id/textView2"
       android:layout_width="wrap_content"
@@ -56,6 +56,7 @@
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/textView" />
 
+  <!--Enter email-->
   <EditText
       android:id="@+id/enterEmailAddress"
       android:layout_width="244dp"
@@ -79,6 +80,7 @@
       app:layout_constraintStart_toStartOf="@+id/enterPassword"
       app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
+  <!--Enter Password-->
   <EditText
       android:id="@+id/enterPassword"
       android:layout_width="244dp"
@@ -98,6 +100,7 @@
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/enterEmailAddress" />
 
+  <!--Create account button-->
   <Button
       android:id="@+id/createAccountButton"
       android:layout_width="155dp"
