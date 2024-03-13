@@ -43,7 +43,8 @@ public class CalorieCounter extends AppCompatActivity {
                     Intent intent = new Intent(CalorieCounter.this, MainActivity.class);
                     startActivity(intent);
                 } else if (id == R.id.nav_profile) {
-                    return false;
+                    Intent intent = new Intent(CalorieCounter.this, Profile.class);
+                    startActivity(intent);
                 } else if (id == R.id.search) {
                     Intent intent = new Intent(CalorieCounter.this, Search.class);
                     startActivity(intent);
@@ -57,9 +58,11 @@ public class CalorieCounter extends AppCompatActivity {
                     Intent intent = new Intent(CalorieCounter.this, RecipeListings.class);
                     startActivity(intent);
                 } else if (id == R.id.nav_cooking_tips) {
-                    return false;
+                    Intent intent = new Intent(CalorieCounter.this, CookingTips.class);
+                    startActivity(intent);
                 } else if (id == R.id.nav_resources) {
-                    return false;
+                    Intent intent = new Intent(CalorieCounter.this, Resources.class);
+                    startActivity(intent);
                 } else if (id == R.id.nav_settings) {
                     return false;
                 } else if (id == R.id.nav_logout) {
