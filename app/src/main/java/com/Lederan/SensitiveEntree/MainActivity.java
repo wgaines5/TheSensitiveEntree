@@ -66,7 +66,8 @@ public class MainActivity extends AppCompatActivity  {
                     Intent intent = new Intent(MainActivity.this, MainActivity.class);
                     startActivity(intent);
                 } else if (id == R.id.nav_profile) {
-                    return false;
+                    Intent intent = new Intent(MainActivity.this, Profile.class);
+                    startActivity(intent);
                 } else if (id == R.id.search) {
                     Intent intent = new Intent(MainActivity.this, Search.class);
                     startActivity(intent);
@@ -80,9 +81,11 @@ public class MainActivity extends AppCompatActivity  {
                     Intent intent = new Intent(MainActivity.this, RecipeListings.class);
                     startActivity(intent);
                 } else if (id == R.id.nav_cooking_tips) {
-                    return false;
+                    Intent intent = new Intent(MainActivity.this, CookingTips.class);
+                    startActivity(intent);
                 } else if (id == R.id.nav_resources) {
-                    return false;
+                    Intent intent = new Intent(MainActivity.this, Resources.class);
+                    startActivity(intent);
                 } else if (id == R.id.nav_settings) {
                     return false;
                 }else if (id == R.id.nav_logout) {

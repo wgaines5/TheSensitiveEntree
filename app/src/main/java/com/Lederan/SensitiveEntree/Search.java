@@ -4,11 +4,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SearchView;
+import android.widget.TextView;
+import android.widget.Toast;
 
-import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
@@ -26,7 +31,9 @@ public class Search extends AppCompatActivity {
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
+    //Define menu Constants
     FirebaseAuth mAuth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -34,10 +41,13 @@ public class Search extends AppCompatActivity {
 
         search_view = findViewById(R.id.search_view);
         list_view = findViewById(R.id.list_view);
+
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
         toolbar = findViewById(R.id.toolbar);
+
         mAuth = FirebaseAuth.getInstance();
+
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -50,7 +60,8 @@ public class Search extends AppCompatActivity {
                     Intent intent = new Intent(Search.this, MainActivity.class);
                     startActivity(intent);
                 } else if (id == R.id.nav_profile) {
-                    return false;
+                    Intent intent = new Intent(Search.this, Profile.class);
+                    startActivity(intent);
                 } else if (id == R.id.search) {
                     Intent intent = new Intent(Search.this, Search.class);
                     startActivity(intent);
@@ -64,9 +75,11 @@ public class Search extends AppCompatActivity {
                     Intent intent = new Intent(Search.this, RecipeListings.class);
                     startActivity(intent);
                 } else if (id == R.id.nav_cooking_tips) {
-                    return false;
+                    Intent intent = new Intent(Search.this, CookingTips.class);
+                    startActivity(intent);
                 } else if (id == R.id.nav_resources) {
-                    return false;
+                    Intent intent = new Intent(Search.this, Resources.class);
+                    startActivity(intent);
                 } else if (id == R.id.nav_settings) {
                     return false;
                 }else if (id == R.id.nav_logout) {
@@ -80,14 +93,13 @@ public class Search extends AppCompatActivity {
                 return true;
             }
         });
-
         // sample data
         String[] items = {
                 "Spaghetti", "Chicken Parmesan", "Tacos", "Caesar Salad", "Grilled Cheese", "Macaroni and Cheese", "Fettuccine Alfredo", "Fried Rice", "Cookies",
                 "Steak", "Garlic Bread", "Peach Cobbler", "Stir Fry", "Pulled Pork", "Burritos", "Omelet", "Parfait",
                 "Cake", "Casserole"
         };
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, items);
         list_view.setAdapter(adapter);
 
         setupSearchView();

@@ -6,10 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".About"
+    tools:context=".CookingTips"
     tools:openDrawer="start">
     <include
-        layout="@layout/activity_about"
+        layout="@layout/activity_cooking_tips"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
@@ -18,8 +18,8 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:layout_marginTop="25dp"
-        android:background="@color/off_white"
+        android:layout_marginTop="40dp"
+        android:background="#EDE6D6"
         app:headerLayout="@layout/header"
         app:itemIconTint="@color/black"
         app:itemTextColor="@color/black"

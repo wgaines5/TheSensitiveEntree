@@ -32,12 +32,13 @@
         app:layout_constraintTop_toBottomOf="@+id/getFirstName" />
 
     <Button
-        android:id="@+id/registationButton"
+        android:id="@+id/registrationButton"
         android:layout_width="185dp"
         android:layout_height="51dp"
         android:layout_marginTop="21dp"
         android:backgroundTint="@color/dark_green"
         android:text="Create Account"
+        android:onClick="onClick"
         android:textAlignment="center"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="@+id/getConfirmPassword"
@@ -125,7 +126,9 @@
         android:textAlignment="center"
         android:textColor="@color/off_white"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@+id/registationButton"
-        app:layout_constraintStart_toStartOf="@+id/registationButton"
-        app:layout_constraintTop_toBottomOf="@+id/registationButton" />
+        app:layout_constraintEnd_toEndOf="@+id/registrationButton"
+        app:layout_constraintStart_toStartOf="@+id/registrationButton"
+        app:layout_constraintTop_toBottomOf="@+id/registrationButton" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,6 +6,32 @@
     android:layout_height="match_parent"
     android:background="#FEEAD2"
     tools:context=".About">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_about"
+        android:layout_width="410dp"
+        android:layout_height="53dp"
+        android:background="#58A34C"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="296dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="181dp"
+        android:text="@string/about_title"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_about" />
 
     <ImageView
         android:id="@+id/Team_Logo"
@@ -13,94 +39,45 @@
         android:layout_height="141dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.463"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.107"
+        app:layout_constraintVertical_bias="0.214"
         app:srcCompat="@drawable/teamlederan_logo_transparent" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout4"
-        android:layout_width="380dp"
-        android:layout_height="113dp"
-        android:layout_marginStart="16dp"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Team_Logo">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="384dp"
-            android:layout_height="110dp"
-            android:fontFamily="sans-serif-black"
-            android:text="Introducing &quot;The Sensitive Entree&quot;  by Team Lederan – the ultimate culinary companion designed to revolutionize how you approach cooking! Crafted by Daniel, Leah, Lily, and Willie, our app is a testament to our commitment to making the world a healthier, more inclusive, and tastier place."
-            android:textAlignment="center"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/Team_Logo"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="42dp"
+            android:text="@string/about"
             android:textColor="@color/black"
-            android:textSize="13sp" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Team_Logo" />
+    </LinearLayout>
+    </ScrollView>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout5"
-        android:layout_width="375dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="382dp"
-            android:layout_height="133dp"
-            android:fontFamily="sans-serif-black"
-            android:text="Whether you're navigating allergies, counting calories, or watching your budget, our app is your go-to solution. With a vast database of recipes tailored to your needs, we empower users to create delicious meals without compromise. From novices exploring new flavors to seasoned chefs seeking culinary inspiration, we cater to every skill level and taste preference."
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="13sp" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout6"
-        android:layout_width="377dp"
-        android:layout_height="95dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout5">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="382dp"
-            android:layout_height="96dp"
-            android:fontFamily="sans-serif-black"
-            android:text="We've meticulously curated every feature to ensure seamless usability, so you can focus on the joy of cooking. Plus, we offer the flexibility for users to personalize their experience by adding custom meals, making every dish truly their own."
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="12sp" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="377dp"
-        android:layout_height="110dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout6">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="382dp"
-            android:layout_height="96dp"
-            android:fontFamily="sans-serif-black"
-            android:text="As students driven by a passion for technology and a desire to enhance lives, we're dedicated to making your cooking journey as enjoyable and fulfilling as possible. Welcome to a world where cooking is not just a chore but a delightful adventure, all at your fingertips with &quot;The Sensitve Entree&quot; by Team Lederan."
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="12sp" />
-    </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

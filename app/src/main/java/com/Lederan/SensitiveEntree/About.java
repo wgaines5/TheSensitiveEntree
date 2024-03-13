@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
@@ -43,7 +42,8 @@ public class About extends AppCompatActivity {
                     Intent intent = new Intent(About.this, MainActivity.class);
                     startActivity(intent);
                 } else if (id == R.id.nav_profile) {
-                    return false;
+                    Intent intent = new Intent(About.this, Profile.class);
+                    startActivity(intent);
                 } else if (id == R.id.search) {
                     Intent intent = new Intent(About.this, Search.class);
                     startActivity(intent);
@@ -57,9 +57,11 @@ public class About extends AppCompatActivity {
                     Intent intent = new Intent(About.this, RecipeListings.class);
                     startActivity(intent);
                 } else if (id == R.id.nav_cooking_tips) {
-                    return false;
+                    Intent intent = new Intent(About.this, CookingTips.class);
+                    startActivity(intent);
                 } else if (id == R.id.nav_resources) {
-                    return false;
+                    Intent intent = new Intent(About.this, Resources.class);
+                    startActivity(intent);
                 } else if (id == R.id.nav_settings) {
                     return false;
                 }else if (id == R.id.nav_logout) {
