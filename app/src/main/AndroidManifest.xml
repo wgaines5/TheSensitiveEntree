@@ -55,26 +55,20 @@
             android:name=".RecipeListings"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".Profile"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".Resources"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".CookingTips"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
 
 
-        <activity
-            android:name=".Search"
-            android:exported="true"/>
-        <activity
-            android:name=".IngredientSubs"
-            android:exported="true"/>
-        <activity
-            android:name=".AddRecipe"
-            android:exported="true"/>
-        <activity
-            android:name=".CalorieCounter"
-            android:exported="true"/>
-        <activity
-            android:name=".RecipeDetails"
-            android:exported="true"/>
-        <activity
-            android:name=".RecipeListings"
-            android:exported="true"/>
 
 
         <activity
