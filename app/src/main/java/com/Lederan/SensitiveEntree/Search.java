@@ -33,7 +33,7 @@ public class Search extends AppCompatActivity {
                 "Steak", "Garlic Bread", "Peach Cobbler", "Stir Fry", "Pulled Pork", "Burritos", "Omelet", "Parfait",
                 "Cake", "Casserole"
         };
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, items);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.spinner_layout, items);
         list_view.setAdapter(adapter);
 
         setupSearchView();

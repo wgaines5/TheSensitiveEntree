@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@color/almost_white">
 
 
     <androidx.appcompat.widget.Toolbar
@@ -43,6 +43,7 @@
         android:layout_marginTop="120dp"
         android:background="@drawable/textview2"
         android:clickable="true"
+
         android:orientation="vertical"
         android:queryHint="Search for items..."
         app:layout_constraintEnd_toEndOf="parent"
@@ -73,10 +74,12 @@
         android:layout_height="58dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/playfair_display"
+        android:letterSpacing="0.05"
         android:text="Search All Recipes"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="38sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toStartOf="parent"
