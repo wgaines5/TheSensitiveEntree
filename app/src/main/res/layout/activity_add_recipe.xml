@@ -8,7 +8,7 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/addRecipe_toolbar"
-        android:layout_width="411dp"
+        android:layout_width="match_parent"
         android:layout_height="51dp"
         android:background="@color/light_green"
         app:layout_constraintEnd_toEndOf="parent"
