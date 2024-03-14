@@ -7,4 +7,5 @@
     android:textColor="@android:color/black"
     android:textSize="16sp"
     android:textStyle="bold"
+    android:letterSpacing="0.07"
     android:fontFamily="@font/playfair_display"/>

@@ -7,6 +7,15 @@
         <item>Substitute 4</item>
         <item>Substitute 5</item>
     </string-array>
+    <string name="milk">Milk</string>
+    <string name="eggs">Eggs</string>
+    <string name="fish">Fish</string>
+    <string name="shellfish">Crustacean Shellfish</string>
+    <string name="treenuts">Tree Nuts</string>
+    <string name="peanuts">Peanuts</string>
+    <string name="wheat">Wheat</string>
+    <string name="gluten">Gluten</string>
+    <string name="soybeans">Soybeans</string>
     <string name="my_recipes">My Recipes</string>
     <string name="newRecipe_name">Recipe Name:</string>
     <string name="newRecipe_time">Time:</string>
