@@ -16,8 +16,8 @@
             android:layout_width="153dp"
             android:layout_height="106dp"
             android:layout_marginTop="36dp"
-            android:contentDescription="@string/recipe_image"
             android:background="@drawable/textview1"
+            android:contentDescription="@string/recipe_image"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.112"
             app:layout_constraintStart_toStartOf="parent"
@@ -63,7 +63,7 @@
 
         <Button
             android:id="@+id/addRecipe_button"
-            android:layout_width="118dp"
+            android:layout_width="130dp"
             android:layout_height="52dp"
             android:layout_marginTop="912dp"
             android:background="@drawable/button3"
