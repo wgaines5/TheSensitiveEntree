@@ -28,7 +28,7 @@ public class Profile extends AppCompatActivity {
 
         drawerLayout = findViewById(R.id.profile_drawer_layout);
         navigationView = findViewById(R.id.nav_view);
-        toolbar = findViewById(R.id.toolbar);
+        toolbar = findViewById(R.id.profileToolbar);
 
         mAuth = FirebaseAuth.getInstance();
 

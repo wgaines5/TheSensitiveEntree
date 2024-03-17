@@ -64,11 +64,17 @@
             android:name=".EditProfile"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
+        <activity
+            android:name=".Resources"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.AppCompat.NoActionBar">
+
 
         </activity>
         <!--<intent-filter>

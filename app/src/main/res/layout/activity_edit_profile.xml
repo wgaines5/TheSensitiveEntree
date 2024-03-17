@@ -16,18 +16,16 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"/>
 
+
     <Button
-            android:id="@+id/ePBack_button"
-            android:layout_width="60dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/backbutton_icon_foreground"
-            android:contentDescription="@string/back_button"
-            android:onClick="onClickBack"
-            app:layout_constraintEnd_toEndOf="@+id/editProfile_toolbar"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
+        android:id="@+id/ePBack_button"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:background="@drawable/backbutton_icon_foreground"
+        android:contentDescription="@string/back_button"
+        android:onClick="onClickBack"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="1dp" />
 
     <ImageButton
         android:id="@+id/imageButton3"
