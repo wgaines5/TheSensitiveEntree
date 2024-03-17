@@ -21,6 +21,7 @@ public class Search extends AppCompatActivity {
     // Widget variables
     SearchView search_view;
     ListView list_view;
+
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -44,11 +45,13 @@ public class Search extends AppCompatActivity {
 
     // need to set up OnItemClicked for list_view here
 
+    //Filter (list view) function
     private void searchFilter(String query) {
         ArrayAdapter<String> adapter = (ArrayAdapter<String>) list_view.getAdapter();
         adapter.getFilter().filter(query);
     }
 
+    //Search view function
     private void setupSearchView() {
         search_view.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
@@ -64,6 +67,8 @@ public class Search extends AppCompatActivity {
             }
         });
     }
+
+    //Back button function
     public void onClickBack(View view){
         Intent myintent = new Intent(Search.this, RecipeListings.class);
         Search.this.startActivity(myintent);

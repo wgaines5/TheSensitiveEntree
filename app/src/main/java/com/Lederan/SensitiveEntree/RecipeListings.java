@@ -50,6 +50,7 @@ public class RecipeListings extends AppCompatActivity{
         mAuth = FirebaseAuth.getInstance();
 
 
+        //Navigation pull out menu
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -92,6 +93,16 @@ public class RecipeListings extends AppCompatActivity{
             }
         });
     }
+
+    //Recipe image button function to go to recipe details page
+    // very basic for right now until recipe details has specified pages for different recipes
+    public void onClickRecipeDetails(View view){
+        Intent myintent = new Intent(RecipeListings.this, RecipeDetails.class);
+        RecipeListings.this.startActivity(myintent);
+    }
+
+
+    //Add recipe button function
     public void onClickAddRecipe(View view){
         Intent myintent = new Intent(RecipeListings.this, AddRecipe.class);
         RecipeListings.this.startActivity(myintent);
