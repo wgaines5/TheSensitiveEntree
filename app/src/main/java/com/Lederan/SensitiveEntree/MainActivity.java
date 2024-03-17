@@ -3,6 +3,7 @@ package com.Lederan.SensitiveEntree;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +14,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.Blob;
 
 import org.checkerframework.checker.nullness.qual.NonNull;
 
@@ -22,6 +24,7 @@ public class MainActivity extends AppCompatActivity
     NavigationView navigationView;
     Toolbar toolbar;
     FirebaseAuth mAuth;
+    ImageView PBJ;
 
     // Validates the user
     @Override
@@ -31,24 +34,29 @@ public class MainActivity extends AppCompatActivity
         // Check if user is signed in (non-null) and update UI accordingly.
         mAuth = FirebaseAuth.getInstance();
         FirebaseUser currentUser = mAuth.getCurrentUser();
-        currentUser.getIdToken(true).addOnCompleteListener(task ->
+        //Check is now added if the user is null or not.
+        if(currentUser != null)
         {
-            if(!task.isSuccessful())
+            currentUser.getIdToken(true).addOnCompleteListener(task ->
             {
-                mAuth.signOut();
-                Intent myIntent = new Intent(MainActivity.this, Login.class);
-                MainActivity.this.startActivity(myIntent);
-            }
-        });
+                if (!task.isSuccessful()) {
+                    mAuth.signOut();
+                    Intent myIntent = new Intent(MainActivity.this, Login.class);
+                    MainActivity.this.startActivity(myIntent);
+                }
+            });
+        }
     }
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nav_activity_main);
         // Variables
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
         toolbar = findViewById(R.id.toolbar);
+        PBJ = findViewById(R.id.PBJ);
 
         //==================================================================================
         // For hamburger control
@@ -59,7 +67,6 @@ public class MainActivity extends AppCompatActivity
         toggle.syncState();
         sidbarNav();
         //=================================================================================
-
 
     }
     @Override
