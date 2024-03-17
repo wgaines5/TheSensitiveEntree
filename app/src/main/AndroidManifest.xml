@@ -56,7 +56,14 @@
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
 
-
+        <activity
+            android:name=".Profile"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".EditProfile"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"

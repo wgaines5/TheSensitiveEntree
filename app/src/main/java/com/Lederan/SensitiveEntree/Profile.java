@@ -3,6 +3,7 @@ package com.Lederan.SensitiveEntree;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -75,6 +76,11 @@ public class Profile extends AppCompatActivity {
                 return true;
             }
         });
+    }
+
+    public void onClickEdit(View view){
+        Intent myIntent = new Intent(Profile.this, EditProfile.class);
+        Profile.this.startActivity(myIntent);
     }
 
 }
