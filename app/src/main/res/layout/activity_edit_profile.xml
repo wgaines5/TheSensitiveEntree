@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/almost_white">
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/editProfile_toolbar"
+            android:layout_width="411dp"
+            android:layout_height="51dp"
+            android:background="@color/light_green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+
+    <Button
+            android:id="@+id/ePBack_button"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/backbutton_icon_foreground"
+            android:contentDescription="@string/back_button"
+            android:onClick="onClickBack"
+            app:layout_constraintEnd_toEndOf="@+id/editProfile_toolbar"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/ePNav_button"
+            android:layout_width="70dp"
+            android:layout_height="49dp"
+            android:background="@drawable/hamburgericon"
+            android:contentDescription="@string/hamburger_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="142dp"
+        android:layout_marginEnd="130dp"
+        android:contentDescription="@string/profile_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textIsSelectable="true"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton3"
+        app:layout_constraintStart_toStartOf="@+id/imageButton3"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="@string/email"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/editTextText"
+        app:layout_constraintStart_toStartOf="@+id/editTextText"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:linksClickable="true"
+        android:onClick="onPasswordClick"
+        android:text="@string/password"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="134dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="53dp"
+        android:backgroundTint="@color/dark_green"
+        android:onClick="onClickSave"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        android:textColor="@color/almost_white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPasswordConfirm"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPasswordConfirm"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPasswordConfirm" />
+
+    <EditText
+        android:id="@+id/editTextTextPasswordConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hints_grey"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+</androidx.constraintlayout.widget.ConstraintLayout>
