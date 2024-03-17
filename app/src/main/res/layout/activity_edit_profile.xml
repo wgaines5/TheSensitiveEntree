@@ -28,6 +28,15 @@
             app:layout_constraintTop_toTopOf="parent" />
 
 
+        <Button
+            android:id="@+id/ePNav_button"
+            android:layout_width="70dp"
+            android:layout_height="49dp"
+            android:background="@drawable/hamburgericon"
+            android:contentDescription="@string/hamburger_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
 
     <ImageButton
         android:id="@+id/imageButton3"
