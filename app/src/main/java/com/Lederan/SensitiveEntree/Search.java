@@ -17,6 +17,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Search extends AppCompatActivity {
 
+
+    // Widget variables
     SearchView search_view;
     ListView list_view;
     @Override
@@ -27,7 +29,7 @@ public class Search extends AppCompatActivity {
         search_view = findViewById(R.id.search_view);
         list_view = findViewById(R.id.list_view);
 
-        // sample data
+        // sample data for the search to work
         String[] items = {
                 "Spaghetti", "Chicken Parmesan", "Tacos", "Caesar Salad", "Grilled Cheese", "Macaroni and Cheese", "Fettuccine Alfredo", "Fried Rice", "Cookies",
                 "Steak", "Garlic Bread", "Peach Cobbler", "Stir Fry", "Pulled Pork", "Burritos", "Omelet", "Parfait",

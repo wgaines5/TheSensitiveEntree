@@ -322,16 +322,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/ingredSub_backButton"
-            android:layout_width="51dp"
-            android:layout_height="49dp"
-            android:background="@drawable/backbutton_icon_foreground"
-            android:contentDescription="@string/ingredSubs"
-            android:onClick="onClickBack"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <TextView
             android:id="@+id/textView6"
             android:layout_width="133dp"

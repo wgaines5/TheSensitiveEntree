@@ -338,8 +338,8 @@
         android:contentDescription="@string/back_button"
         android:onClick="onClickBack"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/addRecipe_toolbar"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="2dp" />
 
     <ImageView
         android:id="@+id/imageView3"

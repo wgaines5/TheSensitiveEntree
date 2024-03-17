@@ -102,7 +102,7 @@ public class IngredientSubs extends AppCompatActivity implements AdapterView.OnI
             }
         });
 
-        //Dropdown #1
+        // Ingredient Subs Dropdown #1
         sub1_spinner = (Spinner)findViewById(R.id.sub1_spinner);
         ArrayAdapter<String>adapter = new ArrayAdapter<String>(com.Lederan.SensitiveEntree.IngredientSubs.this,
                 R.layout.spinner_layout,subs1);
@@ -111,7 +111,7 @@ public class IngredientSubs extends AppCompatActivity implements AdapterView.OnI
         sub1_spinner.setAdapter(adapter);
         sub1_spinner.setOnItemSelectedListener(this);
 
-        //Dropdown #2
+        // Ingredient Subs Dropdown #2
         sub2_spinner = (Spinner)findViewById(R.id.sub2_spinner);
         ArrayAdapter<String>adapter2 = new ArrayAdapter<String>(com.Lederan.SensitiveEntree.IngredientSubs.this,
                 R.layout.spinner_layout,subs2);
@@ -120,7 +120,7 @@ public class IngredientSubs extends AppCompatActivity implements AdapterView.OnI
         sub2_spinner.setAdapter(adapter);
         sub2_spinner.setOnItemSelectedListener(this);
 
-        //Dropdown #3
+        // Ingredient Subs Dropdown #3
         sub3_spinner = (Spinner)findViewById(R.id.sub3_spinner);
         ArrayAdapter<String>adapter3 = new ArrayAdapter<String>(com.Lederan.SensitiveEntree.IngredientSubs.this,
                 R.layout.spinner_layout,subs3);
@@ -129,7 +129,7 @@ public class IngredientSubs extends AppCompatActivity implements AdapterView.OnI
         sub3_spinner.setAdapter(adapter);
         sub3_spinner.setOnItemSelectedListener(this);
 
-        //Dropdown #4
+        // Ingredient Subs Dropdown #4
         sub4_spinner = (Spinner)findViewById(R.id.sub4_spinner);
         ArrayAdapter<String>adapter4 = new ArrayAdapter<String>(com.Lederan.SensitiveEntree.IngredientSubs.this,
                 R.layout.spinner_layout,subs4);
@@ -138,7 +138,7 @@ public class IngredientSubs extends AppCompatActivity implements AdapterView.OnI
         sub4_spinner.setAdapter(adapter);
         sub4_spinner.setOnItemSelectedListener(this);
 
-        //Dropdown #5
+        // Ingredient Subs Dropdown #5
         sub5_spinner = (Spinner)findViewById(R.id.sub5_spinner);
         ArrayAdapter<String>adapter5 = new ArrayAdapter<String>(com.Lederan.SensitiveEntree.IngredientSubs.this,
                 R.layout.spinner_layout,subs5);
@@ -147,7 +147,7 @@ public class IngredientSubs extends AppCompatActivity implements AdapterView.OnI
         sub5_spinner.setAdapter(adapter);
         sub5_spinner.setOnItemSelectedListener(this);
 
-        //Dropdown #6
+        // Ingredient Subs Dropdown #6
         sub6_spinner = (Spinner)findViewById(R.id.sub6_spinner);
         ArrayAdapter<String>adapter6 = new ArrayAdapter<String>(com.Lederan.SensitiveEntree.IngredientSubs.this,
                 R.layout.spinner_layout,subs6);
@@ -156,7 +156,7 @@ public class IngredientSubs extends AppCompatActivity implements AdapterView.OnI
         sub6_spinner.setAdapter(adapter);
         sub6_spinner.setOnItemSelectedListener(this);
 
-        //Dropdown #7
+        // Ingredient Subs Dropdown #7
         sub7_spinner = (Spinner)findViewById(R.id.sub7_spinner);
         ArrayAdapter<String>adapter7 = new ArrayAdapter<String>(com.Lederan.SensitiveEntree.IngredientSubs.this,
                 R.layout.spinner_layout,subs7);
@@ -165,7 +165,7 @@ public class IngredientSubs extends AppCompatActivity implements AdapterView.OnI
         sub7_spinner.setAdapter(adapter);
         sub7_spinner.setOnItemSelectedListener(this);
 
-        //Dropdown #8
+        // Ingredient Subs Dropdown #8
         sub8_spinner = (Spinner)findViewById(R.id.sub8_spinner);
         ArrayAdapter<String>adapter8 = new ArrayAdapter<String>(com.Lederan.SensitiveEntree.IngredientSubs.this,
                 R.layout.spinner_layout,subs8);
@@ -174,7 +174,7 @@ public class IngredientSubs extends AppCompatActivity implements AdapterView.OnI
         sub8_spinner.setAdapter(adapter);
         sub8_spinner.setOnItemSelectedListener(this);
 
-        //Dropdown #9
+        // Ingredient Subs Dropdown #9
         sub9_spinner = (Spinner)findViewById(R.id.sub9_spinner);
         ArrayAdapter<String>adapter9 = new ArrayAdapter<String>(com.Lederan.SensitiveEntree.IngredientSubs.this,
                 R.layout.spinner_layout,subs9);
@@ -184,12 +184,15 @@ public class IngredientSubs extends AppCompatActivity implements AdapterView.OnI
         sub9_spinner.setOnItemSelectedListener(this);
 
     }
+
+    // Back button function
     public void onClickBack(View view){
         Intent myintent = new Intent(com.Lederan.SensitiveEntree.IngredientSubs.this, RecipeDetails.class);
         com.Lederan.SensitiveEntree.IngredientSubs.this.startActivity(myintent);
     }
 
 
+    //These have to be here for the spinners even with nothing in them.
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
