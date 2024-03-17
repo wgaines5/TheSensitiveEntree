@@ -16,6 +16,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -36,7 +37,8 @@ public class Registration extends AppCompatActivity {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = mAuth.getCurrentUser();
-        if (currentUser != null) {
+        if (currentUser != null)
+        {
             Intent intent = new Intent(getApplicationContext(), MainActivity.class);
             startActivity(intent);
             finish();
@@ -44,7 +46,8 @@ public class Registration extends AppCompatActivity {
     }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
         editTextEmail = findViewById(R.id.getEmail);
@@ -72,21 +75,36 @@ public class Registration extends AppCompatActivity {
         String lName = getLName.getText().toString();
 
         if (TextUtils.isEmpty(email)) {
-            Toast.makeText(Registration.this, "Enter mail", Toast.LENGTH_SHORT).show();
+            Toast.makeText(Registration.this, "Enter email", Toast.LENGTH_SHORT).show();
+            return;
         }
         if (TextUtils.isEmpty(password)) {
             Toast.makeText(Registration.this, "Enter password", Toast.LENGTH_SHORT).show();
+            return;
         }
-        if (editTextPassword != editTextConfirmation) {
+        if (!editTextPassword.getText().toString().equals(editTextConfirmation.getText().toString()))
+        {
             Toast.makeText(Registration.this, "Password mismatch",
                     Toast.LENGTH_SHORT).show();
+            return;
         }
-
         mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-
-                if (task.isSuccessful())
+            public void onComplete(@NonNull Task<AuthResult> task)
+            {
+                Exception exception = task.getException();
+                if (!task.isSuccessful())
+                {
+                    if (exception instanceof FirebaseAuthUserCollisionException)
+                    {
+                        Toast.makeText(Registration.this, "User with this email already exists", Toast.LENGTH_SHORT).show();
+                    }
+                    else
+                    {
+                        Toast.makeText(Registration.this, "Registration failed: " + exception.getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+                }
+                else if (task.isSuccessful())
                 {
                     // Sign in success, update UI with the signed-in user's information
                     Toast.makeText(Registration.this, "Account created! ",
