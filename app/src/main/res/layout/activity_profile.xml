@@ -18,14 +18,15 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"/>
 
-        <Button
-            android:id="@+id/profileNavButton"
-            android:layout_width="70dp"
-            android:layout_height="49dp"
-            android:background="@drawable/hamburgericon"
-            android:contentDescription="@string/hamburger_icon"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/profileNavButton"
+        android:layout_width="70dp"
+        android:layout_height="49dp"
+        android:background="@drawable/hamburgericon"
+        android:contentDescription="@string/hamburger_icon"
+        android:onClick="navMenu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
         android:layout_width="409dp"
