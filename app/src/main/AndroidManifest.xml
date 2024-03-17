@@ -38,23 +38,23 @@
         <activity
             android:name=".IngredientSubs"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>/>
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".AddRecipe"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>/>
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".CalorieCounter"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>/>
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".RecipeDetails"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>/>
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".RecipeListings"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>/>
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
 
 
         <activity
