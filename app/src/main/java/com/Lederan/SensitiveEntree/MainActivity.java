@@ -1,8 +1,11 @@
 package com.Lederan.SensitiveEntree;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -11,10 +14,17 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import com.Lederan.SensitiveEntree.databinding.ActivityMainBinding;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.firestore.Blob;
+
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 import org.checkerframework.checker.nullness.qual.NonNull;
 
@@ -25,6 +35,9 @@ public class MainActivity extends AppCompatActivity
     Toolbar toolbar;
     FirebaseAuth mAuth;
     ImageView PBJ;
+    ActivityMainBinding binding;
+    StorageReference storageReference;
+    ProgressDialog progressDialog;
 
     // Validates the user
     @Override
@@ -57,6 +70,9 @@ public class MainActivity extends AppCompatActivity
         navigationView = findViewById(R.id.nav_view);
         toolbar = findViewById(R.id.toolbar);
         PBJ = findViewById(R.id.PBJ);
+        // Get a reference to the Firebase Storage location
+        FirebaseStorage storage = FirebaseStorage.getInstance();
+        StorageReference storageRef = storage.getReference().child("Food").child("1200px-Peanut-Butter-Jelly-Sandwich.jpg");
 
         //==================================================================================
         // For hamburger control
@@ -68,7 +84,31 @@ public class MainActivity extends AppCompatActivity
         sidbarNav();
         //=================================================================================
 
-    }
+
+        //=================================================================================
+        //Attached an image to the id PBJ and links the image to the recipe page.
+        storageRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+            @Override
+            public void onSuccess(Uri uri) {
+                // Load the image into ImageView using Glide
+                Glide.with(MainActivity.this)
+                        .load(uri)
+                        .apply(RequestOptions.circleCropTransform()) // Apply transformations if needed
+                        .into(PBJ);
+            }
+        });
+
+        ImageView imageView = findViewById(R.id.PBJ);
+        imageView.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(MainActivity.this, RecipeDetails.class);
+                startActivity(intent);
+            }
+        });
+    } //=================================================================================
     @Override
     public void onBackPressed()
     {
