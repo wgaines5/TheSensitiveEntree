@@ -7,6 +7,120 @@
         <item>Substitute 4</item>
         <item>Substitute 5</item>
     </string-array>
+    <string name="allergen_ingredlisttitle">Allergen Ingredient List</string>
+    <string name="resources">Resources</string>
+    <string name="cooking_tips">Cooking Tips</string>
+    <string name="cookingtips_list"></string>
+    <string name="allergen_ingredlist">
+Milk:
+Lactose,
+Whey,
+Butter,
+Buttermilk,
+Cream,
+Sour cream,
+Cheese,
+Casein
+\n
+\nEggs:
+Egg whites
+\n
+\nFish:
+\n
+\nCrustacean shellfish:
+Barnacle,
+Crab,
+Crawfish,
+Krill,
+Lobster,
+Prawns,
+Shrimp,
+Abalone,
+Clams,
+Cockle,
+Cuttlefish,
+Limpet,
+Mussels,
+Octopus,
+Oysters,
+Periwinkle,
+Sea cucumber,
+Sea urchin,
+Scallops,
+Snails,
+Squid,
+Whelk,
+Glucosamine,
+Boillabaisse,
+Fish stock,
+Seafood flavoring,
+Fish sauce,
+Imitation crab
+\n
+\nTree nuts:
+almond,
+brazil nut,
+cashew,
+hazelnut,
+macadamia,
+pecan,
+pistachio,
+walnut
+\n
+\nPeanuts:
+Peanut oil,
+Peanut butter,
+Arachis oil,
+Beer nuts,
+Ground nuts,
+Mandelonas,
+Monkey nuts,
+Nut meat,
+Nut meal
+\n
+\nWheat:
+Wheat starch,
+Wheat fiber,
+Gluten,
+Bulgar,
+Couscous,
+wheatberries,
+durum,
+emmer,
+semolina,
+spelt,
+farina,
+farro,
+graham
+\n
+\nGluten:
+Wheat(see list above),
+Barley,
+Rye,
+*sometimes oats,
+MSG (monosodium glutamate),
+Maltodextrin,
+Malt,
+Brewers Yeast,
+Most beer,
+Soy sauce,
+https://celiac.org/gluten-free-living/what-is-gluten/sources-of-gluten/
+\n
+\nSoybeans:
+Some vegetable oils,
+Soybean oil,
+Tofu,
+Tempeh,
+Miso,
+Soy sauce,
+Natto,
+Edamame,
+Soy flour,
+Many meat alternatives,
+TVP (texturized vegetable protein),
+Tamari,
+Shoyu,
+Teriyaki </string>
     <string name="milk">Milk</string>
     <string name="eggs">Eggs</string>
     <string name="fish">Fish</string>

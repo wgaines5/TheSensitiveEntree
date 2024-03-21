@@ -35,6 +35,9 @@
             android:name=".Search"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".Resources"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".IngredientSubs"
             android:exported="true"
