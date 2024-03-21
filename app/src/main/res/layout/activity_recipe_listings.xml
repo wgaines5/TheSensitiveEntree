@@ -13,17 +13,19 @@
 
         <ImageButton
             android:id="@+id/recipeImage1_imageButton"
+            style="@android:style/Widget.ImageButton"
             android:layout_width="153dp"
             android:layout_height="106dp"
             android:layout_marginTop="36dp"
             android:background="@drawable/textview1"
             android:contentDescription="@string/recipe_image"
             android:onClick="onClickRecipeDetails"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pancakespic"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.112"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView"
-            tools:srcCompat="@tools:sample/avatars" />
+            app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView" />
 
         <TextView
             android:id="@+id/recipeName1_textView"
@@ -105,11 +107,12 @@
             android:background="@drawable/textview1"
             android:contentDescription="@string/recipe_image"
             android:onClick="onClickRecipeDetails"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pancakespic"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.868"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView"
-            tools:srcCompat="@tools:sample/avatars" />
+            app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView" />
 
         <ImageButton
             android:id="@+id/recipeImage3_imageButton"
@@ -119,11 +122,12 @@
             android:background="@drawable/textview1"
             android:contentDescription="@string/recipe_image"
             android:onClick="onClickRecipeDetails"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pancakespic"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.124"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView"
-            tools:srcCompat="@tools:sample/avatars" />
+            app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView"/>
 
         <ImageButton
             android:id="@+id/recipeImage4_imageButton"
@@ -133,11 +137,12 @@
             android:background="@drawable/textview1"
             android:contentDescription="@string/recipe_image"
             android:onClick="onClickRecipeDetails"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pancakespic"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.124"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView"
-            tools:srcCompat="@tools:sample/avatars" />
+            app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView" />
 
         <ImageButton
             android:id="@+id/recipeImage7_imageButton"
@@ -147,11 +152,12 @@
             android:background="@drawable/textview1"
             android:contentDescription="@string/recipe_image"
             android:onClick="onClickRecipeDetails"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pancakespic"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.872"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView"
-            tools:srcCompat="@tools:sample/avatars" />
+            app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView" />
 
         <ImageButton
             android:id="@+id/recipeImage8_imageButton"
@@ -161,11 +167,12 @@
             android:background="@drawable/textview1"
             android:contentDescription="@string/recipe_image"
             android:onClick="onClickRecipeDetails"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pancakespic"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.124"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView"
-            tools:srcCompat="@tools:sample/avatars" />
+            app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView" />
 
         <ImageButton
             android:id="@+id/recipeImage9_imageButton"
@@ -175,11 +182,12 @@
             android:background="@drawable/textview1"
             android:contentDescription="@string/recipe_image"
             android:onClick="onClickRecipeDetails"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pancakespic"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.124"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView"
-            tools:srcCompat="@tools:sample/avatars" />
+            app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView" />
 
         <ImageButton
             android:id="@+id/recipeImage10_imageButton"
@@ -189,11 +197,12 @@
             android:background="@drawable/textview1"
             android:contentDescription="@string/recipe_image"
             android:onClick="onClickRecipeDetails"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pancakespic"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.872"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView"
-            tools:srcCompat="@tools:sample/avatars" />
+            app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView" />
 
         <ImageButton
             android:id="@+id/recipeImage5_imageButton"
@@ -203,11 +212,12 @@
             android:background="@drawable/textview1"
             android:contentDescription="@string/recipe_image"
             android:onClick="onClickRecipeDetails"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pancakespic"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.868"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView"
-            tools:srcCompat="@tools:sample/avatars" />
+            app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView" />
 
         <ImageButton
             android:id="@+id/recipeImage6_imageButton"
@@ -217,11 +227,12 @@
             android:background="@drawable/textview1"
             android:contentDescription="@string/recipe_image"
             android:onClick="onClickRecipeDetails"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pancakespic"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.868"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView"
-            tools:srcCompat="@tools:sample/avatars" />
+            app:layout_constraintTop_toBottomOf="@+id/Recipes_TextView" />
 
         <TextView
             android:id="@+id/allergen1_textView"

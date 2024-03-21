@@ -65,7 +65,8 @@
             android:paddingRight="10dp"
             android:text="@string/allergen_ingredlisttitle"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="24sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/resources_textView" />
@@ -73,17 +74,16 @@
         <TextView
             android:id="@+id/textView26"
             android:layout_width="359dp"
-            android:layout_height="684dp"
+            android:layout_height="1150dp"
             android:layout_marginTop="72dp"
             android:background="@drawable/textview4"
-
             android:fontFamily="serif"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:text="@string/allergen_ingredlist"
             android:textAlignment="textStart"
             android:textColor="@color/black"
-            android:textSize="16sp"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/resources_textView" />

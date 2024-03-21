@@ -10,7 +10,16 @@
     <string name="allergen_ingredlisttitle">Allergen Ingredient List</string>
     <string name="resources">Resources</string>
     <string name="cooking_tips">Cooking Tips</string>
-    <string name="cookingtips_list"></string>
+    <string name="cookingtips_list">1. Read the whole recipe through.
+\n2. Wash dishes and clean as you cook.
+\n3. While cooking salt your water.
+\n4. Make sure to let meat rest after it has been cooked.
+\n5. Sharpen your knives regularly
+\n6. Keep raw and cooked ingredients seperate.
+\n7. Be careful of overcrwoding pans.
+\n8. Add fresh herbs to your dish towards the end of cooking.
+\n9. Remove food form heat immediately after cooking.
+\n10. Excess fats can be removed from liquid based meals with an icecube.</string>
     <string name="allergen_ingredlist">
 Milk:
 Lactose,
