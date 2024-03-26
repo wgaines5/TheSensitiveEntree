@@ -1,5 +1,5 @@
 <resources>
-<string name = "autoText">AutoText</string>
+    <string name="autoText">AutoText</string>
     <string-array name="Substitutes">
         <item>Substitute 1</item>
         <item>Substitute 2</item>
@@ -57,4 +57,9 @@
     <string name="about_title">About the team behind \nThe Sensitive Entrée</string>
     <string name="save">Save</string>
     <string name="profile_image">Profile Image</string>
+   <string name="dairy">Dairy</string>
+    <string name="peanut">Peanut</string>
+    <string name="Wheat">Wheat</string>
+
+
 </resources>
