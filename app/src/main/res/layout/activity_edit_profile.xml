@@ -29,13 +29,14 @@
 
     <ImageButton
         android:id="@+id/imageButton3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="137dp"
+        android:layout_height="122dp"
         android:layout_marginStart="129dp"
-        android:layout_marginTop="142dp"
+        android:layout_marginTop="88dp"
         android:layout_marginEnd="130dp"
         android:contentDescription="@string/profile_image"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
@@ -89,7 +90,7 @@
         android:id="@+id/button4"
         android:layout_width="134dp"
         android:layout_height="48dp"
-        android:layout_marginTop="53dp"
+        android:layout_marginTop="176dp"
         android:backgroundTint="@color/dark_green"
         android:onClick="onClickSave"
         android:text="@string/save"
@@ -97,6 +98,7 @@
         android:textColor="@color/almost_white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextPasswordConfirm"
+        app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPasswordConfirm"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPasswordConfirm" />
 
