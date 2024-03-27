@@ -60,6 +60,7 @@
    <string name="dairy">Dairy</string>
     <string name="peanut">Peanut</string>
     <string name="Wheat">Wheat</string>
+    <string name="choose_dietary_preferences">Choose Dietary Preferences</string>
 
 
 </resources>

@@ -4,17 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/almost_white">
+    android:background="@color/almost_white"
+    android:scrollbarThumbVertical="@color/off_offWhite">
+
     <androidx.appcompat.widget.Toolbar
-            android:id="@+id/editProfile_toolbar"
-            android:layout_width="411dp"
-            android:layout_height="51dp"
-            android:background="@color/light_green"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"/>
+        android:id="@+id/editProfile_toolbar"
+        android:layout_width="411dp"
+        android:layout_height="51dp"
+        android:background="@color/light_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
 
     <Button
@@ -24,8 +26,8 @@
         android:background="@drawable/backbutton_icon_foreground"
         android:contentDescription="@string/back_button"
         android:onClick="onClickBack"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="1dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -105,7 +107,7 @@
     <EditText
         android:id="@+id/editTextTextPasswordConfirm"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:backgroundTint="@color/black"
         android:ems="10"
@@ -113,8 +115,88 @@
         android:inputType="textPassword"
         android:textColor="@color/black"
         android:textColorHint="@color/hints_grey"
-        android:visibility="invisible"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <ScrollView
+        android:layout_width="285dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="19dp"
+        android:background="@color/off_white"
+        android:scrollIndicators="right"
+        android:scrollbarThumbVertical="@color/light_green"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPasswordConfirm"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPasswordConfirm"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPasswordConfirm">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="241dp">
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="259dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="55dp"
+                    android:text="@string/choose_dietary_preferences"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxDairy"
+                    android:layout_width="147dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="15dp"
+                    android:buttonTint="@color/black"
+                    android:text="@string/dairy"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="@+id/textView25"
+                    app:layout_constraintStart_toStartOf="@+id/textView25"
+                    app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxWheat"
+                    android:layout_width="147dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="15dp"
+                    android:buttonTint="@color/black"
+                    android:text="@string/Wheat"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="@+id/checkBoxDairy"
+                    app:layout_constraintStart_toStartOf="@+id/checkBoxDairy"
+                    app:layout_constraintTop_toBottomOf="@+id/checkBoxDairy" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxPeanut"
+                    android:layout_width="147dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="15dp"
+                    android:buttonTint="@color/black"
+                    android:text="@string/peanut"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="@+id/checkBoxWheat"
+                    app:layout_constraintStart_toStartOf="@+id/checkBoxWheat"
+                    app:layout_constraintTop_toBottomOf="@+id/checkBoxWheat" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
