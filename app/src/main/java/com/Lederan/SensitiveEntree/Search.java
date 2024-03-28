@@ -48,7 +48,7 @@ public class Search extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-
+// NavigationView controls the menu drawer to access each page selected
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {

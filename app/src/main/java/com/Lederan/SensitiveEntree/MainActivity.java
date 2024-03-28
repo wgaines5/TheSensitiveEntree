@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity  {
         toggle.syncState();
         navDash();
     }
+    // This code prevents the back action from closing the app while the menu is open
     @Override
     public void onBackPressed(){
         if(drawerLayout.isDrawerOpen(GravityCompat.START)){
@@ -66,6 +67,7 @@ public class MainActivity extends AppCompatActivity  {
             super.onBackPressed();
         }
     }
+    // NavigationView controls the menu drawer to access each page selected
     public void navDash(){
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override

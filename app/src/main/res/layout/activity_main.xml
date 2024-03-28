@@ -199,7 +199,7 @@
 
             <TextView
                 android:id="@+id/recipetx2"
-                android:layout_width="246dp"
+                android:layout_width="218dp"
                 android:layout_height="72dp"
                 android:layout_marginLeft="130dp"
                 android:layout_marginTop="8dp"
