@@ -23,7 +23,7 @@ public class CookingTips extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.nav_activity_cookingtips);
+        setContentView(R.layout.nav_activity_cookingtips); // The menu drawer overlay of the page original layout
 
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);

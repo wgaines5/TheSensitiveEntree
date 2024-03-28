@@ -25,7 +25,7 @@ public class AddRecipe extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.nav_activity_addrecipe);
+        setContentView(R.layout.nav_activity_addrecipe); // The menu drawer overlay of the page original layout
 
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);

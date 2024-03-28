@@ -37,7 +37,7 @@ public class Search extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.nav_activity_search);
+        setContentView(R.layout.nav_activity_search); // The menu drawer overlay of the page original layout
 
         search_view = findViewById(R.id.search_view);
         list_view = findViewById(R.id.list_view);
