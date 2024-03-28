@@ -101,6 +101,48 @@ public class RecipeListings extends AppCompatActivity{
         RecipeListings.this.startActivity(myintent);
     }
 
+    //Every click function for each hardcoded recipe page
+    public void onClickLambScewers(View view){
+        Intent myintent = new Intent(RecipeListings.this, LambScewers.class);
+        RecipeListings.this.startActivity(myintent);
+    }
+    public void onClickRoastedHalibut(View view){
+        Intent myintent = new Intent(RecipeListings.this, RoastedHalibut.class);
+        RecipeListings.this.startActivity(myintent);
+    }
+    public void onClickChickenPie(View view){
+        Intent myintent = new Intent(RecipeListings.this, ChickenPie.class);
+        RecipeListings.this.startActivity(myintent);
+    }
+    public void onClickCauliflowerSoup(View view){
+        Intent myintent = new Intent(RecipeListings.this, CauliflowerSoup.class);
+        RecipeListings.this.startActivity(myintent);
+    }
+    public void onClickBakedSpaghetti(View view){
+        Intent myintent = new Intent(RecipeListings.this, BakedSpaghetti.class);
+        RecipeListings.this.startActivity(myintent);
+    }
+    public void onClickPeanutChocolate(View view){
+        Intent myintent = new Intent(RecipeListings.this, PeanutChocolate.class);
+        RecipeListings.this.startActivity(myintent);
+    }
+    public void onClickShrimpScampi(View view){
+        Intent myintent = new Intent(RecipeListings.this, ShrimpScampi.class);
+        RecipeListings.this.startActivity(myintent);
+    }
+    public void onClickVegtableLinguini(View view){
+        Intent myintent = new Intent(RecipeListings.this, VegtableLinguine.class);
+        RecipeListings.this.startActivity(myintent);
+    }
+    public void onClickChickenTacos(View view){
+        Intent myintent = new Intent(RecipeListings.this, ChickenTacos.class);
+        RecipeListings.this.startActivity(myintent);
+    }
+    public void onClickBeanBourguignon(View view){
+        Intent myintent = new Intent(RecipeListings.this, RecipeDetails.class);
+        RecipeListings.this.startActivity(myintent);
+    }
+
 
     //Add recipe button function
     public void onClickAddRecipe(View view){

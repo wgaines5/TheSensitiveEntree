@@ -37,7 +37,7 @@ public class IngredientSubs extends AppCompatActivity implements AdapterView.OnI
     String[] subsOne = {"Substitution 1", "Substitution 2", "Substitution 3", "Substitution 4"};
     AutoCompleteTextView autocompletetextview;
     ArrayAdapter<String> subItems;
-    private static final String[] subs1 = {"See Substitutions","Sub 1", "Sub 2", "Sub 3"};
+    private static final String[] subs1 = {"See Substitutions","Almond Milk", "Oat Milk", "Soy Milk", "Cashew Milk"};
     private static final String[] subs2 = {"See ","Sub 1", "Sub 2", "Sub 3"};
     private static final String[] subs3 = {"See All","Sub 1", "Sub 2", "Sub 3"};
     private static final String[] subs4 = {"See All","Sub 1", "Sub 2", "Sub 3"};

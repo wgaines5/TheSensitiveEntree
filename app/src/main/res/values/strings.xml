@@ -1,14 +1,322 @@
 <resources>
 <string name = "autoText">AutoText</string>
-    <string-array name="Substitutes">
-        <item>Substitute 1</item>
-        <item>Substitute 2</item>
-        <item>Substitute 3</item>
-        <item>Substitute 4</item>
-        <item>Substitute 5</item>
-    </string-array>
-    <string name="allergen_ingredlisttitle">Allergen Ingredient List</string>
-    <string name="resources">Resources</string>
+
+    //strings for all the recipes and ingredients for the hardcoded individual recipe pages
+
+    //Lamb Scewers
+    <string name="lambscewers_name">Lamb Scewers</string>
+    <string name="lambscewers_ingreds">Ingredients: \n1. 2 lbs of lamb leg meat at least 15% fat\n2. 2 cups of onion slices\n3. 4-5 cloves of crushed garlic\n4. 1.5 tbsp of cumin seeds\n5. 2 tsp of Sichuan peppercorn\n6. 1 tsp of white pepper\n7. 1 tsp of white pepper\n8. 2.5 tbsp mild chili flake optional\n9. 1 tsp of spicy chili flake optional\n10.2 to 3 tsp of salt or taste
+    \n
+    \nDirections:\n1. Lamb shoulder and leg are the best cut for making bbq skewers because you can get some large chunks of meat out of them. Cut the lamb into 1-inch size pieces. Don’t cut it too small or else it will dry out quickly while grilling.
+\n\n2. Marinade the lamb meat with 2 cups of onion slices and 4 cloves of crushed garlic. Cover it and let it sit for 40 minutes. This is to help gentle some off that strong lamb smell. Also, the enzyme in the onion can tenderize the meat. I have seen people use onion puree instead of the slices. That way the meat will be a bit too wet. When you put wet meat onto a hot grill, it will stick on the grill.
+\n\n3. While waiting, you can make the spice powder. Toast 1.5 tbsp of cumin seeds, 2 tsp of Sichuan peppercorn, a tsp of fennel seeds, a tsp of white peppercorn in a cast-iron skillet for 3-5 minutes. Then blend into a fine powder. I always prefer a freshly ground spice mix. It makes a huge difference in taste.
+\n\n4. To spice up my BBQ, I also like to use some red chili flake. To get the spicy level that I like, I will mix some mild chili flake with some face heaven chili powder.
+\n\n5. Besides that, you will need some salt which we will sprinkle it on while you are grilling.
+\n\n6. Put the lamb onto the skewers. Set your grill at high temperature. The thermometer attachment on my grill shows it reaches 500 F. If the temperature is too low, it will take much longer to chared the meat and there is a higher chance that the lamb will be dried out.
+\n\n7. Sprinkle some salt. Be generous because some of the salt might fall off while cooking and turning. I will say for 2 pounds of meat, you will need about 2-3 tsp of salt.
+\n\n8. It will take a few minutes on each side for it to charred. Once both sides have that nice color, the meat is about medium-rare. The way I like is medium-well so I lower the distance of the charcoal. Let the meat cook for a few minutes more. Keep turning until it reaches the desired color or the doneness that you like.
+\n\n9. Once you think it is almost done, you can sprinkle the spice mix and chili flake onto the meat. Take the meat off the grill and enjoy!</string>
+    <string name="lambscewers_servings">Servings: 4</string>
+    <string name="lambscewers_servingsize">Serving Size: 1 scewer</string>
+    <string name="lambscewers_calories">Calories: 300</string>
+    <string name="lambscewers_time">Time: 75 minutes</string>
+
+    //Roasted Halibut
+    <string name="halibut_name">Roasted Halibut</string>
+    <string name="halibut_ingreds">Ingredients:\n1. 2(8-ounce) halibut fillets, preferably at least 1-inch thick
+\n2. 1½teaspoons extra virgin olive oil, more to taste
+\n3. Kosher salt
+\n4. Ground chile pepper, preferably Turkish or Aleppo
+\n5. 2 rosemary branches
+\n6. 1 small lemon, very thinly sliced
+\n7. ¼cup sliced, pitted calamata or other good-quality black olives
+    \n
+    \nDirections:
+        \n1. Heat oven to 450 degrees.
+        \n\n2. Place fish in a baking dish, brush fillets with 1 teaspoon of oil and season with salt and chile pepper.
+        \n\n3. Top each fillet with a rosemary branch and several slices of lemon. Drizzle remaining oil over lemon slices and sprinkle with additional salt. Scatter olives over fish and pan.
+        \n\n4. Bake until just opaque, about 10 minutes. If lemon slices have not browned or singed (this will depend on how thinly you slice them), place pan under broiler for 1 to 2 minutes.
+        \n\n5. Serve drizzled with more olive oil; sprinkle with more salt and chili, if desired.</string>
+    <string name="halibut_servings">Servings: 2</string>
+    <string name="halibut_servingsize">Serving Size: 1 fillet</string>
+    <string name="halibut_calories">Calories: 200</string>
+    <string name="halibut_time">Time: 10 minutes</string>
+
+    //Chicken Pot Pie
+    <string name="chickenpie_name">Chicken Pot Pie</string>
+    <string name="chickenpie_ingreds">Ingredients:\n1. 2 cups diced peeled potatoes
+\n2. 1-3/4 cups sliced carrots
+\n3. 1 cup butter, cubed
+\n4. 2/3 cup chopped onion
+\n5. 1 cup all-purpose flour
+\n6. 1-3/4 teaspoons salt
+\n7. 1 teaspoon dried thyme
+\n8. 3/4 teaspoon pepper
+\n9. 3 cups chicken broth
+\n10. 1-1/2 cups whole milk
+\n11. 4 cups cubed cooked chicken
+\n12. 1 cup frozen peas
+\n13. 1 cup frozen corn
+\n14. 4 sheets refrigerated pie crust
+    \n
+    \nDirections:
+    \n1. Preheat oven to 425°. Place potatoes and carrots in a large saucepan; add water to cover. Bring to a boil. Reduce heat; cook, covered, 8-10 minutes or until crisp-tender; drain.
+    \n\n2. In a large skillet, heat butter over medium-high heat. Add onion; cook and stir until tender. Stir in flour and seasonings until blended. Gradually stir in broth and milk. Bring to a boil, stirring constantly; cook and stir 2 minutes or until thickened.
+\n\n3. In a large bowl, combine chicken, peas, corn and potato-carrot mixture. Stir in broth mixture.
+\n\n4. Unroll a pie crust into each of two 9-in. pie plates; trim crusts even with rims of plates. Add chicken mixture. Unroll remaining crusts; place over filling. Trim, seal and flute edges. Cut slits in tops.
+\n\n5. Bake 35-40 minutes or until crust is lightly browned. Let stand 15 minutes before cutting.</string>
+    <string name="chickenpie_servings">Servings: 8</string>
+    <string name="chickenpie_servingsize">Serving Size: 1 slice</string>
+    <string name="chickenpie_calories">Calories: 475</string>
+    <string name="chickenpie_time">Time: 90 minutes</string>
+
+    //Cauliflower Soup
+    <string name="cauliflower_name">Cauliflower Soup</string>
+    <string name="cauliflower_ingreds">Ingredients:\n1. 1 medium head cauliflower, broken into florets
+\n2. 1 medium carrot, shredded
+\n3. 1/4 cup chopped celery
+\n4. 2-1/2 cups water
+\n5. 2 teaspoons chicken bouillon or 1 vegetable bouillon cube
+\n6. 3 tablespoons butter
+\n7. 3 tablespoons all-purpose flour
+\n8. 3/4 teaspoon salt
+\n9. 1/8 teaspoon pepper
+\n10. 2 cups 2% milk
+\n11. 1 cup shredded cheddar cheese
+\n12. 1/2 to 1 teaspoon hot pepper sauce, optional
+    \n
+    \nDirections:\n1. In a Dutch oven, combine the cauliflower, carrot, celery, water and bouillon. Bring to a boil. Reduce heat; cover and simmer for 12-15 minutes or until vegetables are tender (do not drain).
+        \n\n2. In a large saucepan, melt butter. Stir in the flour, salt and pepper until smooth. Gradually add milk. Bring to a boil over medium heat; cook and stir for 2 minutes or until thickened. Reduce heat. Stir in the cheese until melted, adding hot pepper sauce if desired. Stir into the cauliflower mixture.</string>
+    <string name="cauliflower_servings">Servings: 8</string>
+    <string name="cauliflower_servingsize">Serving Size: 1 cup</string>
+    <string name="cauliflower_calories">Calories: 160</string>
+    <string name="cauliflower_time">Time: 30 minutes</string>
+
+    //Baked Spaghetti
+    <string name="spaghetti_name">Baked Spaghetti</string>
+    <string name="spaghetti_ingreds">Ingredients:\n
+    1. 1 cup chopped onion
+\n2. 1 cup chopped green pepper
+\n3. 1 tablespoon butter
+\n4. 1 can (28 ounces) diced tomatoes, undrained
+\n5. 1 can (4 ounces) mushroom stems and pieces, drained
+\n6. 1 can (2-1/4 ounces) sliced ripe olives, drained
+\n7. 2 teaspoons dried oregano
+\n8. 1 pound ground beef, browned and drained, optional
+\n9. 12 ounces spaghetti, cooked and drained
+\n10. 2 cups shredded cheddar cheese
+\n11. 1 can (10-3/4 ounces) condensed cream of mushroom soup, undiluted
+\n12. 1/4 cup water
+\n13. 1/4 cup grated Parmesan cheese
+    \n
+    \nDirections:
+    \n1. In a large skillet, saute onion and green pepper in butter until tender. Add the tomatoes, mushrooms, olives, oregano and, if desired, ground beef. Simmer, uncovered, for 10 minutes.
+    \n\n2. Place half of the spaghetti in a greased 13x9-in. baking dish. Layer with half of the vegetable mixture and 1 cup cheddar cheese. Repeat layers.
+    \n\n3. In a small bowl, combine soup and water until smooth; pour over casserole. Sprinkle with Parmesan cheese. Bake, uncovered, at 350° until heated through, 30-35 minutes.</string>
+    <string name="spaghetti_servings">Servings: 12</string>
+    <string name="spaghetti_servingsize">Serving Size: 1 cup</string>
+    <string name="spaghetti_calories">Calories: 239</string>
+    <string name="spaghetti_time">Time: 60 minutes</string>
+
+    //Peanut Butter Chocolate Dessert
+    <string name="chocolate_name">Peanut Butter Chocolate Dessert</string>
+    <string name="chocolate_ingreds">Ingredients:
+    \n1. 20 chocolate cream-filled chocolate sandwich cookies, divided
+\n2. 2 tablespoons butter, softened
+\n3. 1 package (8 ounces) cream cheese, softened
+\n4. 1/2 cup peanut butter
+\n5. 1-1/2 cups confectioners sugar, divided
+\n6. 1 carton (16 ounces) frozen whipped topping, thawed, divided
+\n7. 15 miniature peanut butter cups, chopped
+\n8. 1 cup 2% milk
+\n9. 1 package (3.9 ounces) instant chocolate fudge pudding mix
+    \n
+    \nDirections:
+    \n1. Crush 16 cookies; toss with the butter. Press into an ungreased 9-in. square dish; set aside.
+\n\n2. In a large bowl, beat the cream cheese, peanut butter and 1 cup confectioners' sugar until smooth. Fold in half the whipped topping. Spread over crust. Sprinkle with peanut butter cups.
+\n\n3. In another large bowl, beat the milk, pudding mix and remaining confectioners' sugar on low speed for 2 minutes. Let stand for 2 minutes or until soft-set. Fold in remaining whipped topping.
+\n\n4. Spread over peanut butter cups. Crush remaining cookies; sprinkle over the top. Cover and chill for at least 3 hours.</string>
+    <string name="chocolate_servings">Servings: 16</string>
+    <string name="chocolate_servingsize">Serving Size: 1 piece</string>
+    <string name="chocolate_calories">Calories: 365</string>
+    <string name="chocolate_time">Time: 20 minutes</string>
+
+    //Shrimp Scampi
+    <string name="shrimp_name">Shrimp Scampi</string>
+    <string name="shrimp_ingreds">Ingredients:
+    \n1. 3 to 4 garlic cloves, minced
+\n2. 1/4 cup butter, cubed
+\n3. 1/4 cup olive oil
+\n4. 1 pound uncooked shrimp (31-40 per pound), peeled and deveined
+\n5. 1/4 cup lemon juice
+\n6. 1/2 teaspoon pepper
+\n7. 1/4 teaspoon dried oregano
+\n8. 1/2 cup grated Parmesan cheese
+\n9. 1/4 cup dry bread crumbs
+\n10. 1/4 cup minced fresh parsley
+\n11. Hot cooked angel hair pasta
+    \n
+    \nDirections:
+    \n1. In a 10-in. ovenproof skillet, saute garlic in butter and oil until fragrant. Add the shrimp, lemon juice, pepper and oregano; cook and stir until shrimp turn pink. Sprinkle with cheese, bread crumbs and parsley.
+        \n\n2.Broil 6 in. from the heat for 2-3 minutes or until topping is golden brown. Serve with pasta.</string>
+    <string name="shrimp_servings">Servings: 4</string>
+    <string name="shrimp_servingsize">Serving Size: 1 cup</string>
+    <string name="shrimp_calories">Calories: 395</string>
+    <string name="shrimp_time">Time: 20 minutes</string>
+
+    //Vegtable Linguine
+    <string name="linguine_name">Vegtable Linguine</string>
+    <string name="linguine_ingreds">Ingredients:
+    \n1. 6 ounces uncooked linguine
+\n2. 2 tablespoons butter
+\n3. 1 tablespoon olive oil
+\n4. 2 medium zucchini, thinly sliced
+\n5. 1/2 pound fresh mushrooms, sliced
+\n6. 1 large tomato, chopped
+\n7. 2 green onions, chopped
+\n8. 1 garlic clove, minced
+\n9. 1/2 teaspoon salt
+\n10. 1/4 teaspoon pepper
+\n11. 1 cup shredded provolone cheese
+\n12. 3 tablespoons shredded Parmesan cheese
+\n13. 2 teaspoons minced fresh basil
+    \n
+    \nDirections:
+    \n1. Cook linguine according to package directions. Meanwhile, in a large skillet, heat butter and oil over medium heat. Add zucchini and mushrooms; saute 3-5 minutes. Add tomato, onions, garlic and seasonings. Reduce heat; simmer, covered, about 3 minutes.
+\n\n2. Drain linguine; add to vegetable mixture. Sprinkle with cheeses and basil. Toss to coat.</string>
+    <string name="linguine_servings">Servings: 6</string>
+    <string name="linguine_servingsize">Serving Size: 1 1/2 cups</string>
+    <string name="linguine_calories">Calories: 260</string>
+    <string name="linguine_time">Time: 30 minutes</string>
+
+    //Chicken Tacos
+    <string name="tacos_name">Chicken Tacos</string>
+    <string name="tacos_ingreds">Ingredients:
+    \n1. 1-1/2 pounds boneless skinless chicken breast halves
+\n2. 3 tablespoons lime juice
+\n3. 1 tablespoon chili powder
+\n4. 1 cup frozen corn, thawed
+\n5. 1 cup chunky salsa
+\n6. 12 fat-free flour tortillas (6 inches), warmed
+\n7. Optional: Sour cream, pickled onions, shredded lettuce, sliced avocado and shredded cheddar or Cotija cheese
+    \n
+    \nDirections:
+    \n1. Place chicken in a 3-qt. slow cooker. Combine lime juice and chili powder; pour over chicken. Cook, covered, on low until chicken is tender, 5-6 hours.
+\n\n2. Remove chicken. When cool enough to handle, shred meat with 2 forks; return to slow cooker. Stir in corn and salsa. Cook, covered, on low until heated through, about 30 minutes. Place filling on tortillas; if desired, serve with sour cream, pickled onions, lettuce and cheese.</string>
+    <string name="tacos_servings">Servings: 6</string>
+    <string name="tacos_servingsize">Serving Size: 2 tacos</string>
+    <string name="tacos_calories">Calories: 291</string>
+    <string name="tacos_time">Time: 5 hours</string>
+
+    <string name="beans_name">Beans Bourguignon</string>
+    <string name="beans_ingreds">Ingredients:
+    \n1. 1 ounce dried porcini mushrooms
+\n2. 1 1/2 cups boiling water
+\n3. 1/4 cup plus 1 tablespoon olive oil
+\n4. 1 pound cremini mushrooms, quartered
+\n5. Kosher salt and freshly ground black pepper
+\n6. 3 small carrots (about 5 ounces), sliced 1/8 inch thick
+\n7. 1 medium onion (about 10 ounces), chopped
+\n8. 2 tablespoons tomato paste
+\n9. 2 tablespoons fresh thyme leaves, chopped
+\n10. 1 teaspoon fresh oregano leaves, chopped
+\n11. 2 cloves garlic, thinly sliced
+\n12. 1 1/2 cups vegan dry red wine, such as cabernet sauvignon
+\n13. 8 ounces frozen pearl onions (about 2 cups)
+\n14. Two 15-ounce cans cannellini beans, drained and rinsed
+\n15. 1 cup fresh flat-leaf parsley leaves, finely chopped, plus more for garnish, optional
+\n16. 12 ounces cavatappi pasta
+    \n
+    \nDirections:
+    \n1. Place the porcini mushrooms in a medium heat-safe bowl. Pour the boiling water over top and let the porcini soak until the liquid is a very dark brown, about 20 minutes. Strain the liquid into a small liquid measuring cup (you should have about 3/4 cup), then chop the porcini and set aside.
+\n\n2. Meanwhile, heat 2 tablespoons of the olive oil in a large heavy-bottomed pot over medium-high heat until shimmering. Add the cremini mushrooms, 1 teaspoon salt and a generous amount of black pepper and stir so the cremini are in an even layer. Let the cremini cook, untouched, until starting to caramelize, about 3 minutes. Stir the cremini a few times and then continue to cook, untouched, until golden brown, about 3 minutes more. Transfer to a medium bowl with a slotted spoon and return the pot to the burner.
+\n\n3. Add another 2 tablespoons of the olive oil to the pot along with the carrots, onion, 1/2 teaspoon salt and a few grinds of black pepper. Cook, stirring occasionally, until the vegetables are softened, 4 to 5 minutes. Stir in the tomato paste, thyme, oregano, garlic and reserved porcini and cook, stirring frequently, until the tomato paste is toasted and turns a deep maroon color, 2 to 3 minutes.
+\n\n4. Stir in the wine, bring to a simmer and cook until reduced by half, 3 to 4 minutes. Fold in the pearl onions, cannellini, cremini, reserved porcini water, 1 teaspoon salt and a few grinds of black pepper and bring to a simmer. Cook, stirring occasionally, until the sauce is thick enough to coat the back of the spoon and the mushrooms are very soft, 8 to 10 minutes. Fold in 1/2 cup of the parsley.
+\n\n5. Meanwhile, bring a large pot of salted water to a boil. Cook the pasta until al dente according to package directions. Drain the pasta and add it back to the pot. Stir in the remaining 1 tablespoon olive oil and 1/2 cup parsley, 1 teaspoon salt and a few grinds of black pepper. Serve the beans bourguignon on top of the herbed pasta and garnish with more parsley if desired.</string>
+    <string name="beans_servings">Servings: 10</string>
+    <string name="beans_servingsize">Serving Size: 1 cup</string>
+    <string name="beans_calories">Calories: 234</string>
+    <string name="beans_time">Time: 45 minutes</string>
+
+    <string name="shrimpSkill_name">Creamy Garlicky Shrimp Skillet</string>
+    <string name="shrimpSkill_ingreds"></string>
+    <string name="shrimpSkill_servings"></string>
+    <string name="shrimpSkill_servingsize"></string>
+    <string name="shrimpSkill_calories"></string>
+    <string name="shrimpSkill_time"></string>
+
+    <string name="crab_name">Deviled Crabs</string>
+    <string name="crab_ingreds"></string>
+    <string name="crab_servings"></string>
+    <string name="crab_servingsize"></string>
+    <string name="crab_calories"></string>
+    <string name="crab_time"></string>
+
+    <string name="noodles_name">Drunken Noodles</string>
+    <string name="noodles_ingreds"></string>
+    <string name="noodles_servings"></string>
+    <string name="noodles_servingsize"></string>
+    <string name="noodles_calories"></string>
+    <string name="noodles_time"></string>
+
+    <string name="pizza_name">Hot Sausage Skillet PanPizza</string>
+    <string name="pizza_ingreds"></string>
+    <string name="pizza_servings"></string>
+    <string name="pizza_servingsize"></string>
+    <string name="pizza_calories"></string>
+    <string name="pizza_time"></string>
+
+    <string name="fish_name">Mustard-Roasted Fish</string>
+    <string name="fish_ingreds"></string>
+    <string name="fish_servings"></string>
+    <string name="fish_servingsize"></string>
+    <string name="fish_calories"></string>
+    <string name="fish_time"></string>
+
+    <string name="lamb_name">Pan-Roasted Double Cut Lamb Chops</string>
+    <string name="lamb_ingreds"></string>
+    <string name="lamb_servings"></string>
+    <string name="lamb_servingsize"></string>
+    <string name="lamb_calories"></string>
+    <string name="lamb_time"></string>
+
+    <string name="roast_name">Slow-Cooker Pot Roast</string>
+    <string name="roast_ingreds"></string>
+    <string name="roast_servings"></string>
+    <string name="roast_servingsize"></string>
+    <string name="roast_calories"></string>
+    <string name="roast_time"></string>
+
+    <string name="beef_name">Slow-Cooker Beef and Polenta</string>
+    <string name="beef_ingreds"></string>
+    <string name="beef_servings"></string>
+    <string name="beef_servingsize"></string>
+    <string name="beef_calories"></string>
+    <string name="beef_time"></string>
+
+    <string name="bok_name">Slow-Cooker Chinese Beef and Bok Choy</string>
+    <string name="bok_ingreds"></string>
+    <string name="bok_servings"></string>
+    <string name="bok_servingsize"></string>
+    <string name="bok_calories"></string>
+    <string name="bok_time"></string>
+
+    <string name="flat_name">Tumeric Chicken Flatbread</string>
+    <string name="flat_ingreds"></string>
+    <string name="flat_servings"></string>
+    <string name="flat_servingsize"></string>
+    <string name="flat_calories"></string>
+    <string name="flat_time"></string>
+
+    <string name="vegan_name">Vegan Tostadas</string>
+    <string name="vegan_ingreds"></string>
+    <string name="vegan_servings"></string>
+    <string name="vegan_servingsize"></string>
+    <string name="vegan_calories"></string>
+    <string name="vegan_time"></string>
+
+
+    //Cooking Tips Page name and tips
     <string name="cooking_tips">Cooking Tips</string>
     <string name="cookingtips_list">1. Read the whole recipe through.
 \n2. Wash dishes and clean as you cook.
@@ -20,6 +328,11 @@
 \n8. Add fresh herbs to your dish towards the end of cooking.
 \n9. Remove food form heat immediately after cooking.
 \n10. Excess fats can be removed from liquid based meals with an icecube.</string>
+
+
+    //Resources Page resources and titles
+    <string name="allergen_ingredlisttitle">Allergen Ingredient List</string>
+    <string name="resources">Resources</string>
     <string name="allergen_ingredlist">
 Milk:
 Lactose,
@@ -36,7 +349,7 @@ Egg whites
 \n
 \nFish:
 \n
-\nCrustacean shellfish:
+\nShellfish:
 Barnacle,
 Crab,
 Crawfish,
@@ -130,15 +443,17 @@ TVP (texturized vegetable protein),
 Tamari,
 Shoyu,
 Teriyaki </string>
+    //Ingredients that need to be subbed
     <string name="milk">Milk</string>
     <string name="eggs">Eggs</string>
     <string name="fish">Fish</string>
-    <string name="shellfish">Crustacean Shellfish</string>
+    <string name="shellfish">Shellfish</string>
     <string name="treenuts">Tree Nuts</string>
     <string name="peanuts">Peanuts</string>
     <string name="wheat">Wheat</string>
     <string name="gluten">Gluten</string>
     <string name="soybeans">Soybeans</string>
+
     <string name="my_recipes">My Recipes</string>
     <string name="newRecipe_name">Recipe Name:</string>
     <string name="newRecipe_time">Time:</string>

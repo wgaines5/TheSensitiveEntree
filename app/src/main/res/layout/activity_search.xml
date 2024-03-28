@@ -29,9 +29,11 @@
 
     <Button
         android:id="@+id/hamSearch_button"
-        android:layout_width="70dp"
-        android:layout_height="49dp"
-        android:background="@drawable/hamburgericon"
+        android:layout_width="48dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/whiteHam"
         android:contentDescription="@string/hamburger_icon"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

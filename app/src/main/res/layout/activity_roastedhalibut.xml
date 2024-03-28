@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/almost_white">
+    android:background="@color/almost_white"
+    tools:ignore="MissingDefaultResource">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -18,7 +19,7 @@
             android:layout_marginTop="44dp"
             android:fontFamily="serif"
             android:letterSpacing="0.05"
-            android:text="@string/recipe_name"
+            android:text="@string/halibut_name"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
             android:textColor="@color/black"
@@ -46,7 +47,7 @@
             android:layout_marginTop="168dp"
             android:fontFamily="serif"
             android:letterSpacing="0.05"
-            android:text="@string/recipe_servings"
+            android:text="@string/halibut_servings"
             android:textAlignment="textStart"
             android:textColor="@color/black"
             android:textSize="18sp"
@@ -62,12 +63,12 @@
             android:layout_marginTop="168dp"
             android:fontFamily="serif"
             android:letterSpacing="0.05"
-            android:text="@string/recipe_servingsize"
+            android:text="@string/halibut_servingsize"
             android:textAlignment="textStart"
             android:textColor="@color/black"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.865"
+            app:layout_constraintHorizontal_bias="0.75"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/RecipeNameDetails_textView" />
 
@@ -78,7 +79,7 @@
             android:layout_marginTop="192dp"
             android:fontFamily="serif"
             android:letterSpacing="0.05"
-            android:text="@string/recipe_time"
+            android:text="@string/halibut_time"
             android:textAlignment="textStart"
             android:textColor="@color/black"
             android:textSize="18sp"
@@ -94,7 +95,7 @@
             android:layout_marginTop="192dp"
             android:fontFamily="serif"
             android:letterSpacing="0.05"
-            android:text="@string/recipe_calories"
+            android:text="@string/halibut_calories"
             android:textAlignment="textStart"
             android:textColor="@color/black"
             android:textSize="18sp"
@@ -114,7 +115,7 @@
             android:lineSpacingExtra="8sp"
             android:paddingLeft="8sp"
             android:paddingTop="8sp"
-            android:text="@string/recipe_directions"
+            android:text="@string/halibut_ingreds"
             android:textAlignment="textStart"
             android:textColor="@color/black"
             android:textSize="18sp"
@@ -213,7 +214,7 @@
             app:layout_constraintHorizontal_bias="0.47"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/RecipeNameDetails_textView"
-            app:srcCompat="@drawable/recipe_pic" />
+            app:srcCompat="@drawable/halibut1" />
 
         <Button
             android:id="@+id/detBack_button"

@@ -304,13 +304,14 @@
 
         <Button
             android:id="@+id/hamIngred_button"
-            android:layout_width="57dp"
-            android:layout_height="51dp"
-            android:background="@drawable/hamburgericon"
+            android:layout_width="48dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/whiteHam"
             android:contentDescription="@string/hamburger_icon"
-            android:fontFamily="@font/playfair_display"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"  />
 
         <TextView
             android:id="@+id/textView6"
