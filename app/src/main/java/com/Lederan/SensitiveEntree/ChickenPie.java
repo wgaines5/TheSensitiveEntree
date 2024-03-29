@@ -23,7 +23,7 @@ public class ChickenPie extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chickenPie);
+        setContentView(R.layout.activity_chickenpie);
 
     }
 

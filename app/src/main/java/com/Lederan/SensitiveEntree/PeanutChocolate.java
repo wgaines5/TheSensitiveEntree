@@ -23,7 +23,7 @@ public class PeanutChocolate extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_peanutChocolate);
+        setContentView(R.layout.activity_peanutchocolate);
 
     }
 

@@ -11,7 +11,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-public class CauliflowerSoup extends AppCompatActivity {
+public class MustardRoastedFish extends AppCompatActivity {
 
     //Widget Variables
 
@@ -23,25 +23,25 @@ public class CauliflowerSoup extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cauliflowersoup);
+        setContentView(R.layout.activity_beansbourguignon);
 
     }
 
     //Back button onClick
     public void onClickBack(View view){
-        Intent myintent = new Intent(CauliflowerSoup.this, RecipeListings.class);
-        CauliflowerSoup.this.startActivity(myintent);
+        Intent myintent = new Intent(MustardRoastedFish.this, RecipeListings.class);
+        MustardRoastedFish.this.startActivity(myintent);
     }
 
     //Ingredient substitutions button onClick
     public void onClickIngredientSubs(View view){
-        Intent myintent = new Intent(CauliflowerSoup.this, IngredientSubs.class);
-        CauliflowerSoup.this.startActivity(myintent);
+        Intent myintent = new Intent(MustardRoastedFish.this, IngredientSubs.class);
+        MustardRoastedFish.this.startActivity(myintent);
     }
 
     //Resource button onClick
     public void onClickResource(View view){
-        Intent myintent = new Intent(CauliflowerSoup.this, Resources.class);
-        CauliflowerSoup.this.startActivity(myintent);
+        Intent myintent = new Intent(MustardRoastedFish.this, Resources.class);
+        MustardRoastedFish.this.startActivity(myintent);
     }
 }

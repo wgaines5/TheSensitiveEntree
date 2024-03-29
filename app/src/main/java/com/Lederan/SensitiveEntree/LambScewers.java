@@ -23,7 +23,7 @@ public class LambScewers extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lambScewers);
+        setContentView(R.layout.activity_lambscewers);
 
     }
 

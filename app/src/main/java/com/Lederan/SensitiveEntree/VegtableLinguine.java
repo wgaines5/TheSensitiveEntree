@@ -23,7 +23,7 @@ public class VegtableLinguine extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_vegtableLinguine);
+        setContentView(R.layout.activity_vegtablelinguine);
 
     }
 

@@ -23,7 +23,7 @@ public class RoastedHalibut extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_roastedHalibut);
+        setContentView(R.layout.activity_roastedhalibut);
 
     }
 
