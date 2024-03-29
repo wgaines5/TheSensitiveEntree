@@ -1,7 +1,6 @@
 package com.Lederan.SensitiveEntree;
 
 import android.content.Intent;
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -30,18 +29,22 @@ public class RecipeDetails extends AppCompatActivity {
         setContentView(R.layout.activity_recipe_deatils);
 
     }
+
+    //Back button onClick
     public void onClickBack(View view){
         Intent myintent = new Intent(RecipeDetails.this, RecipeListings.class);
         RecipeDetails.this.startActivity(myintent);
     }
+
+    //Ingredient substitutions button onClick
     public void onClickIngredientSubs(View view){
         Intent myintent = new Intent(RecipeDetails.this, IngredientSubs.class);
         RecipeDetails.this.startActivity(myintent);
     }
 
-    //method for Resource button
-   /* public void onClickResource(View view){
-        Intent myintent = new Intent(RecipeDetails.this, AllergyResources.class);
+    //Resource button onClick
+    public void onClickResource(View view){
+        Intent myintent = new Intent(RecipeDetails.this, Resources.class);
         RecipeDetails.this.startActivity(myintent);
-    }*/
+    }
 }
