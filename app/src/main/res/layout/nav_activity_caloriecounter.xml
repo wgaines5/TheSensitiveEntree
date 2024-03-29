@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".CalorieCounter"
+    tools:context=".MainActivity"
     tools:openDrawer="start">
     <include
         layout="@layout/activity_calorie_counter"
@@ -18,7 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="@color/off_white"
+        android:background="#EDE6D6"
         app:headerLayout="@layout/header"
         app:itemIconTint="@color/black"
         app:itemTextColor="@color/black"

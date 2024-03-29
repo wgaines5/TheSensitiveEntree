@@ -28,18 +28,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".CookingTips"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
-        <activity
             android:name=".About"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".Search"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
-        <activity android:name=".Resources"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
@@ -77,25 +70,12 @@
 
 
 
-        <activity
-            android:name=".Profile"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
-        <activity
-            android:name=".EditProfile"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
 
-        <activity
-            android:name=".Resources"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.AppCompat.NoActionBar">
-
 
         </activity>
         <!--<intent-filter>
