@@ -14,6 +14,7 @@ import android.widget.ScrollView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
@@ -43,14 +44,34 @@ public class RecipeListings extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nav_activity_recipelistings);
 
-        drawerLayout = findViewById(R.id.drawer_layout);
+        drawerLayout = findViewById(R.id.recipeList_drawer_layout);
         navigationView = findViewById(R.id.nav_view);
-        toolbar = findViewById(R.id.toolbar);
+        toolbar = findViewById(R.id.recipeListToolbar);
 
         mAuth = FirebaseAuth.getInstance();
 
+        setSupportActionBar(toolbar);
+        navigationView.bringToFront();
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close);
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
+        navMenu();
 
-        //Navigation pull out menu
+    }
+
+
+    public void onMenuClick(View view)
+    {
+        if(drawerLayout.isDrawerOpen(GravityCompat.START))
+        {
+            drawerLayout.closeDrawer(GravityCompat.START);
+        }
+        else{
+            super.onBackPressed();
+        }
+    }
+    public void navMenu(){
+
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -93,58 +114,6 @@ public class RecipeListings extends AppCompatActivity{
             }
         });
     }
-
-    //Recipe image button function to go to recipe details page
-    // very basic for right now until recipe details has specified pages for different recipes
-    public void onClickRecipeDetails(View view){
-        Intent myintent = new Intent(RecipeListings.this, RecipeDetails.class);
-        RecipeListings.this.startActivity(myintent);
-    }
-
-    //Every click function for each hardcoded recipe page
-    public void onClickLambScewers(View view){
-        Intent myintent = new Intent(RecipeListings.this, LambScewers.class);
-        RecipeListings.this.startActivity(myintent);
-    }
-    public void onClickRoastedHalibut(View view){
-        Intent myintent = new Intent(RecipeListings.this, RoastedHalibut.class);
-        RecipeListings.this.startActivity(myintent);
-    }
-    public void onClickChickenPie(View view){
-        Intent myintent = new Intent(RecipeListings.this, ChickenPie.class);
-        RecipeListings.this.startActivity(myintent);
-    }
-    public void onClickCauliflowerSoup(View view){
-        Intent myintent = new Intent(RecipeListings.this, CauliflowerSoup.class);
-        RecipeListings.this.startActivity(myintent);
-    }
-    public void onClickBakedSpaghetti(View view){
-        Intent myintent = new Intent(RecipeListings.this, BakedSpaghetti.class);
-        RecipeListings.this.startActivity(myintent);
-    }
-    public void onClickPeanutChocolate(View view){
-        Intent myintent = new Intent(RecipeListings.this, PeanutChocolate.class);
-        RecipeListings.this.startActivity(myintent);
-    }
-    public void onClickShrimpScampi(View view){
-        Intent myintent = new Intent(RecipeListings.this, ShrimpScampi.class);
-        RecipeListings.this.startActivity(myintent);
-    }
-    public void onClickVegtableLinguini(View view){
-        Intent myintent = new Intent(RecipeListings.this, VegtableLinguine.class);
-        RecipeListings.this.startActivity(myintent);
-    }
-    public void onClickChickenTacos(View view){
-        Intent myintent = new Intent(RecipeListings.this, ChickenTacos.class);
-        RecipeListings.this.startActivity(myintent);
-    }
-    public void onClickBeanBourguignon(View view){
-        Intent myintent = new Intent(RecipeListings.this, RecipeDetails.class);
-        RecipeListings.this.startActivity(myintent);
-    }
-
-
-    //Add recipe button function
     public void onClickAddRecipe(View view){
         Intent myintent = new Intent(RecipeListings.this, AddRecipe.class);
         RecipeListings.this.startActivity(myintent);

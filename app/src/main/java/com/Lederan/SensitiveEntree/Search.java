@@ -17,11 +17,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Search extends AppCompatActivity {
 
-
-    // Widget variables
     SearchView search_view;
     ListView list_view;
-
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -30,14 +27,13 @@ public class Search extends AppCompatActivity {
         search_view = findViewById(R.id.search_view);
         list_view = findViewById(R.id.list_view);
 
-        // sample data for the search to work
+        // sample data
         String[] items = {
-                "Baked Spaghetti", "Chicken Parmesan", "Tacos", "Caesar Salad", "Grilled Cheese", "Macaroni and Cheese", "Fettuccine Alfredo", "Fried Rice", "Cookies",
+                "Spaghetti", "Chicken Parmesan", "Tacos", "Caesar Salad", "Grilled Cheese", "Macaroni and Cheese", "Fettuccine Alfredo", "Fried Rice", "Cookies",
                 "Steak", "Garlic Bread", "Peach Cobbler", "Stir Fry", "Pulled Pork", "Burritos", "Omelet", "Parfait",
-                "Cake", "Casserole", "Vegan Tostadas", "Tumeric Chicken Flatbread", "Beef and Bok Choy", "Beef and Polenta", "Pot Roast", "Pan-Roasted Lamb Chops", "Mustard Roasted Fish", "Hot Sausage Pan Pizza", "Drunken Noodles", "Deviled Crab", "Creamy Garlicky Shrimp Skillet", "Beans Bourguignon", "Chicken Tacos", "Vegetable Linguine",
-                "Shrimp Scampi", "Peanut Butter Chocolate Dessert", "Baked Spaghetti", "Cauliflower Soup", "Chicken Pot Pie", "Roasted Halibut", "Lamb Scewers"
+                "Cake", "Casserole"
         };
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.spinner_layout, items);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, items);
         list_view.setAdapter(adapter);
 
         setupSearchView();
@@ -46,13 +42,11 @@ public class Search extends AppCompatActivity {
 
     // need to set up OnItemClicked for list_view here
 
-    //Filter (list view) function
     private void searchFilter(String query) {
         ArrayAdapter<String> adapter = (ArrayAdapter<String>) list_view.getAdapter();
         adapter.getFilter().filter(query);
     }
 
-    //Search view function
     private void setupSearchView() {
         search_view.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
@@ -68,8 +62,6 @@ public class Search extends AppCompatActivity {
             }
         });
     }
-
-    //Back button function
     public void onClickBack(View view){
         Intent myintent = new Intent(Search.this, RecipeListings.class);
         Search.this.startActivity(myintent);

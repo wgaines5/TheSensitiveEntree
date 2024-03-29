@@ -1,4 +1,6 @@
 buildscript {
+    val agp_version by extra("8.2.1")
+    val agp_version1 by extra("8.2.2")
     dependencies {
         classpath("com.google.gms:google-services:4.4.1")
     }
@@ -7,5 +9,5 @@ buildscript {
 plugins {
     id("com.android.application") version "8.2.2" apply false
     // Fire base dependency
-    id("com.google.gms.google-services") version "4.4.1" apply false
+   /* id("com.google.gms.google-services") version "4.4.1" apply false*/
 }

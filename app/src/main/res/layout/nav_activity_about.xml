@@ -25,3 +25,4 @@
         app:menu="@menu/primary_menu" />
 
 </androidx.drawerlayout.widget.DrawerLayout>
+

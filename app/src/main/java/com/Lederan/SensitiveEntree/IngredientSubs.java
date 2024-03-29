@@ -3,6 +3,7 @@ package com.Lederan.SensitiveEntree;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import androidx.activity.OnBackPressedCallback;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
@@ -51,14 +52,31 @@ public class IngredientSubs extends AppCompatActivity implements AdapterView.OnI
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.nav_activity_ingredientsubs);
-
-        drawerLayout = findViewById(R.id.drawer_layout);
+        setContentView(R.layout.nav_activity_ingredientsubs); // The menu drawer overlay of the page original layout
+        drawerLayout = findViewById(R.id.ingredSub_drawer_layout);
         navigationView = findViewById(R.id.nav_view);
-        toolbar = findViewById(R.id.toolbar);
+        toolbar = findViewById(R.id.ingredSub_toolbar);
 
         mAuth = FirebaseAuth.getInstance();
 
+        setSupportActionBar(toolbar);
+        navigationView.bringToFront();
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close);
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
+        navMenu();
+    }
+    public void onMenuClick(View view)
+    {
+        if(drawerLayout.isDrawerOpen(GravityCompat.START))
+        {
+            drawerLayout.closeDrawer(GravityCompat.START);
+        }
+        else{
+            super.onBackPressed();
+        }
+    }
+    public void navMenu(){
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -71,7 +89,8 @@ public class IngredientSubs extends AppCompatActivity implements AdapterView.OnI
                     Intent intent = new Intent(IngredientSubs.this, MainActivity.class);
                     startActivity(intent);
                 } else if (id == R.id.nav_profile) {
-                    return false;
+                    Intent intent = new Intent(IngredientSubs.this, Profile.class);
+                    startActivity(intent);
                 } else if (id == R.id.search) {
                     Intent intent = new Intent(IngredientSubs.this, Search.class);
                     startActivity(intent);
@@ -85,9 +104,11 @@ public class IngredientSubs extends AppCompatActivity implements AdapterView.OnI
                     Intent intent = new Intent(IngredientSubs.this, RecipeListings.class);
                     startActivity(intent);
                 } else if (id == R.id.nav_cooking_tips) {
-                    return false;
+                    Intent intent = new Intent(IngredientSubs.this, CookingTips.class);
+                    startActivity(intent);
                 } else if (id == R.id.nav_resources) {
-                    return false;
+                    Intent intent = new Intent(IngredientSubs.this, Resources.class);
+                    startActivity(intent);
                 } else if (id == R.id.nav_settings) {
                     return false;
                 }else if (id == R.id.nav_logout) {

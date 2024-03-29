@@ -30,31 +30,55 @@ public class MainActivity extends AppCompatActivity  {
         // Check if user is signed in (non-null) and update UI accordingly.
         mAuth = FirebaseAuth.getInstance();
         FirebaseUser currentUser = mAuth.getCurrentUser();
-        currentUser.getIdToken(true).addOnCompleteListener(task ->
+        //Check is now added if the user is null or not.
+        if(currentUser != null)
         {
-            if(!task.isSuccessful())
+            currentUser.getIdToken(true).addOnCompleteListener(task ->
             {
-                mAuth.signOut();
-                Intent myIntent = new Intent(MainActivity.this, Login.class);
-                MainActivity.this.startActivity(myIntent);
-            }
-        });
+                if (!task.isSuccessful()) {
+                    mAuth.signOut();
+                    Intent myIntent = new Intent(MainActivity.this, Login.class);
+                    MainActivity.this.startActivity(myIntent);
+                }
+            });
+        }
     }
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nav_activity_main);
-
+        // Variables
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
         toolbar = findViewById(R.id.toolbar);
 
+        //==================================================================================
+        // For hamburger control
         setSupportActionBar(toolbar);
 
         navigationView.bringToFront();
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
+        sidbarNav();
+        //=================================================================================
+
+    }
+    @Override
+    public void onBackPressed()
+    {
+        if(drawerLayout.isDrawerOpen(GravityCompat.START))
+        {
+            drawerLayout.closeDrawer(GravityCompat.START);
+        }
+        else{
+            super.onBackPressed();
+        }
+    }
+
+    public void sidbarNav()
+    {
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -66,7 +90,8 @@ public class MainActivity extends AppCompatActivity  {
                     Intent intent = new Intent(MainActivity.this, MainActivity.class);
                     startActivity(intent);
                 } else if (id == R.id.nav_profile) {
-                    return false;
+                    Intent intent = new Intent(MainActivity.this, Profile.class);
+                    startActivity(intent);
                 } else if (id == R.id.search) {
                     Intent intent = new Intent(MainActivity.this, Search.class);
                     startActivity(intent);
@@ -80,9 +105,11 @@ public class MainActivity extends AppCompatActivity  {
                     Intent intent = new Intent(MainActivity.this, RecipeListings.class);
                     startActivity(intent);
                 } else if (id == R.id.nav_cooking_tips) {
-                    return false;
+                    Intent intent = new Intent(MainActivity.this, CookingTips.class);
+                    startActivity(intent);
                 } else if (id == R.id.nav_resources) {
-                    return false;
+                    Intent intent = new Intent(MainActivity.this, Resources.class);
+                    startActivity(intent);
                 } else if (id == R.id.nav_settings) {
                     return false;
                 }else if (id == R.id.nav_logout) {
@@ -97,13 +124,5 @@ public class MainActivity extends AppCompatActivity  {
             }
         });
     }
-    @Override
-    public void onBackPressed(){
-        if(drawerLayout.isDrawerOpen(GravityCompat.START)){
-            drawerLayout.closeDrawer(GravityCompat.START);
-        }
-        else{
-            super.onBackPressed();
-        }
-    }
 }
+
