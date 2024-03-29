@@ -119,4 +119,89 @@ public class RecipeListings extends AppCompatActivity{
         RecipeListings.this.startActivity(myintent);
     }
 
+    public void onClickBakedSpaghetti(View view){
+        Intent myintent = new Intent(RecipeListings.this, BakedSpaghetti.class);
+        RecipeListings.this.startActivity(myintent);
+    }
+    public void onClickBeansBourguignon(View view){
+        Intent myintent = new Intent(RecipeListings.this, BeansBourguignon.class);
+        RecipeListings.this.startActivity(myintent);
+    }
+    public void onClickBeefAndPolenta(View view){
+        Intent myintent = new Intent(RecipeListings.this, BeefAndPolenta.class);
+        RecipeListings.this.startActivity(myintent);
+    }
+    public void onClickBokChoy(View view){
+        Intent myintent = new Intent(RecipeListings.this, BokChoy.class);
+        RecipeListings.this.startActivity(myintent);
+    }
+    public void onClickCauliflowerSoup(View view){
+        Intent myintent = new Intent(RecipeListings.this, CauliflowerSoup.class);
+        RecipeListings.this.startActivity(myintent);
+    }
+    public void onClickChickenPie(View view){
+        Intent myintent = new Intent(RecipeListings.this, ChickenPie.class);
+        RecipeListings.this.startActivity(myintent);
+    }
+    public void onClickChickenTacos(View view){
+        Intent myintent = new Intent(RecipeListings.this, ChickenTacos.class);
+        RecipeListings.this.startActivity(myintent);
+    }
+    public void onClickCreamyShrimpSkillet(View view){
+        Intent myintent = new Intent(RecipeListings.this, CreamyShrimpSkillet.class);
+        RecipeListings.this.startActivity(myintent);
+    }
+    public void onClickDeviledCrabs(View view){
+        Intent myintent = new Intent(RecipeListings.this, DeviledCrabs.class);
+        RecipeListings.this.startActivity(myintent);
+    }
+    public void onClickDrunkenNoodles(View view){
+        Intent myintent = new Intent(RecipeListings.this, DrunkenNoodles.class);
+        RecipeListings.this.startActivity(myintent);
+    }
+    public void onClickLambChops(View view){
+        Intent myintent = new Intent(RecipeListings.this, LambChops.class);
+        RecipeListings.this.startActivity(myintent);
+    }
+    public void LambScewers(View view){
+        Intent myintent = new Intent(RecipeListings.this, LambScewers.class);
+        RecipeListings.this.startActivity(myintent);
+    }
+    public void onClickMustardRoastedFish(View view){
+        Intent myintent = new Intent(RecipeListings.this, MustardRoastedFish.class);
+        RecipeListings.this.startActivity(myintent);
+    }
+    public void onClickPanPizza(View view){
+        Intent myintent = new Intent(RecipeListings.this, PanPizza.class);
+        RecipeListings.this.startActivity(myintent);
+    }
+    public void onClickPeanutChocolate(View view){
+        Intent myintent = new Intent(RecipeListings.this, PeanutChocolate.class);
+        RecipeListings.this.startActivity(myintent);
+    }
+    public void onClickPotRoast(View view){
+        Intent myintent = new Intent(RecipeListings.this, PotRoast.class);
+        RecipeListings.this.startActivity(myintent);
+    }
+    public void onClickRoastedHalibut(View view){
+        Intent myintent = new Intent(RecipeListings.this, RoastedHalibut.class);
+        RecipeListings.this.startActivity(myintent);
+    }
+    public void onClickShrimpScampi(View view){
+        Intent myintent = new Intent(RecipeListings.this, ShrimpScampi.class);
+        RecipeListings.this.startActivity(myintent);
+    }
+    public void onClickVegtableLinguine(View view){
+        Intent myintent = new Intent(RecipeListings.this, VegtableLinguine.class);
+        RecipeListings.this.startActivity(myintent);
+    }
+    public void onClickTumericChickenFlatbread(View view){
+        Intent myintent = new Intent(RecipeListings.this, ChickenFlatbread.class);
+        RecipeListings.this.startActivity(myintent);
+    }
+    public void onClickVeganTostadas(View view){
+        Intent myintent = new Intent(RecipeListings.this, VeganTostadas.class);
+        RecipeListings.this.startActivity(myintent);
+    }
+
 }
