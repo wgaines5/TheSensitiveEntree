@@ -51,7 +51,7 @@ public class IngredientSubs extends AppCompatActivity implements AdapterView.OnI
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.nav_activity_ingredientsubs);
+        setContentView(R.layout.nav_activity_ingredientsubs); // The menu drawer overlay of the page original layout
 
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
@@ -59,7 +59,7 @@ public class IngredientSubs extends AppCompatActivity implements AdapterView.OnI
 
         mAuth = FirebaseAuth.getInstance();
 
-
+// NavigationView controls the menu drawer to access each page selected
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {

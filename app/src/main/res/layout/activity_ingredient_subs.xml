@@ -173,8 +173,8 @@
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/ingredSub_toolbar"
-            android:layout_width="416dp"
-            android:layout_height="58dp"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
             android:background="@color/light_green"
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme"
@@ -297,6 +297,15 @@
             app:layout_constraintTop_toBottomOf="@+id/selectSub_textView" />
 
 
+        <Button
+            android:id="@+id/ingredSub_backButton"
+            android:layout_width="51dp"
+            android:layout_height="49dp"
+            android:background="@drawable/backbutton_icon_foreground"
+            android:contentDescription="@string/ingredSubs"
+            android:onClick="onClickBack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView6"

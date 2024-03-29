@@ -3,7 +3,6 @@ package com.Lederan.SensitiveEntree;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.ImageView;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,17 +13,14 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.firestore.Blob;
 
 import org.checkerframework.checker.nullness.qual.NonNull;
 
-public class MainActivity extends AppCompatActivity
-{
+public class MainActivity extends AppCompatActivity  {
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
     FirebaseAuth mAuth;
-    ImageView PBJ;
 
     // Validates the user
     @Override
@@ -56,11 +52,11 @@ public class MainActivity extends AppCompatActivity
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
         toolbar = findViewById(R.id.toolbar);
-        PBJ = findViewById(R.id.PBJ);
 
         //==================================================================================
         // For hamburger control
         setSupportActionBar(toolbar);
+
         navigationView.bringToFront();
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close);
         drawerLayout.addDrawerListener(toggle);
@@ -129,3 +125,4 @@ public class MainActivity extends AppCompatActivity
         });
     }
 }
+
