@@ -23,7 +23,7 @@ public class VeganTostadas extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_beansbourguignon);
+        setContentView(R.layout.activity_vegantostadas);
 
     }
 
