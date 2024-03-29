@@ -28,11 +28,18 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".CookingTips"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
             android:name=".About"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".Search"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".Resources"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity

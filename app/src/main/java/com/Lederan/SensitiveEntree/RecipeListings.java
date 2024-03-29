@@ -14,7 +14,6 @@ import android.widget.ScrollView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
@@ -40,38 +39,17 @@ public class RecipeListings extends AppCompatActivity{
     FirebaseAuth mAuth;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.nav_activity_recipelistings); // The menu drawer overlay of the page original layout
+        setContentView(R.layout.nav_activity_recipelistings);
 
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
-        toolbar = findViewById(R.id.recipeListingToolbar);
+        toolbar = findViewById(R.id.toolbar);
 
         mAuth = FirebaseAuth.getInstance();
-        setSupportActionBar(toolbar);
-        navigationView.bringToFront();
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close);
-        drawerLayout.addDrawerListener(toggle);
-        toggle.syncState();
-        navMenu();
-
-    }
 
 
-    public void onMenuClick(View view)
-    {
-        if(drawerLayout.isDrawerOpen(GravityCompat.START))
-        {
-            drawerLayout.closeDrawer(GravityCompat.START);
-        }
-        else{
-            super.onBackPressed();
-        }
-    }
-    public void navMenu(){
-
-// NavigationView controls the menu drawer to access each page selected
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -83,8 +61,7 @@ public class RecipeListings extends AppCompatActivity{
                     Intent intent = new Intent(RecipeListings.this, MainActivity.class);
                     startActivity(intent);
                 } else if (id == R.id.nav_profile) {
-                    Intent intent = new Intent(RecipeListings.this, Profile.class);
-                    startActivity(intent);
+                    return false;
                 } else if (id == R.id.search) {
                     Intent intent = new Intent(RecipeListings.this, Search.class);
                     startActivity(intent);
@@ -98,11 +75,9 @@ public class RecipeListings extends AppCompatActivity{
                     Intent intent = new Intent(RecipeListings.this, RecipeListings.class);
                     startActivity(intent);
                 } else if (id == R.id.nav_cooking_tips) {
-                    Intent intent = new Intent(RecipeListings.this, CookingTips.class);
-                    startActivity(intent);
+                    return false;
                 } else if (id == R.id.nav_resources) {
-                    Intent intent = new Intent(RecipeListings.this, Resources.class);
-                    startActivity(intent);
+                    return false;
                 } else if (id == R.id.nav_settings) {
                     return false;
                 }else if (id == R.id.nav_logout) {

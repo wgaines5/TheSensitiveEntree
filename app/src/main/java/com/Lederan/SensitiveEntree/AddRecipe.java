@@ -17,6 +17,8 @@ import org.checkerframework.checker.nullness.qual.NonNull;
 
 
 public class AddRecipe extends AppCompatActivity {
+
+    // Widget variables
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
@@ -33,7 +35,7 @@ public class AddRecipe extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-// NavigationView controls the menu drawer to access each page selected
+
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -79,6 +81,8 @@ public class AddRecipe extends AppCompatActivity {
             }
         });
     }
+
+    // Back button function
     public void onClickBack(View view){
         Intent myintent = new Intent(com.Lederan.SensitiveEntree.AddRecipe.this, RecipeListings.class);
         com.Lederan.SensitiveEntree.AddRecipe.this.startActivity(myintent);
