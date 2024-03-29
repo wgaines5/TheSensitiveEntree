@@ -32,9 +32,10 @@ public class Search extends AppCompatActivity {
 
         // sample data for the search to work
         String[] items = {
-                "Spaghetti", "Chicken Parmesan", "Tacos", "Caesar Salad", "Grilled Cheese", "Macaroni and Cheese", "Fettuccine Alfredo", "Fried Rice", "Cookies",
+                "Baked Spaghetti", "Chicken Parmesan", "Tacos", "Caesar Salad", "Grilled Cheese", "Macaroni and Cheese", "Fettuccine Alfredo", "Fried Rice", "Cookies",
                 "Steak", "Garlic Bread", "Peach Cobbler", "Stir Fry", "Pulled Pork", "Burritos", "Omelet", "Parfait",
-                "Cake", "Casserole"
+                "Cake", "Casserole", "Vegan Tostadas", "Tumeric Chicken Flatbread", "Beef and Bok Choy", "Beef and Polenta", "Pot Roast", "Pan-Roasted Lamb Chops", "Mustard Roasted Fish", "Hot Sausage Pan Pizza", "Drunken Noodles", "Deviled Crab", "Creamy Garlicky Shrimp Skillet", "Beans Bourguignon", "Chicken Tacos", "Vegetable Linguine",
+                "Shrimp Scampi", "Peanut Butter Chocolate Dessert", "Baked Spaghetti", "Cauliflower Soup", "Chicken Pot Pie", "Roasted Halibut", "Lamb Scewers"
         };
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.spinner_layout, items);
         list_view.setAdapter(adapter);
