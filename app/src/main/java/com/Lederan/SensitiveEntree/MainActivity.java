@@ -1,8 +1,11 @@
 package com.Lederan.SensitiveEntree;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,9 +13,14 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 import org.checkerframework.checker.nullness.qual.NonNull;
 
@@ -21,6 +29,11 @@ public class MainActivity extends AppCompatActivity  {
     NavigationView navigationView;
     Toolbar toolbar;
     FirebaseAuth mAuth;
+    ImageView feat1;
+    ImageView feat2;
+    ImageView feat3;
+    ImageView feat4;
+    ImageView feat5;
 
     // Validates the user
     @Override
@@ -30,6 +43,7 @@ public class MainActivity extends AppCompatActivity  {
         // Check if user is signed in (non-null) and update UI accordingly.
         mAuth = FirebaseAuth.getInstance();
         FirebaseUser currentUser = mAuth.getCurrentUser();
+
         //Check is now added if the user is null or not.
         if(currentUser != null)
         {
@@ -52,6 +66,7 @@ public class MainActivity extends AppCompatActivity  {
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
         toolbar = findViewById(R.id.toolbar);
+        FirebaseStorage storage = FirebaseStorage.getInstance();
 
         //==================================================================================
         // For hamburger control
@@ -63,7 +78,18 @@ public class MainActivity extends AppCompatActivity  {
         toggle.syncState();
         sidbarNav();
         //=================================================================================
-
+        // Renders the features from firebase
+        feat1 = findViewById(R.id.feat1);
+        feat2 = findViewById(R.id.feat2);
+        feat3 = findViewById(R.id.feat3);
+        feat4 = findViewById(R.id.feat4);
+        feat5 = findViewById(R.id.feat5);
+        Bok(storage);
+        ChickenParm(storage);
+        Spaghetti(storage);
+        Steak(storage);
+        Swordfish(storage);
+        //==================================================================================
     }
     @Override
     public void onBackPressed()
@@ -121,6 +147,136 @@ public class MainActivity extends AppCompatActivity  {
                 }
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return true;
+            }
+        });
+    }
+
+    public void Bok(FirebaseStorage storage)
+    {
+        StorageReference storageRef = storage.getReference().child("Food").child("del119923-bok-choy-web-139-rv-index-6567f49581973.jpg");
+        storageRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+            @Override
+            public void onSuccess(Uri uri) {
+                // Load the image into ImageView using Glide
+                Glide.with(MainActivity.this)
+                        .load(uri)
+                        .apply(RequestOptions.circleCropTransform()) // Apply transformations if needed
+                        .into(feat1);
+            }
+        });
+
+        ImageView imageView = findViewById(R.id.feat1);
+        imageView.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(MainActivity.this, RecipeListings.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    public void ChickenParm(FirebaseStorage storage)
+    {
+        StorageReference storageRef = storage.getReference().child("Food").child("Chicken-Parmesan-Recipe-f-500x500.webp");
+        storageRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+            @Override
+            public void onSuccess(Uri uri) {
+                // Load the image into ImageView using Glide
+                Glide.with(MainActivity.this)
+                        .load(uri)
+                        .apply(RequestOptions.circleCropTransform()) // Apply transformations if needed
+                        .into(feat2);
+            }
+        });
+
+        ImageView imageView = findViewById(R.id.feat2);
+        imageView.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(MainActivity.this, RecipeDetails.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    public void Spaghetti(FirebaseStorage storage)
+    {
+        StorageReference storageRef = storage.getReference().child("Food").child("Spaghetti-with-Meat-Sauce-Recipe-1-1200.jpg");
+        storageRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+            @Override
+            public void onSuccess(Uri uri) {
+                // Load the image into ImageView using Glide
+                Glide.with(MainActivity.this)
+                        .load(uri)
+                        .apply(RequestOptions.circleCropTransform()) // Apply transformations if needed
+                        .into(feat3);
+            }
+        });
+
+        ImageView imageView = findViewById(R.id.feat3);
+        imageView.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(MainActivity.this, BakedSpaghetti.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    public void Steak(FirebaseStorage storage)
+    {
+        StorageReference storageRef = storage.getReference().child("Food").child("grilled-steak-15.jpg");
+        storageRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+            @Override
+            public void onSuccess(Uri uri) {
+                // Load the image into ImageView using Glide
+                Glide.with(MainActivity.this)
+                        .load(uri)
+                        .apply(RequestOptions.circleCropTransform()) // Apply transformations if needed
+                        .into(feat4);
+            }
+        });
+
+        ImageView imageView = findViewById(R.id.feat4);
+        imageView.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(MainActivity.this, RecipeDetails.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    public void Swordfish(FirebaseStorage storage)
+    {
+        StorageReference storageRef = storage.getReference().child("Food").child("grilled-swordfish-11.jpg");
+        storageRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+            @Override
+            public void onSuccess(Uri uri) {
+                // Load the image into ImageView using Glide
+                Glide.with(MainActivity.this)
+                        .load(uri)
+                        .apply(RequestOptions.circleCropTransform()) // Apply transformations if needed
+                        .into(feat5);
+            }
+        });
+
+        ImageView imageView = findViewById(R.id.feat5);
+        imageView.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(MainActivity.this, RecipeDetails.class);
+                startActivity(intent);
             }
         });
     }
