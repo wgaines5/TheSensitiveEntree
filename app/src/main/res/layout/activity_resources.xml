@@ -14,11 +14,15 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/resourcesToolbar"
             android:layout_width="match_parent"
-            android:layout_height="51dp"
+            android:layout_height="58dp"
             android:background="@color/light_green"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/menu_icon_foreground" />
+            />
 
 
         <TextView

@@ -15,7 +15,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:navigationIcon="@drawable/menu_icon_foreground"/>
 
     <TextView
         android:id="@+id/greenLine_textView"
@@ -26,15 +29,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-    <Button
-        android:id="@+id/hamSearch_button"
-        android:layout_width="70dp"
-        android:layout_height="49dp"
-        android:background="@drawable/hamburgericon"
-        android:contentDescription="@string/hamburger_icon"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <android.widget.SearchView
         android:id="@+id/search_view"
@@ -52,7 +46,7 @@
     <ListView
         android:id="@+id/list_view"
         android:layout_width="345dp"
-        android:layout_height="233dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/dropdown1"
         android:clickable="true"
         android:contextClickable="false"

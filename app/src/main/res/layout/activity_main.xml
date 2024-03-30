@@ -163,7 +163,7 @@
                 app:layout_constraintHorizontal_bias="0.067"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/recipe"
-                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                 android:foreground="@mipmap/beansbourgulgnon"/>
 
             <TextView
                 android:id="@+id/recipetx1"
