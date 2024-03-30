@@ -153,17 +153,20 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/recipe1"
                 android:layout_width="300dp"
                 android:layout_height="180dp"
                 android:layout_marginLeft="65dp"
                 android:layout_marginTop="16dp"
+                android:background="@drawable/textview1"
+                android:contentDescription="@string/recipe_image"
+                android:foreground="@mipmap/beansbourgulgnon"
+                android:onClick="onClickBeansBourguignon"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.067"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/recipe"
-                 android:foreground="@mipmap/beansbourgulgnon"/>
+                app:layout_constraintTop_toBottomOf="@+id/recipe" />
 
             <TextView
                 android:id="@+id/recipetx1"
@@ -178,13 +181,16 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/recipe1" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/recipe2"
                 android:layout_width="300dp"
                 android:layout_height="180dp"
                 android:layout_marginLeft="65dp"
                 android:layout_marginTop="16dp"
+                android:background="@drawable/textview1"
+                android:contentDescription="@string/recipe_image"
                 android:foreground="@mipmap/creamygarlicshrimp"
+                android:onClick="onClickCreamyShrimpSkillet"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/recipe"
@@ -202,13 +208,16 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/recipe2" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/recipe3"
                 android:layout_width="300dp"
                 android:layout_height="180dp"
                 android:layout_marginLeft="65dp"
                 android:layout_marginTop="16dp"
+                android:background="@drawable/textview1"
+                android:contentDescription="@string/recipe_image"
                 android:foreground="@mipmap/devlledcrabs"
+                android:onClick="onClickDeviledCrabs"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.932"
                 app:layout_constraintStart_toStartOf="parent"
@@ -228,13 +237,16 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/recipe3" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/recipe4"
                 android:layout_width="300dp"
                 android:layout_height="180dp"
                 android:layout_marginLeft="65dp"
                 android:layout_marginTop="16dp"
+                android:background="@drawable/textview1"
+                android:contentDescription="@string/recipe_image"
                 android:foreground="@mipmap/drunkennoodles"
+                android:onClick="onClickDrunkenNoodles"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.067"
                 app:layout_constraintStart_toStartOf="parent"
@@ -254,13 +266,16 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/recipe4" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/recpie5"
                 android:layout_width="300dp"
                 android:layout_height="180dp"
                 android:layout_marginLeft="65dp"
                 android:layout_marginTop="16dp"
+                android:contentDescription="@string/recipe_image"
                 android:foreground="@mipmap/hotsausagecastiron"
+                android:onClick="onClickPanPizza"
+                android:background="@drawable/textview1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/recipetx2"
@@ -278,13 +293,16 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/recpie5" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/recipe6"
                 android:layout_width="300dp"
                 android:layout_height="180dp"
                 android:layout_marginLeft="65dp"
                 android:layout_marginTop="16dp"
+                android:background="@drawable/textview1"
+                android:contentDescription="@string/recipe_image"
                 android:foreground="@mipmap/mustardroastedfish"
+                android:onClick="onClickMustardRoastedFish"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.932"
                 app:layout_constraintStart_toStartOf="parent"
@@ -304,13 +322,16 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/recipe6" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/Recipe7"
                 android:layout_width="300dp"
                 android:layout_height="180dp"
                 android:layout_marginLeft="65dp"
                 android:layout_marginTop="16dp"
+                android:background="@drawable/textview1"
+                android:contentDescription="@string/recipe_image"
                 android:foreground="@mipmap/panroasteddoublecutlambchops"
+                android:onClick="onClickLambChops"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.067"
                 app:layout_constraintStart_toStartOf="parent"
@@ -330,13 +351,16 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Recipe7" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/recipe8"
                 android:layout_width="300dp"
                 android:layout_height="180dp"
                 android:layout_marginLeft="65dp"
                 android:layout_marginTop="16dp"
+                android:background="@drawable/textview1"
+                android:contentDescription="@string/recipe_image"
                 android:foreground="@mipmap/slowcookerbeefandpolenta"
+                android:onClick="onClickBeefAndPolenta"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/recipetx5"
@@ -354,13 +378,16 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/recipe8" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/recipe9"
                 android:layout_width="300dp"
                 android:layout_height="180dp"
                 android:layout_marginLeft="65dp"
                 android:layout_marginTop="16dp"
+                android:contentDescription="@string/recipe_image"
                 android:foreground="@mipmap/slowcookerchinesebeefandbok"
+                android:onClick="onClickBokChoy"
+                android:background="@drawable/textview1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.932"
                 app:layout_constraintStart_toStartOf="parent"
@@ -380,13 +407,16 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/recipe9" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/recipe10"
                 android:layout_width="300dp"
                 android:layout_height="180dp"
                 android:layout_marginLeft="65dp"
                 android:layout_marginTop="16dp"
+                android:contentDescription="@string/recipe_image"
                 android:foreground="@mipmap/slowcookerpotroast"
+                android:onClick="onClickPotRoast"
+                android:background="@drawable/textview1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.067"
                 app:layout_constraintStart_toStartOf="parent"
@@ -406,13 +436,16 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/recipe10" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/recipe11"
                 android:layout_width="300dp"
                 android:layout_height="180dp"
                 android:layout_marginLeft="65dp"
                 android:layout_marginTop="16dp"
+                android:background="@drawable/textview1"
+                android:contentDescription="@string/recipe_image"
                 android:foreground="@mipmap/turmericchickenflatbread"
+                android:onClick="onClickTumericChickenFlatbread"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/recipetx8"
@@ -430,13 +463,16 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/recipe11" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/recipe12"
                 android:layout_width="300dp"
                 android:layout_height="180dp"
                 android:layout_marginLeft="65dp"
                 android:layout_marginTop="16dp"
+                android:background="@drawable/textview1"
+                android:contentDescription="@string/recipe_image"
                 android:foreground="@mipmap/vegantoastadas"
+                android:onClick="onClickVeganTostadas"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.932"
                 app:layout_constraintStart_toStartOf="parent"

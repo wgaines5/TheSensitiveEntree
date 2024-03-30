@@ -13,18 +13,21 @@ import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.Toolbar;
 
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 import org.checkerframework.checker.nullness.qual.NonNull;
 
 public class Search extends AppCompatActivity {
 
+    FirebaseAuth mAuth;
     DrawerLayout drawerLayout;
     Toolbar toolbar;
     NavigationView navigationView;
@@ -35,19 +38,31 @@ public class Search extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nav_activity_search);
 
+        drawerLayout = findViewById(R.id.drawer_layout);
+        navigationView = findViewById(R.id.nav_view);
+        toolbar = findViewById(R.id.search_toolbar);
         search_view = findViewById(R.id.search_view);
         list_view = findViewById(R.id.list_view);
+
+        mAuth = FirebaseAuth.getInstance();
 
         // sample data
         String[] items = {
                 "Spaghetti", "Chicken Parmesan", "Tacos", "Caesar Salad", "Grilled Cheese", "Macaroni and Cheese", "Fettuccine Alfredo", "Fried Rice", "Cookies",
                 "Steak", "Garlic Bread", "Peach Cobbler", "Stir Fry", "Pulled Pork", "Burritos", "Omelet", "Parfait",
-                "Cake", "Casserole"
+                "Cake", "Casserole", "Baked Spaghetti", "Beans Bourguignon", "Beef and Polenta", "Chinese Bok Choy", "Cauliflower Soup", "Tumeric Chicken Flatbread", "Chicken Pot Pie",
+                "Chicken Tacos", "Creamy Garicky Shrimp Skillet", "Deviled Crabs","Drunken Noodles", "Lamb Chops", "Lamb Scewers", "Mustard Roasted Fish", "Pan Pizza",
+                "Peanut Butter Chocolate Dessert", "Pot Roast", "Roasted Halibut", "Shrimp Scampi", "Vegan Tostadas", "Vegetable Linguine"
         };
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, items);
         list_view.setAdapter(adapter);
 
         setupSearchView();
+        setSupportActionBar(toolbar);
+        navigationView.bringToFront();
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close);
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
         //navMenu();
 
     }
@@ -63,7 +78,7 @@ public class Search extends AppCompatActivity {
         }
     }
 
-    /*public void navMenu(){
+    public void navMenu() {
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -98,17 +113,18 @@ public class Search extends AppCompatActivity {
                     startActivity(intent);
                 } else if (id == R.id.nav_settings) {
                     return false;
-                }else if (id == R.id.nav_logout) {
+                } else if (id == R.id.nav_logout) {
                     mAuth.signOut();
                     Intent intent = new Intent(Search.this, Login.class);
                     startActivity(intent);
-                }else {
+                } else {
                     return false;
                 }
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return true;
             }
-        });*/
+        });
+    }
 
     // need to set up OnItemClicked for list_view here
 

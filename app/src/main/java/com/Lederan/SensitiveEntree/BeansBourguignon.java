@@ -29,7 +29,7 @@ public class BeansBourguignon extends AppCompatActivity {
 
     //Back button onClick
     public void onClickBack(View view){
-        Intent myintent = new Intent(BeansBourguignon.this, RecipeListings.class);
+        Intent myintent = new Intent(BeansBourguignon.this, MainActivity.class);
         BeansBourguignon.this.startActivity(myintent);
     }
 

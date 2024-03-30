@@ -280,5 +280,90 @@ public class MainActivity extends AppCompatActivity  {
             }
         });
     }
+
+    public void onClickBakedSpaghetti(View view){
+        Intent myintent = new Intent(MainActivity.this, BakedSpaghetti.class);
+        MainActivity.this.startActivity(myintent);
+    }
+    public void onClickBeansBourguignon(View view){
+        Intent myintent = new Intent(MainActivity.this, BeansBourguignon.class);
+        MainActivity.this.startActivity(myintent);
+    }
+    public void onClickBeefAndPolenta(View view){
+        Intent myintent = new Intent(MainActivity.this, BeefAndPolenta.class);
+        MainActivity.this.startActivity(myintent);
+    }
+    public void onClickBokChoy(View view){
+        Intent myintent = new Intent(MainActivity.this, BokChoy.class);
+        MainActivity.this.startActivity(myintent);
+    }
+    public void onClickCauliflowerSoup(View view){
+        Intent myintent = new Intent(MainActivity.this, CauliflowerSoup.class);
+        MainActivity.this.startActivity(myintent);
+    }
+    public void onClickChickenPie(View view){
+        Intent myintent = new Intent(MainActivity.this, ChickenPie.class);
+        MainActivity.this.startActivity(myintent);
+    }
+    public void onClickChickenTacos(View view){
+        Intent myintent = new Intent(MainActivity.this, ChickenTacos.class);
+        MainActivity.this.startActivity(myintent);
+    }
+    public void onClickCreamyShrimpSkillet(View view){
+        Intent myintent = new Intent(MainActivity.this, CreamyShrimpSkillet.class);
+        MainActivity.this.startActivity(myintent);
+    }
+    public void onClickDeviledCrabs(View view){
+        Intent myintent = new Intent(MainActivity.this, DeviledCrabs.class);
+        MainActivity.this.startActivity(myintent);
+    }
+    public void onClickDrunkenNoodles(View view){
+        Intent myintent = new Intent(MainActivity.this, DrunkenNoodles.class);
+        MainActivity.this.startActivity(myintent);
+    }
+    public void onClickLambChops(View view){
+        Intent myintent = new Intent(MainActivity.this, LambChops.class);
+        MainActivity.this.startActivity(myintent);
+    }
+    public void onClickLambScewers(View view){
+        Intent myintent = new Intent(MainActivity.this, LambScewers.class);
+        MainActivity.this.startActivity(myintent);
+    }
+    public void onClickMustardRoastedFish(View view){
+        Intent myintent = new Intent(MainActivity.this, MustardRoastedFish.class);
+        MainActivity.this.startActivity(myintent);
+    }
+    public void onClickPanPizza(View view){
+        Intent myintent = new Intent(MainActivity.this, PanPizza.class);
+        MainActivity.this.startActivity(myintent);
+    }
+    public void onClickPeanutChocolate(View view){
+        Intent myintent = new Intent(MainActivity.this, PeanutChocolate.class);
+        MainActivity.this.startActivity(myintent);
+    }
+    public void onClickPotRoast(View view){
+        Intent myintent = new Intent(MainActivity.this, PotRoast.class);
+        MainActivity.this.startActivity(myintent);
+    }
+    public void onClickRoastedHalibut(View view){
+        Intent myintent = new Intent(MainActivity.this, RoastedHalibut.class);
+        MainActivity.this.startActivity(myintent);
+    }
+    public void onClickShrimpScampi(View view){
+        Intent myintent = new Intent(MainActivity.this, ShrimpScampi.class);
+        MainActivity.this.startActivity(myintent);
+    }
+    public void onClickVegtableLinguine(View view){
+        Intent myintent = new Intent(MainActivity.this, VegtableLinguine.class);
+        MainActivity.this.startActivity(myintent);
+    }
+    public void onClickTumericChickenFlatbread(View view){
+        Intent myintent = new Intent(MainActivity.this, ChickenFlatbread.class);
+        MainActivity.this.startActivity(myintent);
+    }
+    public void onClickVeganTostadas(View view){
+        Intent myintent = new Intent(MainActivity.this, VeganTostadas.class);
+        MainActivity.this.startActivity(myintent);
+    }
 }
 
