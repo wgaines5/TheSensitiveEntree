@@ -176,7 +176,7 @@
             android:layout_marginTop="380dp"
             android:background="@drawable/textview1"
             android:contentDescription="@string/recipe_image"
-            android:onClick="onClickBakedSpaghetti"
+            android:onClick="onClickMustardRoastedFish"
             android:scaleType="fitCenter"
             android:src="@drawable/fish2"
             app:layout_constraintEnd_toEndOf="parent"

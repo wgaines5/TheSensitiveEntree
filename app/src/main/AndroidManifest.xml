@@ -67,29 +67,94 @@
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
-            android:name=".Resources"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
-        <activity
-            android:name=".CookingTips"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
-
-
-
-        <activity
-            android:name=".Profile"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
-        <activity
             android:name=".EditProfile"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
-
         <activity
-            android:name=".Resources"
+            android:name=".LambScewers"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".RoastedHalibut"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".ChickenPie"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".CauliflowerSoup"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".BakedSpaghetti"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".BeansBourguignon"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".BeefAndPolenta"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".BokChoy"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".ChickenFlatbread"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".ChickenTacos"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".CreamyShrimpSkillet"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".DeviledCrabs"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".DrunkenNoodles"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".LambChops"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".MustardRoastedFish"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".PanPizza"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".PeanutChocolate"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".PotRoast"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".ShrimpScampi"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".VeganTostadas"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".VegtableLinguine"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true"

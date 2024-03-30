@@ -163,7 +163,7 @@ public class RecipeListings extends AppCompatActivity{
         Intent myintent = new Intent(RecipeListings.this, LambChops.class);
         RecipeListings.this.startActivity(myintent);
     }
-    public void LambScewers(View view){
+    public void onClickLambScewers(View view){
         Intent myintent = new Intent(RecipeListings.this, LambScewers.class);
         RecipeListings.this.startActivity(myintent);
     }
