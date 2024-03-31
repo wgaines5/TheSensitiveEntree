@@ -45,6 +45,7 @@ public class Login extends AppCompatActivity
         buttonLogin = findViewById(R.id.loginButton);
         mAuth = FirebaseAuth.getInstance();
 
+        /*Login button clicked*/
         buttonLogin.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -90,6 +91,8 @@ public class Login extends AppCompatActivity
             }
         });
     }
+
+    /*Create account button clicked. Goes to registration page*/
     public void onCreateAccountClick(View view) {
         Intent myIntent = new Intent(Login.this, Registration.class);
         Login.this.startActivity(myIntent);

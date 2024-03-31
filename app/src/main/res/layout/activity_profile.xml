@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/almost_white">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/profileToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/light_green"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/menu_icon_foreground" />
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/profileToolbar"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/profileToolbar"
+        app:layout_constraintTop_toBottomOf="@+id/profileToolbar"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="276dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="32dp"
+        android:text="Placeholder name"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.725"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/profileEmail"
+        android:layout_width="276dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="24dp"
+        android:text="Placeholder email"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView24"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView24"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/dark_green"
+        android:onClick="onClickEdit"
+        android:text="@string/edit"
+        android:textAllCaps="false"
+        android:textColor="@color/almost_white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/checkedTextView3"
+        app:layout_constraintStart_toStartOf="@+id/checkedTextView3"
+        app:layout_constraintTop_toBottomOf="@+id/checkedTextView3" />
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:checkMark="@android:drawable/btn_star_big_on"
+        android:checkMarkTint="@color/black"
+        android:checked="false"
+        android:text="@string/dairy"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/profileEmail"
+        app:layout_constraintStart_toStartOf="@+id/profileEmail"
+        app:layout_constraintTop_toBottomOf="@+id/profileEmail" />
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView2"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:checkMark="@android:drawable/btn_star_big_on"
+        android:checkMarkTint="@color/black"
+        android:text="@string/Wheat"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/checkedTextView"
+        app:layout_constraintStart_toStartOf="@+id/checkedTextView"
+        app:layout_constraintTop_toBottomOf="@+id/checkedTextView" />
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView3"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:checkMark="@android:drawable/btn_star_big_on"
+        android:checkMarkTint="@color/black"
+        android:text="@string/peanut"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/checkedTextView2"
+        app:layout_constraintStart_toStartOf="@+id/checkedTextView2"
+        app:layout_constraintTop_toBottomOf="@+id/checkedTextView2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
